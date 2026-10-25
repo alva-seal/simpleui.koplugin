@@ -1233,7 +1233,7 @@ function M.install()
             if self._fc_overlay_pages and self.status ~= "complete" and self._fc_pages then
                 local cell_min = math.min(self.width or 40, self.height or 40)
                 self._fc_pages_widget = CoverWidgets.buildRectBadgeWidget(
-                    self._fc_pages .. _(" p."), false, cell_min, CE.getColor("pages"), false, badge_scale)
+                    self._fc_pages .. _(""), false, cell_min, CE.getColor("pages"), false, badge_scale)
             end
 
             if self._fc_overlay_series then
