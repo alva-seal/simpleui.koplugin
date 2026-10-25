@@ -174,12 +174,6 @@ function M.getFadeAmount() return M.getFadeAmountPct() / 100 end
 -- ---------------------------------------------------------------------------
 -- 4. Constants
 -- ---------------------------------------------------------------------------
-local _BADGE_BAR_H       = Screen:scaleBySize(8)
-local _BADGE_BAR_GAP     = Screen:scaleBySize(4)
-
--- Extra shift of the pages badge: positive = further right / further down.
-local _PAGES_SHIFT_X = Screen:scaleBySize(6)
-local _PAGES_SHIFT_Y = Screen:scaleBySize(8)
 
 -- Base sizes computed once from device DPI at startup.
 local _BASE_COVER_H = math.floor(Screen:scaleBySize(96))
@@ -216,6 +210,10 @@ local _BADGE_TOP_INSET   = Screen:scaleBySize(0)
 local _BADGE_RIGHT_INSET = Screen:scaleBySize(8)
 local _BADGE_BAR_H       = Screen:scaleBySize(8)
 local _BADGE_BAR_GAP     = Screen:scaleBySize(4)
+
+-- Extra shift of the pages badge: positive = further right / further down.
+local _PAGES_SHIFT_X = Screen:scaleBySize(-6)
+local _PAGES_SHIFT_Y = Screen:scaleBySize(12)
 
 -- Plugin directory and optional custom icon path.
 -- (Depth-independent — see infra/sui_paths.lua for why this can't be the
