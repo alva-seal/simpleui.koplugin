@@ -69,7 +69,7 @@ A clean, distraction-free UI plugin for KOReader. SimpleUI adds a **dedicated Ho
 
 ### Home Screen
 
-Build the screen you want from modules — Currently Reading, Recent and New Books, To Be Read, Cover Deck, Collections, Reading Goals, Reading Stats, Reading Heatmap, Tabbed Grid, Quick Actions, Quote of the Day, a Tiny Critter and more. Each module can take **1/3, 1/2, 2/3 or the full width** of a row, so modules sit side by side in a bento-style grid; you can split a screen into **several pages**, save **presets**, set a **wallpaper** and create extra **Custom Screens**.
+Build the screen you want from modules — Currently Reading, Recent and New Books, To Be Read, Cover Deck, Collections, Reading Goals, Reading Stats, Reading Heatmap, Tabbed Grid, Quick Actions, Quote of the Day, a Tiny Critter and more. Each module is a box you size and place freely on a grid of 6 columns, so modules sit side by side; you can split a screen into **several pages**, save **presets**, set a **wallpaper** and create extra **Custom Screens**.
 
 See [docs/HOME_SCREEN.md](docs/HOME_SCREEN.md) for every module and the layout tools.
 

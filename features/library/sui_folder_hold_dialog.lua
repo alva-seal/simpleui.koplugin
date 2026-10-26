@@ -70,7 +70,7 @@ local function listRows(ctx, has_operations)
     if ctx.file_manager and not has_operations then
         Rows.pushRow(rows, Rows.deleteItem(ctx, not (ctx.item and ctx.item.is_go_up)))
     end
-    Rows.appendRegisteredRows(ctx, rows, false, nil, nil)
+    Rows.appendRegisteredRows(ctx, rows, false)
     return rows
 end
 

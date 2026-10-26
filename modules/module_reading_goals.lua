@@ -25,7 +25,6 @@ local _ = require("infra/sui_i18n").translate
 local N_ = require("infra/sui_i18n").ngettext
 local logger          = require("logger")
 local Config          = require("infra/sui_config")
-local Bento           = require("infra/sui_bento")
 local SectionLabel    = require("engines/sui_section_label")
 local AAPaint         = require("infra/sui_aa_paint")
 
@@ -1102,13 +1101,13 @@ function M.getHeight(_ctx)
         -- Approximate column width when the module is in a bento column so
         -- height tracks the same ring size build() will use.
         local approx_inner
-        local span = Config.getBentoSpan("reading_goals", pfx)
-        if span < Bento.FULL then
+        local fraction = Config.getBentoFraction("reading_goals", pfx)
+        if fraction < 1 then
             local content_w = UI.getInnerW()
             if UI.isLandscape() then
                 content_w = UI.getSpreadColWidth(content_w)
             end
-            approx_inner = math.max(1, math.floor(content_w * span / Bento.ROW))
+            approx_inner = math.max(1, math.floor(content_w * fraction))
         end
         local card_w, _, cd = _ringsCardW(scale, approx_inner, n, pfx, styles)
         h = top_gap + _ringCardApproxHeight(card_w, cd, getRingContent(pfx))

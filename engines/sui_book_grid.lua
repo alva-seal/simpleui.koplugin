@@ -869,6 +869,9 @@ function GridRenderer.build(w, ctx, opts)
         end
 
         local cell = VerticalGroup:new{ align = "center", cover_widget }
+        -- Width of the drawn cover: the slot minus its shadow inset. Bar and
+        -- label are centred on it, left-aligned in the cw-wide slot.
+        local card_w = math.max(1, cw - SUIStyle.coverShadowOffset(SUIStyle.SHADOW_MODULES))
 
         -- Captured below (when applicable) and merged into a single
         -- row_update_funcs[i] closure after this cell's elements are
@@ -881,16 +884,15 @@ function GridRenderer.build(w, ctx, opts)
             -- Wrapped in a single-slot OverlapGroup so a later refresh can
             -- just replace bar_container[1] with a freshly-built progress
             -- bar instead of rebuilding this whole cell.
-            local _bar_w = cw
             local _bar_h = D.RB_BAR_H
-            local _init_bar = UI.progressBar(_bar_w, bd.percent, _bar_h, ink.bar_fg, ink.bar_bg)
+            local _init_bar = UI.progressBar(card_w, bd.percent, _bar_h, ink.bar_fg, ink.bar_bg)
             local bar_container = OverlapGroup:new{
-                dimen = _init_bar:getSize(),
+                dimen = Geom:new{ w = cw, h = _init_bar:getSize().h },
                 _init_bar,
             }
             cell[#cell+1] = bar_container
             _update_bar = function(nd)
-                bar_container[1] = UI.progressBar(_bar_w, (nd and nd.percent or 0), _bar_h, ink.bar_fg, ink.bar_bg)
+                bar_container[1] = UI.progressBar(card_w, (nd and nd.percent or 0), _bar_h, ink.bar_fg, ink.bar_bg)
             end
         end
 
@@ -903,11 +905,14 @@ function GridRenderer.build(w, ctx, opts)
                 face      = pct_face,
                 bold      = pct_bold,
                 fgcolor   = _pct_fg,
-                max_width = cw,
+                max_width = card_w,
                 truncate_with_ellipsis = true,
                 alignment = "center",
             }
-            cell[#cell+1] = pct_w
+            cell[#cell+1] = OverlapGroup:new{
+                dimen = Geom:new{ w = cw, h = label_h },
+                CenterContainer:new{ dimen = Geom:new{ w = card_w, h = label_h }, pct_w },
+            }
             _update_text = function(nd)
                 UI.updateColoredText(pct_w,
                     opts.labelForItem and opts.labelForItem(nd)

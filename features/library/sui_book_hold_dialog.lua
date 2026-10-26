@@ -263,14 +263,11 @@ local function settingsItem(ctx)
     }
 end
 
--- Registered rows, and the "Delete" item still to be offered in the list: nil
--- when the actions grid already offers it (`has_operations`) or a registered
--- row took its place.
-local function registeredRows(ctx, has_operations)
-    local rows   = {}
-    local delete = ctx.file_manager and (not has_operations and Rows.deleteItem(ctx))
-    local placed = Rows.appendRegisteredRows(ctx, rows, true, ctx.book_props, delete)
-    return rows, not placed and delete or nil
+-- Rows registered through FileManager:addFileDialogButtons.
+local function registeredRows(ctx)
+    local rows = {}
+    Rows.appendRegisteredRows(ctx, rows, true, ctx.book_props)
+    return rows
 end
 
 -- Rows of the actions grid: the book actions, the registered rows that hold
@@ -286,8 +283,8 @@ local function gridRows(ctx, registered)
 end
 
 -- Rows of the list below the grid: the registered single-item rows, caller
--- rows and the remaining actions. `delete` is the item left over by
--- registeredRows.
+-- rows and the remaining actions. `delete` is the "Delete" item, nil when the
+-- actions grid already offers it.
 local function listRows(ctx, registered, delete)
     local rows = {}
     local opts = ctx.opts
@@ -323,7 +320,8 @@ function M.show(file, opts)
     if ctx.is_book then
         sections[#sections + 1] = statusSection(ctx)
     end
-    local registered, delete = registeredRows(ctx, #clipboard > 0)
+    local registered = registeredRows(ctx)
+    local delete = ctx.file_manager and #clipboard == 0 and Rows.deleteItem(ctx) or nil
     local grid = gridRows(ctx, registered)
     if #grid > 0 then
         sections[#sections + 1] = { type = "rows", rows = grid }

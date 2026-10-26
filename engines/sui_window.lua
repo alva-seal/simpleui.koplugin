@@ -4034,7 +4034,9 @@ end
 ---
 --- @param opts table
 ---   inner_w    number    — required; width the row is laid out in
----   ids        string[]  — required; modules of the row, in order
+---   ids        string[]  — modules of the row, in order
+---   cols       table[]|nil — { { span = n, ids = {...} }, ... }: columns of stacked
+---              modules, instead of `ids`
 ---   spans      table     — required; id -> span, in sixths of a row
 ---   row_total  number    — sum of a full row (default 6)
 ---   label_for  function  — (id) -> card title
@@ -4048,54 +4050,61 @@ end
 ---
 --- @return HorizontalGroup, number, number  the row, its height and its width
 function SUIWindow.BentoRow(opts)
-    assert(opts.inner_w and opts.ids and opts.spans, "SUIWindow.BentoRow: inner_w, ids and spans are required")
+    assert(opts.inner_w and (opts.cols or opts.ids) and opts.spans, "SUIWindow.BentoRow: inner_w, ids and spans are required")
     local row_total = opts.row_total or 6
-    local ids       = opts.ids
-    local n         = #ids
     local gap       = SZ(Screen:scaleBySize(6))
 
+    -- Columns side by side; each is a stack of modules of one width.
+    local cols = opts.cols
+    if not cols then
+        cols = {}
+        for i, id in ipairs(opts.ids) do cols[i] = { span = opts.spans[id], ids = { id } } end
+    end
+    local n = #cols
+
     local sum = 0
-    for _i, id in ipairs(ids) do sum = sum + opts.spans[id] end
+    for _i, col in ipairs(cols) do sum = sum + col.span end
     local avail  = math.max(1, opts.inner_w - (n - 1) * gap)
     local widths = {}
     local used   = 0
-    for i, id in ipairs(ids) do
+    for i, col in ipairs(cols) do
         if i == n then
             widths[i] = math.max(1, math.floor(avail * sum / row_total) - used)
         else
-            widths[i] = math.max(1, math.floor(avail * opts.spans[id] / row_total))
+            widths[i] = math.max(1, math.floor(avail * col.span / row_total))
             used = used + widths[i]
         end
     end
 
-    local cards, row_h = {}, 0
-    for i, id in ipairs(ids) do
-        local _id = id
-        local tappable = opts.on_tap ~= nil and id ~= opts.highlight
-        local arrows = opts.on_move ~= nil and opts.spans[id] == row_total
-        local can    = arrows and opts.can_move and opts.can_move(id) or {}
-        local sub    = opts.span_label(opts.spans[id])
-        local summary = opts.summary_for and opts.spans[id] == row_total and opts.summary_for(id)
-        if summary and summary ~= "" then sub = sub .. "  ·  " .. summary end
-        cards[i] = _CardBase{
-            inner_w      = widths[i],
-            title        = opts.label_for(id),
-            subtitle     = sub,
-            show_chevron = tappable,
-            dim          = opts.highlight ~= nil and id ~= opts.highlight or nil,
-            on_tap       = tappable and function() opts.on_tap(_id) end or nil,
-            on_delete    = opts.on_delete and function() opts.on_delete(_id) end,
-            arrange_mode = arrows or nil,
-            on_move_up   = arrows and can.up ~= false and function() opts.on_move(_id, "up") end or nil,
-            on_move_down = arrows and can.down ~= false and function() opts.on_move(_id, "down") end or nil,
-            margin_v     = 0,
-        }
-        row_h = math.max(row_h, cards[i]:getSize().h)
-    end
-
+    local row_h = 0
     local hg = HorizontalGroup:new{ align = "top" }
-    for i = 1, n do
-        hg[#hg + 1] = cards[i]
+    for i, col in ipairs(cols) do
+        local stack = VerticalGroup:new{ align = "left" }
+        for k, id in ipairs(col.ids) do
+            local _id = id
+            local tappable = opts.on_tap ~= nil and id ~= opts.highlight
+            local arrows = opts.on_move ~= nil and opts.spans[id] == row_total
+            local can    = arrows and opts.can_move and opts.can_move(id) or {}
+            local sub    = opts.span_label(opts.spans[id])
+            local summary = opts.summary_for and opts.spans[id] == row_total and opts.summary_for(id)
+            if summary and summary ~= "" then sub = sub .. "  ·  " .. summary end
+            if k > 1 then stack[#stack + 1] = VerticalSpan:new{ width = gap } end
+            stack[#stack + 1] = _CardBase{
+                inner_w      = widths[i],
+                title        = opts.label_for(id),
+                subtitle     = sub,
+                show_chevron = tappable,
+                dim          = opts.highlight ~= nil and id ~= opts.highlight or nil,
+                on_tap       = tappable and function() opts.on_tap(_id) end or nil,
+                on_delete    = opts.on_delete and function() opts.on_delete(_id) end,
+                arrange_mode = arrows or nil,
+                on_move_up   = arrows and can.up ~= false and function() opts.on_move(_id, "up") end or nil,
+                on_move_down = arrows and can.down ~= false and function() opts.on_move(_id, "down") end or nil,
+                margin_v     = 0,
+            }
+        end
+        row_h = math.max(row_h, stack:getSize().h)
+        hg[#hg + 1] = stack
         if i < n then hg[#hg + 1] = HorizontalSpan:new{ width = gap } end
     end
 
@@ -4104,11 +4113,11 @@ end
 
 --- Renders the rows of a bento page: one widget per row, so a long page can
 --- still be split between rows. A row that does not fill the width is centred
---- and gets a caption.
+--- and gets a caption, unless it holds stacked modules.
 ---
 --- @param opts table
 ---   inner_w    number    — required
----   rows       table[]   — { { ids = {...}, sum = n }, ... } in sixths of a row
+---   rows       table[]   — { { ids = {...}, cols = {...}|nil, sum = n }, ... } in sixths of a row
 ---   spans      table     — id -> span, in sixths of a row
 ---   row_total  number    — sum of a full row (default 6)
 ---   label_for, span_label, summary_for, on_tap, on_delete, on_move, can_move — as in BentoRow
@@ -4140,6 +4149,7 @@ function SUIWindow.BentoMap(opts)
         local hg, row_h = SUIWindow.BentoRow{
             inner_w     = opts.inner_w,
             ids         = row.ids,
+            cols        = row.cols,
             spans       = opts.spans,
             row_total   = row_total,
             label_for   = opts.label_for,
@@ -4158,7 +4168,12 @@ function SUIWindow.BentoMap(opts)
                 hg,
             },
         }
-        if row.sum < row_total and opts.open_text then
+        -- A row with stacked modules is shaped on purpose: it is not open.
+        local stacked = false
+        for _c, col in ipairs(row.cols or {}) do
+            if #col.ids > 1 then stacked = true end
+        end
+        if row.sum < row_total and opts.open_text and not stacked then
             entry[#entry + 1] = CenterContainer:new{
                 dimen = Geom:new{ w = opts.inner_w, h = SZ(Screen:scaleBySize(20)) },
                 TextWidget:new{

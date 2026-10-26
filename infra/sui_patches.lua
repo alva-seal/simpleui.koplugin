@@ -4394,10 +4394,13 @@ end
 -- ---------------------------------------------------------------------------
 
 -- Paint the wallpaper onto bb, anchored at y=0 (top of screen), with its tint.
+-- The library scrim covers the content area only, between the bars.
 local function _paintWallpaper(bg_widget, bb, x, y)
     if not bg_widget then return end
-    bg_widget:paintTo(bb, x, 0)
-    SUIWallpaper.paintTint(bb, x, 0, Screen:getWidth(), Screen:getHeight())
+    SUIWallpaper.paintBackground(bb, x)
+    local top = UI.getTopInset()
+    SUIWallpaper.paintLibraryScrim(bb, x, top, Screen:getWidth(),
+        Screen:getHeight() - top - Bottombar.TOTAL_H())
 end
 
 -- Returns the wallpaper background widget when the file manager wallpaper is

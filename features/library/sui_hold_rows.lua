@@ -31,9 +31,6 @@ local DialogIcons = require("features/dialogs/sui_dialog_icons")
 
 local M = {}
 
--- Registered row replaced in place by "Delete" on book sheets.
-M.DELETE_ROW_ID = "coverbrowser_2"
-
 -- Registered rows whose action navigates inside the file browser instead of
 -- changing the state of the item.
 M.NAVIGATING_ROW_IDS = {
@@ -189,28 +186,16 @@ end
 
 --- Appends the rows registered through FileManager:addFileDialogButtons.
 --- Each row function receives (path, is_file, book_props, close_callback).
---- `delete_item` decides the DELETE_ROW_ID row: an item takes its place, false
---- drops it (the sheet offers "Delete" elsewhere), nil leaves it as registered.
---- Returns true when the delete item was placed.
-function M.appendRegisteredRows(ctx, rows, is_file, book_props, delete_item)
-    local placed = false
+function M.appendRegisteredRows(ctx, rows, is_file, book_props)
     for _i, row in ipairs(registeredRows(ctx.file_manager)) do
-        if row.id == M.DELETE_ROW_ID and delete_item ~= nil then
-            if delete_item then
-                M.pushRow(rows, delete_item)
-                placed = true
-            end
-        else
-            local navigates = M.NAVIGATING_ROW_IDS[row.id]
-            local close = navigates and ctx.closeAndNavigate or once(ctx.closeAndRefresh)
-            local ok, built = pcall(row.func, ctx.path, is_file, book_props, close)
-            if ok and built ~= nil then
-                if not (navigates or ctx.file_chooser) then closeAfterAction(built, close) end
-                M.appendRow(rows, built)
-            end
+        local navigates = M.NAVIGATING_ROW_IDS[row.id]
+        local close = navigates and ctx.closeAndNavigate or once(ctx.closeAndRefresh)
+        local ok, built = pcall(row.func, ctx.path, is_file, book_props, close)
+        if ok and built ~= nil then
+            if not (navigates or ctx.file_chooser) then closeAfterAction(built, close) end
+            M.appendRow(rows, built)
         end
     end
-    return placed
 end
 
 -- Item running `run` on `ctx.path` after closing the sheet. `enabled` is

@@ -1469,6 +1469,7 @@ function M.makeBackdropStrengthItem(opts)
     return M.makeSpinItem{
         text          = opts.title,
         enabled_func  = opts.enabled_func,
+        separator     = opts.separator,
         value_func    = opts.value_func or function() return label(opts.get()) end,
         live          = true,
         title         = opts.title,
@@ -1736,12 +1737,53 @@ end
 
 -- Width as a percent of the row, for modules that size their content by it.
 function M.getBentoWidth(mod_id, pfx)
+    if M.isBentoClassic(pfx) then return M.getBentoPct(mod_id, pfx) end
     return Bento.spanToPct(M.getBentoSpan(mod_id, pfx))
+end
+
+-- Width as a fraction of the row, in the layout mode of the screen.
+function M.getBentoFraction(mod_id, pfx)
+    return M.getBentoWidth(mod_id, pfx) / 100
 end
 
 -- Stores a percent width, snapped to the nearest fixed width.
 function M.setBentoWidth(pct, mod_id, pfx)
     M.setBentoSpan(Bento.pctToSpan(pct), mod_id, pfx)
+end
+
+local function _bentoModeKey(pfx)
+    return (pfx or "simpleui_hs_") .. "bento_mode"
+end
+
+-- Layout mode of a screen: "grid" (fixed widths) or "classic" (free widths in
+-- percent, a module that does not fit stacks under a column of its width).
+function M.isBentoClassic(pfx)
+    return M.readChoice(_bentoModeKey(pfx), { "grid", "classic" }, "grid") == "classic"
+end
+
+function M.setBentoClassic(on, pfx)
+    SUISettings:set(_bentoModeKey(pfx), on and "classic" or "grid")
+end
+
+-- Percent snapped to the steps of the classic mode.
+local function _snapPct(v)
+    local step = Bento.CLASSIC_STEP
+    v = math.floor(v / step + 0.5) * step
+    return math.max(Bento.CLASSIC_MIN, math.min(Bento.CLASSIC_MAX, v))
+end
+
+-- Free width in percent for the classic mode, kept in the same setting as the
+-- fixed widths so switching mode keeps it.
+function M.getBentoPct(mod_id, pfx)
+    local v = mod_id and SUISettings:get(_bentoKey(mod_id, pfx))
+    if type(v) ~= "number" then return Bento.spanToPct(M.getBentoSpan(mod_id, pfx)) end
+    return _snapPct(v)
+end
+
+function M.setBentoPct(pct, mod_id, pfx)
+    if mod_id and pfx then
+        SUISettings:set(_bentoKey(mod_id, pfx), _snapPct(pct))
+    end
 end
 
 -- Radio options for the module widths.
@@ -1761,6 +1803,12 @@ function M.bentoSpanLabel(span)
     return ""
 end
 
+-- Width of the module as shown to the user, in the layout mode of the screen.
+function M.bentoWidthLabel(mod_id, pfx)
+    if M.isBentoClassic(pfx) then return M.getBentoPct(mod_id, pfx) .. "%" end
+    return M.bentoSpanLabel(M.getBentoSpan(mod_id, pfx))
+end
+
 local function _bentoAutofitKey(pfx)
     return (pfx or "simpleui_hs_") .. "bento_autofit"
 end
@@ -1773,6 +1821,20 @@ end
 
 function M.setBentoAutofit(on, pfx)
     SUISettings:set(_bentoAutofitKey(pfx), on)
+end
+
+local function _bentoStackKey(pfx)
+    return (pfx or "simpleui_hs_") .. "bento_stack"
+end
+
+-- Whether a module that does not fit in its row goes under a column of the
+-- row with the same width, instead of starting a new row. On by default.
+function M.isBentoStack(pfx)
+    return SUISettings:nilOrTrue(_bentoStackKey(pfx))
+end
+
+function M.setBentoStack(on, pfx)
+    SUISettings:set(_bentoStackKey(pfx), on)
 end
 
 -- ---------------------------------------------------------------------------
@@ -1824,7 +1886,7 @@ function M.appendModuleChromeItems(items, opts)
     end
     if opts.layout_sheet then
         local function currentWidth()
-            return M.bentoSpanLabel(M.getBentoSpan(mod.id, pfx))
+            return M.bentoWidthLabel(mod.id, pfx)
         end
         items[#items + 1] = {
             text           = _("Width and Position"),

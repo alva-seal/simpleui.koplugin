@@ -10,6 +10,7 @@
 --   Layout.findPage(layout, id)                          -> page, page_index
 --   Layout.setSpan(layout, pfx, id, span)                -> changed ids
 --   Layout.move(layout, pfx, id, dir)                    -> changed ids
+--   Layout.mode(pfx)                                     -> { classic=, stack= }
 --   Layout.pageSpans(page, pfx)                          -> ids, spans
 --   Layout.pageRows(page, pfx)                           -> bento rows, spans
 
@@ -218,25 +219,42 @@ function LayoutService.remove(layout, pfx, mod_id)
     return true
 end
 
--- Ordered ids of a page and the span of each module.
+-- Layout mode of the screen, as Bento reads it.
+function LayoutService.mode(pfx)
+    local Config = require("infra/sui_config")
+    return { classic = Config.isBentoClassic(pfx), stack = Config.isBentoStack(pfx) }
+end
+
+-- Ordered ids of a page and the width of each module: its span in sixths of a
+-- row, or its percent in the classic layout.
 function LayoutService.pageSpans(page, pfx)
     local Config = require("infra/sui_config")
+    local classic = Config.isBentoClassic(pfx)
     local ids, spans = {}, {}
     for _, entry in ipairs(page.modules) do
         local id = LayoutService.entryId(entry)
         if id then
             ids[#ids + 1] = id
-            spans[id] = Config.getBentoSpan(id, pfx)
+            spans[id] = classic and Config.getBentoPct(id, pfx) or Config.getBentoSpan(id, pfx)
         end
     end
     return ids, spans
 end
 
--- Bento rows of a page, as rendered: { { ids = {...}, sum = n }, ... }, and
--- the span of each module.
+-- Bento rows of a page, as rendered: { { cols = {...}, ids = {...}, sum = n }, ... },
+-- and the width of each module.
 function LayoutService.pageRows(page, pfx)
     local ids, spans = LayoutService.pageSpans(page, pfx)
-    return Bento.pack(ids, spans), spans
+    return Bento.packFor(ids, spans, LayoutService.mode(pfx)), spans
+end
+
+-- Stores the width a page change gave a module.
+local function storeWidth(Config, pfx, id, width)
+    if Config.isBentoClassic(pfx) then
+        Config.setBentoPct(width, id, pfx)
+    else
+        Config.setBentoSpan(width, id, pfx)
+    end
 end
 
 -- Gives a module a width; unless the screen has auto-adjust off, the
@@ -247,13 +265,13 @@ function LayoutService.setSpan(layout, pfx, mod_id, span)
     local Config = require("infra/sui_config")
     local page = LayoutService.findPage(layout, mod_id)
     if not page then
-        Config.setBentoSpan(span, mod_id, pfx)
+        storeWidth(Config, pfx, mod_id, span)
         return { mod_id }
     end
     local ids, spans = LayoutService.pageSpans(page, pfx)
     local new_spans, changed = Bento.setSpan(ids, spans, mod_id, span, Config.isBentoAutofit(pfx))
     for _, id in ipairs(changed) do
-        Config.setBentoSpan(new_spans[id], id, pfx)
+        storeWidth(Config, pfx, id, new_spans[id])
     end
     return changed
 end
@@ -265,10 +283,10 @@ function LayoutService.move(layout, pfx, mod_id, dir)
     if not page then return {} end
     local Config = require("infra/sui_config")
     local ids, spans = LayoutService.pageSpans(page, pfx)
-    local new_ids, new_spans, changed = Bento.move(ids, spans, mod_id, dir)
+    local new_ids, new_spans, changed = Bento.move(ids, spans, mod_id, dir, LayoutService.mode(pfx))
     page.modules = new_ids
     for _, id in ipairs(changed) do
-        Config.setBentoSpan(new_spans[id], id, pfx)
+        storeWidth(Config, pfx, id, new_spans[id])
     end
     return changed
 end

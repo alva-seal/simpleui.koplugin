@@ -304,6 +304,7 @@ local function sgOpenGroup(file_chooser, group_item)
     local items = group_item.series_items
     _sg_current = {
         series_name = group_item.text,
+        group_path  = group_item.path,
         parent_page = file_chooser.page or 1,
     }
     items._sg_is_series_view = true
@@ -440,8 +441,8 @@ function SeriesGrouping.install()
             if path == parent then
                 if _sg_current then
                     _sg_current.should_restore = true
-                    local saved_page = _sg_current.parent_page
-                    if saved_page and saved_page > 1 then fc.page = saved_page end
+                    -- The core focuses this item in the parent listing.
+                    fc.focused_path = _sg_current.group_path
                 end
             else
                 _sg_current = nil
@@ -471,7 +472,10 @@ function SeriesGrouping.install()
         end
 
         _sg_orig_refreshPath(fc)
-        if SeriesGrouping.isEnabled() and _sg_current then
+        if _sg_current and _sg_current.should_restore then
+            -- Leaving the group for its parent: it must stay closed.
+            _sg_current = nil
+        elseif SeriesGrouping.isEnabled() and _sg_current then
             local sname      = _sg_current.series_name
             local saved_page = _sg_current.parent_page
             for _, item in ipairs(fc.item_table or {}) do
@@ -486,28 +490,11 @@ function SeriesGrouping.install()
         _sg_refreshPath_depth = _sg_refreshPath_depth - 1
     end
 
-    -- Restore focus to the series group item when returning from a virtual folder.
+    -- Drops the group state when series grouping is turned off.
     FileChooser.updateItems = function(fc, ...)
         if not SeriesGrouping.isEnabled() then
             _sg_current = nil
             return _sg_orig_updateItems(fc, ...)
-        end
-        if fc.item_table and fc.item_table._sg_is_series_view then
-            return _sg_orig_updateItems(fc, ...)
-        end
-        if _sg_current and _sg_current.should_restore
-                and fc.item_table and #fc.item_table > 0 then
-            local sname = _sg_current.series_name
-            for idx, item in ipairs(fc.item_table) do
-                if item.is_series_group and item.text == sname then
-                    fc.page = math.ceil(idx / fc.perpage)
-                    local select_num = ((idx - 1) % fc.perpage) + 1
-                    if fc.path_items and fc.path then fc.path_items[fc.path] = idx end
-                    _sg_current = nil
-                    return _sg_orig_updateItems(fc, select_num)
-                end
-            end
-            _sg_current = nil
         end
         return _sg_orig_updateItems(fc, ...)
     end

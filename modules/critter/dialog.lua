@@ -17,11 +17,21 @@
 -- tier (see mood.lua).
 --
 -- Voice: a tiny critter living on the shelf, dry and warm, never sarcastic with
--- the user. Its humour comes from its size and home and from the reading facts.
--- Every answer of an exchange fits every opener variant, since 2-3 are dealt at
--- random. A tier changes the attitude, not the volume; a declined answer costs
--- mood but gets a gracious reply. Lines stay short (about 42 characters, 32 for
--- `sub`) and free of puns that only work in English.
+-- the user. Its humour comes from its size and home (bookmark as a blanket, the
+-- lamp, the shelf) and from the reading facts, not from stock quips; at most
+-- three jokes about its size, and no recurring food gags.
+-- Writing rules:
+--   - Every answer of an exchange fits every opener variant, since 2-3 are
+--     dealt at random.
+--   - A reply answers the option that was chosen; `sub` carries the punchline
+--     and is left out when it adds nothing.
+--   - A tier changes the attitude, not the volume: grumpy is terse but fair,
+--     meh tired, okay the base, happy warmer, radiant affectionate. Override a
+--     tier only where it adds something.
+--   - `delta` runs from -2 to +3: +2/+3 warm or engaged, +1 playful, 0 neutral,
+--     -1 a brush-off. A declined answer costs mood but gets a gracious reply.
+--   - Lines stay short (about 42 characters, 32 for `sub`) and free of puns that
+--     only work in English. Translations follow the pt-PT rules in CLAUDE.md.
 
 local Deck = require("infra/sui_deck")
 local _    = require("infra/sui_i18n").translate

@@ -2247,8 +2247,47 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
             return items
         end
 
-        -- Ordered as: source → image rendering → tint → surfaces over the
-        -- wallpaper (top of the screen to bottom).
+        -- Ordered as: source → image rendering and tint → opacity of the
+        -- surfaces over the wallpaper.
+        local function imageItems()
+            return {
+                imageToggleItem(_("Stretch to fill screen"),
+                    SUIWallpaper.styleGetWallpaperStretch, SUIWallpaper.styleSetWallpaperStretch),
+                imageToggleItem(_("Auto-rotate"),
+                    SUIWallpaper.styleGetWallpaperAutoRotate, SUIWallpaper.styleSetWallpaperAutoRotate),
+                imageToggleItem(_("Invert in Night Mode"),
+                    SUIWallpaper.styleGetWallpaperInvertNight, SUIWallpaper.styleSetWallpaperInvertNight),
+                tintItem({
+                    title = _("Lighten"),
+                    info  = _("Fades the wallpaper towards white to improve text readability."),
+                    get   = SUIWallpaper.styleGetWallpaperLighten,
+                    set   = SUIWallpaper.styleSetWallpaperLighten,
+                }),
+                tintItem({
+                    title = _("Darken"),
+                    info  = _("Fades the wallpaper towards black."),
+                    get   = SUIWallpaper.styleGetWallpaperDarken,
+                    set   = SUIWallpaper.styleSetWallpaperDarken,
+                }),
+            }
+        end
+
+        local function surfaceOpacityItems()
+            return {
+                strengthItem({
+                    title         = _("Library/History/Collections"),
+                    info          = _("Scrim over the wallpaper in Library, History and Collections. 0% shows the wallpaper, 100% hides it."),
+                    get           = SUIWallpaper.getLibraryStrength,
+                    set           = SUIWallpaper.setLibraryStrength,
+                    default_value = Backdrop.STRENGTH_MAX,
+                }),
+                makeBarBackdropItem("statusbar",  ctx_menu, _("Status Bar Opacity")),
+                makeBarBackdropItem("titlebar",   ctx_menu, _("Title Bar Opacity")),
+                makeBarBackdropItem("pagination", ctx_menu, _("Pagination Bar Opacity")),
+                makeBarBackdropItem("navbar",     ctx_menu, _("Navigation Bar Opacity")),
+            }
+        end
+
         return {
             {
                 text           = _("Enable Wallpaper"),
@@ -2266,38 +2305,15 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
                 sub_item_table_func = selectWallpaperItems,
             },
             {
-                text           = _("Show wallpaper on all screens"),
-                checked_func   = SUIWallpaper.styleGetWallpaperShowInFM,
-                enabled_func   = SUIWallpaper.isWallpaperActive,
-                keep_menu_open = true,
-                separator      = true,
-                callback       = function()
-                    SUIWallpaper.styleSetWallpaperShowInFM(not SUIWallpaper.styleGetWallpaperShowInFM())
-                    _applyFullLayoutRefresh()
-                end,
+                text                = _("Display"),
+                enabled_func        = SUIWallpaper.styleGetWallpaperEnabled,
+                sub_item_table_func = imageItems,
             },
-            imageToggleItem(_("Stretch to fill screen"),
-                SUIWallpaper.styleGetWallpaperStretch, SUIWallpaper.styleSetWallpaperStretch),
-            imageToggleItem(_("Auto-rotate"),
-                SUIWallpaper.styleGetWallpaperAutoRotate, SUIWallpaper.styleSetWallpaperAutoRotate),
-            imageToggleItem(_("Invert in Night Mode"),
-                SUIWallpaper.styleGetWallpaperInvertNight, SUIWallpaper.styleSetWallpaperInvertNight),
-            tintItem({
-                title = _("Lighten"),
-                info  = _("Fades the wallpaper towards white to improve text readability."),
-                get   = SUIWallpaper.styleGetWallpaperLighten,
-                set   = SUIWallpaper.styleSetWallpaperLighten,
-            }),
-            tintItem({
-                title = _("Darken"),
-                info  = _("Fades the wallpaper towards black."),
-                get   = SUIWallpaper.styleGetWallpaperDarken,
-                set   = SUIWallpaper.styleSetWallpaperDarken,
-            }),
-            makeBarBackdropItem("statusbar",  ctx_menu, _("Status Bar Opacity")),
-            makeBarBackdropItem("titlebar",   ctx_menu, _("Title Bar Opacity")),
-            makeBarBackdropItem("pagination", ctx_menu, _("Pagination Bar Opacity")),
-            makeBarBackdropItem("navbar",     ctx_menu, _("Navigation Bar Opacity")),
+            {
+                text                = _("Surface Opacity"),
+                enabled_func        = SUIWallpaper.isWallpaperActive,
+                sub_item_table_func = surfaceOpacityItems,
+            },
         }
     end
     plugin.makeWallpaperMenuItems = makeWallpaperMenuItems
@@ -2349,7 +2365,7 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
 
     local function makeBehaviourMenuItems(ctx)
         ctx = ctx or HOMESCREEN_CTX
-        local items = {
+        local start_items = {
             startWithItem(),
             bookCloseTargetItem(),
             {
@@ -2364,80 +2380,8 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
                     SUISettings:saveSetting("simpleui_hs_return_on_wakeup", not on)
                 end,
             },
-            {
-                text_func = function() return _("Scale") end,
-                separator = true,
-                sub_item_table = {
-                    {
-                        text_func    = function() return _("Lock Scale") end,
-                        checked_func = function() return Config.isScaleLinked() end,
-                        keep_menu_open = true,
-                        separator = true,
-                        callback = function()
-                            Config.setScaleLinked(not Config.isScaleLinked())
-                            _applyFullLayoutRefresh()
-                        end,
-                    },
-                    Config.makeSpinItem{
-                        text_func    = function() return _("Modules") end,
-                        title        = _("Module Scale"),
-                        info         = function()
-                            return Config.isScaleLinked()
-                                and _("Scales all modules and labels together.\n100% is the default size.")
-                                or  _("Global scale for all modules.\nIndividual overrides in Module Settings take precedence.\n100% is the default size.")
-                        end,
-                        get          = Config.getModuleScalePct,
-                        value_min    = Config.SCALE_MIN,
-                        value_max    = Config.SCALE_MAX,
-                        value_step   = Config.SCALE_STEP,
-                        default_value= Config.SCALE_DEF,
-                        unit         = "%",
-                        set          = function(value)
-                            Config.setModuleScale(value)
-                            _applyFullLayoutRefresh()
-                            if ctx and ctx.refresh then ctx.refresh() end
-                        end,
-                    },
-                    Config.makeSpinItem{
-                        text_func    = function() return _("Labels") end,
-                        guard        = function()
-                            if not Config.isScaleLinked() then return true end
-                            UI.Notify.toast(_("Disable \"Lock Scale\" first to set a custom label scale."))
-                        end,
-                        title        = _("Label Scale"),
-                        info         = _("Scales the module label text above each module, on top of the size set in Style > Module Labels.\n100% is the default size."),
-                        get          = Config.getLabelScalePct,
-                        value_min    = Config.SCALE_MIN,
-                        value_max    = Config.SCALE_MAX,
-                        value_step   = Config.SCALE_STEP,
-                        default_value= Config.SCALE_DEF,
-                        unit         = "%",
-                        set          = function(value)
-                            Config.setLabelScale(value)
-                            _applyFullLayoutRefresh()
-                            if ctx and ctx.refresh then ctx.refresh() end
-                        end,
-                    },
-                    {
-                        text      = _("Reset to Default Scale"),
-                        separator = true,
-                        callback  = function()
-                            local Dialogs = require("features/dialogs/sui_dialogs")
-                            Dialogs.confirm{
-                                text    = _("Reset all scales to default (100%)? This cannot be undone."),
-                                ok_text = _("Reset"),
-                                ok_callback = function()
-                                    Config.resetAllScales(ctx.pfx, ctx.pfx_qa)
-                                    local FC = package.loaded["features/library/sui_foldercovers"]
-                                    if FC and FC.invalidateCache then FC.invalidateCache() end
-                                    _applyFullLayoutRefresh()
-                                    if ctx and ctx.refresh then ctx.refresh() end
-                                end,
-                            }
-                        end,
-                    },
-                },
-            },
+        }
+        local book_items = {
             {
                 text = _("Closing Book Notice"),
                 help_text = _("Show a brief \"Closing book…\" notice when closing a book, preventing accidental double-taps while e-ink refreshes."),
@@ -2538,6 +2482,103 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
                     },
                 },
             },
+        }
+        local layout_items = {
+            {
+                text_func = function() return _("Scale") end,
+                separator = true,
+                sub_item_table = {
+                    {
+                        text_func    = function() return _("Lock Scale") end,
+                        checked_func = function() return Config.isScaleLinked() end,
+                        keep_menu_open = true,
+                        separator = true,
+                        callback = function()
+                            Config.setScaleLinked(not Config.isScaleLinked())
+                            _applyFullLayoutRefresh()
+                        end,
+                    },
+                    Config.makeSpinItem{
+                        text_func    = function() return _("Modules") end,
+                        title        = _("Module Scale"),
+                        info         = function()
+                            return Config.isScaleLinked()
+                                and _("Scales all modules and labels together.\n100% is the default size.")
+                                or  _("Global scale for all modules.\nIndividual overrides in Module Settings take precedence.\n100% is the default size.")
+                        end,
+                        get          = Config.getModuleScalePct,
+                        value_min    = Config.SCALE_MIN,
+                        value_max    = Config.SCALE_MAX,
+                        value_step   = Config.SCALE_STEP,
+                        default_value= Config.SCALE_DEF,
+                        unit         = "%",
+                        set          = function(value)
+                            Config.setModuleScale(value)
+                            _applyFullLayoutRefresh()
+                            if ctx and ctx.refresh then ctx.refresh() end
+                        end,
+                    },
+                    Config.makeSpinItem{
+                        text_func    = function() return _("Labels") end,
+                        guard        = function()
+                            if not Config.isScaleLinked() then return true end
+                            UI.Notify.toast(_("Disable \"Lock Scale\" first to set a custom label scale."))
+                        end,
+                        title        = _("Label Scale"),
+                        info         = _("Scales the module label text above each module, on top of the size set in Style > Module Labels.\n100% is the default size."),
+                        get          = Config.getLabelScalePct,
+                        value_min    = Config.SCALE_MIN,
+                        value_max    = Config.SCALE_MAX,
+                        value_step   = Config.SCALE_STEP,
+                        default_value= Config.SCALE_DEF,
+                        unit         = "%",
+                        set          = function(value)
+                            Config.setLabelScale(value)
+                            _applyFullLayoutRefresh()
+                            if ctx and ctx.refresh then ctx.refresh() end
+                        end,
+                    },
+                    {
+                        text      = _("Reset to Default Scale"),
+                        separator = true,
+                        callback  = function()
+                            local Dialogs = require("features/dialogs/sui_dialogs")
+                            Dialogs.confirm{
+                                text    = _("Reset all scales to default (100%)? This cannot be undone."),
+                                ok_text = _("Reset"),
+                                ok_callback = function()
+                                    Config.resetAllScales(ctx.pfx, ctx.pfx_qa)
+                                    local FC = package.loaded["features/library/sui_foldercovers"]
+                                    if FC and FC.invalidateCache then FC.invalidateCache() end
+                                    _applyFullLayoutRefresh()
+                                    if ctx and ctx.refresh then ctx.refresh() end
+                                end,
+                            }
+                        end,
+                    },
+                },
+            },
+            {
+                text         = _("Stack Modules"),
+                help_text    = _("When a module does not fit in its row, show it under the module of the row with the same width instead of starting a new row."),
+                checked_func = function() return Config.isBentoStack(ctx.pfx) end,
+                keep_menu_open = true,
+                callback     = function()
+                    Config.setBentoStack(not Config.isBentoStack(ctx.pfx), ctx.pfx)
+                    refreshHomescreen()
+                    if ctx.refresh then ctx.refresh() end
+                end,
+            },
+            {
+                text         = _("Adjust Row Automatically"),
+                help_text    = _("When a module changes width, the next module of its row adjusts so the row stays full."),
+                checked_func = function() return Config.isBentoAutofit(ctx.pfx) end,
+                keep_menu_open = true,
+                separator    = true,
+                callback     = function()
+                    Config.setBentoAutofit(not Config.isBentoAutofit(ctx.pfx), ctx.pfx)
+                end,
+            },
             {
                 text           = _("Overflow Warning"),
                 help_text      = _("Warn when modules on a page exceed the available screen height."),
@@ -2550,18 +2591,28 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
                     SUISettings:saveSetting("simpleui_hs_overflow_warn", not on)
                 end,
             },
+        }
+        local items = {
+            { text = _("Start & Wake"), sub_item_table = start_items },
+            { text = _("Books"),        sub_item_table = book_items },
+            { text = _("Layout"),       sub_item_table = layout_items },
             {
-                text           = _("Settings on Long Tap"),
-                help_text      = _("When enabled, long-pressing a module on the home screen opens its settings menu.\nDisable this to prevent settings from appearing on long tap."),
-                checked_func   = function()
-                    return SUISettings:nilOrTrue("simpleui_hs_settings_on_hold")
-                end,
-                keep_menu_open = true,
-                callback       = function()
-                    local on = SUISettings:nilOrTrue("simpleui_hs_settings_on_hold")
-                    SUISettings:saveSetting("simpleui_hs_settings_on_hold", not on)
-                    refreshHomescreen()
-                end,
+                text = _("Interaction"),
+                sub_item_table = {
+                    {
+                        text           = _("Settings on Long Tap"),
+                        help_text      = _("When enabled, long-pressing a module on the home screen opens its settings menu.\nDisable this to prevent settings from appearing on long tap."),
+                        checked_func   = function()
+                            return SUISettings:nilOrTrue("simpleui_hs_settings_on_hold")
+                        end,
+                        keep_menu_open = true,
+                        callback       = function()
+                            local on = SUISettings:nilOrTrue("simpleui_hs_settings_on_hold")
+                            SUISettings:saveSetting("simpleui_hs_settings_on_hold", not on)
+                            refreshHomescreen()
+                        end,
+                    },
+                },
             },
         }
 
@@ -2572,7 +2623,7 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
         -- the SimpleUI Home Screen; the file browser title-bar home icon still
         -- goes to the home folder.
         if Config.deviceHasHomeKey() then
-            table.insert(items, 3, {
+            table.insert(start_items, 4, {
                 text           = _("Home key opens Home Screen"),
                 help_text      = _("Makes the device's physical Home key open the SimpleUI Home Screen — while reading and while browsing files — instead of KOReader's native Home behaviour. The file browser title-bar home icon still goes to the home folder."),
                 checked_func   = function()

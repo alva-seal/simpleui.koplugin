@@ -1514,18 +1514,14 @@ function ScreenWidget:_initLayout()
         content_widget,
     }
 
-    -- SUIWallpaper.styleGetBgWidget() already creates the ImageWidget with
-    -- height=sh (full screen), so when bars_transparent is active the
-    -- wallpaper automatically bleeds behind the topbar and bottombar with no
-    -- extra work needed here.  We just paint it at (x, y) as usual.
+    -- The wallpaper raster is screen-sized, so when the bars are transparent
+    -- it bleeds behind the topbar and bottombar with no extra work needed here.
     if _lf_bg then
         local _orig_paintTo = content_widget.paintTo
-        local _bg           = _lf_bg
         function content_widget:paintTo(bb, x, y)
             -- Always paint from y=0 so the wallpaper is anchored at the top
             -- and covers the full screen area.
-            _bg:paintTo(bb, x, 0)
-            SUIWallpaper.paintTint(bb, x, 0, Screen:getWidth(), Screen:getHeight())
+            SUIWallpaper.paintBackground(bb, x)
             _orig_paintTo(self, bb, x, y)
         end
     end
@@ -2073,6 +2069,9 @@ function ScreenWidget:_openModuleSettingsFor(mod)
             left_btn       = placed and {
                 glyph  = SUIStyle.icon("layout"),
                 label  = function()
+                    if Config.isBentoClassic(self._pfx) then
+                        return Config.bentoWidthLabel(mod.id, self._pfx)
+                    end
                     local span = Config.getBentoSpan(mod.id, self._pfx)
                     return span == Bento.FULL and _("Full Width") or Config.bentoSpanLabel(span)
                 end,
@@ -2098,15 +2097,17 @@ function ScreenWidget:_openBentoSheet(mod, close_window, on_changed)
         pfx        = pfx,
         on_removed = close_window,
         on_changed = on_changed,
-        rows       = {
-            {
-                text = _("Edit Home Screen page"), sui_icon = "edit", chevron = true,
-                callback = function()
-                    if close_window then close_window() end
-                    require("screens/sui_settings_window"):showPageEditor(pfx, mod.id)
-                end,
-            },
-        },
+        rows       = function(id)
+            return {
+                {
+                    text = _("Page Editor"), sui_icon = "edit", chevron = true,
+                    callback = function()
+                        if close_window then close_window() end
+                        require("screens/sui_settings_window"):showPageEditor(pfx, id)
+                    end,
+                },
+            }
+        end,
     }
 end
 
@@ -2279,7 +2280,13 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
     local layout_fingerprint = ""
     local pages_by_id = {}
 
-    -- Column spans come from per-module settings (bento grid), not the layout.
+    -- Column spans (percents in the classic layout) come from per-module
+    -- settings, not the layout.
+    local classic = Config.isBentoClassic(self._pfx)
+    local function _widthOf(mod_id)
+        if classic then return Config.getBentoPct(mod_id, self._pfx) end
+        return Config.getBentoSpan(mod_id, self._pfx)
+    end
     local mod_col_span = {}
     if layout and type(layout.pages) == "table" then
         for _, page in ipairs(layout.pages) do
@@ -2297,7 +2304,7 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
                 end
                 if mod_id then
                     table.insert(page_ids, mod_id)
-                    local span = Config.getBentoSpan(mod_id, self._pfx)
+                    local span = _widthOf(mod_id)
                     mod_col_span[mod_id] = span
                     layout_fingerprint = layout_fingerprint .. mod_id .. ":" .. tostring(span) .. ","
                 end
@@ -2309,7 +2316,7 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
         pages_by_id = splitOrderIntoPages(raw_order)
         for _, mod_id in ipairs(raw_order) do
             if mod_id ~= "__page_break__" then
-                local span = Config.getBentoSpan(mod_id, self._pfx)
+                local span = _widthOf(mod_id)
                 mod_col_span[mod_id] = span
                 layout_fingerprint = layout_fingerprint .. mod_id .. ":" .. tostring(span) .. ","
             else
@@ -2450,6 +2457,11 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
         -- Horizontal gap of the landscape page split.
         local H_COL_GAP = 1
 
+        local mode = { classic = classic, stack = Config.isBentoStack(self._pfx) }
+        local function _pack_rows(ids)
+            return Bento.packFor(ids, mod_col_span, mode)
+        end
+
         -- Builds label + hold-wrapper cell. Slot registration happens in
         -- _register_cell once the cell's real parent is known.
         local function _emit_mod(mod, col_w)
@@ -2545,8 +2557,19 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
             local gutter = ModuleChrome.GUTTER
             local mirrored = BD.mirroredUILayout()
 
+
+            -- Stack of the modules of a column, each separated by its top margin.
+            local function _assemble(items)
+                local v_col = VerticalGroup:new{ align = "left" }
+                for k, it in ipairs(items) do
+                    if k > 1 then v_col[#v_col+1] = self:_vspan(mod_gaps[it.id] or MOD_GAP) end
+                    v_col[#v_col+1] = it.cell
+                end
+                return v_col
+            end
+
             local function _flush_row(row)
-                local n = #row.ids
+                local n = #row.cols
                 local gap_px = mod_gaps[row.ids[1]] or MOD_GAP
                 first[1] = false
                 parent_body[#parent_body+1] = self:_vspan(gap_px)
@@ -2556,12 +2579,12 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
                 local boxes_w = math.max(1, container_w - 2 * inset - (n - 1) * gutter)
                 local box = {}
                 local allocated = 0
-                for i, id in ipairs(row.ids) do
+                for i, col in ipairs(row.cols) do
                     if i == n then
-                        local row_pixels = math.max(1, math.floor(boxes_w * row.sum / Bento.ROW))
+                        local row_pixels = math.max(1, math.floor(boxes_w * row.sum / row.of))
                         box[i] = math.max(1, row_pixels - allocated)
                     else
-                        box[i] = math.max(1, math.floor(boxes_w * (mod_col_span[id] or Bento.FULL) / Bento.ROW))
+                        box[i] = math.max(1, math.floor(boxes_w * col.span / row.of))
                         allocated = allocated + box[i]
                     end
                 end
@@ -2571,55 +2594,57 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
                 for i = 1, n do row_w = row_w + box[i] end
                 local x = math.max(0, math.floor((container_w - 2 * inset - row_w) / 2))
 
-                -- Build columns first: the box of every shorter column is
-                -- then stretched to the tallest one (see ModuleChrome.stretch);
-                -- a column without a box is centred against it.
+                -- Build columns first: the box of the last module of every
+                -- shorter column is then stretched to the tallest one (see
+                -- ModuleChrome.stretch); a column without a box is centred
+                -- against it.
                 local built = {}
                 local max_h = 0
-                for i, id in ipairs(row.ids) do
+                for i, col in ipairs(row.cols) do
                     local slot_w = box[i] + 2 * inset
-                    local v_col = VerticalGroup:new{ align = "left" }
-                    local cell = _emit_mod(by_id[id], slot_w)
-                    local wrapped
-                    if cell then
-                        wrapped = cell._sui_widget
-                        _register_cell(cell)
-                        v_col[#v_col+1] = cell
+                    local items = {}
+                    for _, id in ipairs(col.ids) do
+                        local cell = _emit_mod(by_id[id], slot_w)
+                        if cell then
+                            items[#items+1] = { id = id, cell = cell, wrapped = cell._sui_widget }
+                            _register_cell(cell)
+                        end
                     end
+                    local v_col = _assemble(items)
                     local col_h = v_col:getSize().h
                     if col_h > max_h then max_h = col_h end
                     built[#built+1] = {
-                        v_col = v_col, cell = cell, wrapped = wrapped, id = id,
-                        slot_w = slot_w, col_h = col_h, x = x,
+                        v_col = v_col, items = items, slot_w = slot_w, col_h = col_h, x = x,
                     }
                     x = x + box[i] + gutter
                 end
 
                 for _, b in ipairs(built) do
-                    -- A module that can use the row's extra height is built
-                    -- again with it.
-                    local mod = by_id[b.id]
-                    if b.wrapped and b.col_h < max_h and mod.fills_row_height then
-                        self._grow_h[b.id] = max_h - b.col_h
+                    -- The last module of a column takes up the extra height. One
+                    -- that can use it is built again with it.
+                    local last = b.items[#b.items]
+                    local mod = last and by_id[last.id]
+                    if last and last.wrapped and b.col_h < max_h and mod.fills_row_height then
+                        self._grow_h[last.id] = max_h - b.col_h
                         local cell = _emit_mod(mod, b.slot_w)
                         if cell then
-                            local v_col = VerticalGroup:new{ align = "left", cell }
-                            b.wrapped, b.cell, b.v_col = cell._sui_widget, cell, v_col
+                            last.cell, last.wrapped = cell, cell._sui_widget
                             _register_cell(cell)
-                            b.col_h = v_col:getSize().h
+                            b.v_col = _assemble(b.items)
+                            b.col_h = b.v_col:getSize().h
                         end
                     end
-                    if b.wrapped and b.col_h < max_h then
-                        local wrapper = b.cell[#b.cell]
-                        local box_h = ModuleChrome.stretch(b.wrapped, b.wrapped:getSize().h + max_h - b.col_h)
+                    if last and last.wrapped and b.col_h < max_h then
+                        local wrapper = last.cell[#last.cell]
+                        local box_h = ModuleChrome.stretch(last.wrapped, last.wrapped:getSize().h + max_h - b.col_h)
                         if box_h then
                             wrapper.dimen.h = box_h
-                            b.cell:resetLayout()
+                            last.cell:resetLayout()
                             b.v_col:resetLayout()
                             b.col_h = b.v_col:getSize().h
-                            local book_slot = self._book_mod_slots[b.id]
+                            local book_slot = self._book_mod_slots[last.id]
                             if book_slot then book_slot.min_h = box_h end
-                            if b.id == "clock" then self._clock_min_h = box_h end
+                            if last.id == "clock" then self._clock_min_h = box_h end
                         end
                     end
                 end
@@ -2648,7 +2673,7 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
                 parent_body[#parent_body+1] = row_group
             end
 
-            for _, row in ipairs(Bento.pack(ids, mod_col_span)) do
+            for _, row in ipairs(_pack_rows(ids)) do
                 _flush_row(row)
             end
         end
@@ -2671,7 +2696,7 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
                 left_mods, right_mods = {}, {}
                 local ids = {}
                 for i, mod in ipairs(cur_page_mods) do ids[i] = mod.id end
-                local row_of, rows = {}, Bento.pack(ids, mod_col_span)
+                local row_of, rows = {}, _pack_rows(ids)
                 for r, row in ipairs(rows) do
                     for _, id in ipairs(row.ids) do row_of[id] = r end
                 end
@@ -2709,6 +2734,7 @@ function ScreenWidget:_updatePage(keep_cache, books_only, stats_only)
         logger.warn("simpleui: screen (" .. tostring(self._id) .. "): fatal DB error detected — dropping shared connection")
         pcall(function() self._db_conn:close() end)
         self._db_conn = nil
+        ctx.db_conn   = nil
     end
 
     if empty_widget then
@@ -2861,6 +2887,8 @@ function ScreenWidget:_scheduleDataRefresh(stats_only)
         Perf.mark("data refresh: db opened")
 
         if self._ctx_cache then
+            -- A deferred first paint built the ctx without a connection.
+            self._ctx_cache.db_conn = self._db_conn
             -- 1. Get new book metadata (prefetchBooks). Skipped when
             -- onShow() already resolved it for this open.
             if not pending_stats_only and not (books_fresh and self._cached_books_state) then
@@ -3352,8 +3380,9 @@ function ScreenWidget:_scheduleCoverPoll()
         for mod_id, slot in pairs(slots) do
             if type(slot.mod.updateCovers) == "function" then
                 local ok, all_done = pcall(slot.mod.updateCovers, slot.widget, ctx)
-                local dimen = slot.widget and slot.widget.dimen
                 if ok then
+                    local wrapper = self_ref._wrapper_pool and self_ref._wrapper_pool[mod_id]
+                    local dimen   = (wrapper and wrapper.dimen) or (slot.widget and slot.widget.dimen)
                     if dimen then
                         self_ref.dithered = true
                         UIManager:setDirty(self_ref, function()

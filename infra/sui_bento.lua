@@ -5,10 +5,14 @@
 -- module always sits alone. Shared by the screen engine and the layout editor
 -- so the editor preview always matches the rendered screen.
 --
---   Bento.pack(ids, spans)                  -> rows { {ids=, sum=}, ... }
+--   Bento.pack(ids, spans, stack)           -> rows { {cols=, ids=, sum=, of=}, ... }
+--                                              col = { span=, ids= }; `of` is the
+--                                              size of a full row
+--   Bento.packClassic(ids, pcts)            -> the same, in percent
 --   Bento.setSpan(ids, spans, x, span, adjust) -> spans', changed_ids
---   Bento.move(ids, spans, x, dir)          -> ids', spans', changed_ids
---   Bento.canMove(ids, spans, x)            -> { left, right, up, down }
+--   Bento.packFor(ids, spans, mode)         -> rows of `mode` = { classic=, stack= }
+--   Bento.move(ids, spans, x, dir, mode)    -> ids', spans', changed_ids
+--   Bento.canMove(ids, spans, x, mode)      -> { left, right, up, down }
 --   Bento.pctToSpan(pct) / Bento.spanToPct(span)
 --
 -- `ids` is an ordered array and `spans` a map id -> span (missing = full).
@@ -21,6 +25,12 @@ local FULL  = 6
 Bento.SPANS = { 2, 3, 4, 6 }
 Bento.ROW   = ROW
 Bento.FULL  = FULL
+
+-- Classic layout: widths are percentages of the row, 20 to 100 in steps of 5.
+local CLASSIC_MAX  = 100
+Bento.CLASSIC_MIN  = 20
+Bento.CLASSIC_MAX  = CLASSIC_MAX
+Bento.CLASSIC_STEP = 5
 
 local SPAN_PCT = { [2] = 33, [3] = 50, [4] = 67, [6] = 100 }
 
@@ -52,19 +62,72 @@ local function copyMap(t)
     return out
 end
 
-function Bento.pack(ids, spans)
+-- Packs `ids` into rows of `row` units; `sizeOf(id)` is the width of a module
+-- in units and a module as wide as the row sits alone. With `stack`, a module
+-- that does not fit in the row goes under the column of the row with its own
+-- size that holds the fewest modules (the first of them), instead of
+-- starting a new row. A row is a list of columns, each a stack of modules;
+-- `ids` lists them column by column and `order` in the order of the list.
+local function packRows(ids, sizeOf, row, stack)
     local rows, cur = {}, nil
     for _, id in ipairs(ids) do
-        local s = spanOf(spans, id)
-        if cur and s < FULL and cur.sum + s <= ROW then
-            cur.ids[#cur.ids + 1] = id
-            cur.sum = cur.sum + s
+        local s = sizeOf(id)
+        local col
+        if cur and s < row then
+            if cur.sum + s <= row then
+                col = { span = s, ids = {} }
+                cur.cols[#cur.cols + 1] = col
+                cur.sum = cur.sum + s
+            elseif stack then
+                for _, c in ipairs(cur.cols) do
+                    if c.span == s and (not col or #c.ids < #col.ids) then col = c end
+                end
+            end
+        end
+        if col then
+            col.ids[#col.ids + 1] = id
         else
-            cur = { ids = { id }, sum = s }
+            cur = { cols = { { span = s, ids = { id } } }, sum = s, of = row, order = {} }
             rows[#rows + 1] = cur
+        end
+        cur.order[#cur.order + 1] = id
+    end
+    for _, r in ipairs(rows) do
+        r.ids = {}
+        for _, c in ipairs(r.cols) do
+            for _, id in ipairs(c.ids) do r.ids[#r.ids + 1] = id end
         end
     end
     return rows
+end
+
+function Bento.pack(ids, spans, stack)
+    return packRows(ids, function(id) return spanOf(spans, id) end, ROW, stack)
+end
+
+-- Width of `id` in the classic layout, a percent within its limits.
+local function classicSize(pcts, id)
+    local p = pcts and pcts[id]
+    if type(p) ~= "number" then return CLASSIC_MAX end
+    return math.max(Bento.CLASSIC_MIN, math.min(CLASSIC_MAX, p))
+end
+
+-- Rows of the classic layout: widths are free percentages of the row, and
+-- a module that does not fit always stacks.
+function Bento.packClassic(ids, pcts)
+    return packRows(ids, function(id) return classicSize(pcts, id) end, CLASSIC_MAX, true)
+end
+
+-- Rows of the layout `mode` = { classic = bool, stack = bool } stands for.
+function Bento.packFor(ids, spans, mode)
+    if mode and mode.classic then return Bento.packClassic(ids, spans) end
+    return Bento.pack(ids, spans, mode and mode.stack)
+end
+
+-- Width of `id` as the rows of `mode` read it.
+local function sizeFor(mode)
+    if mode and mode.classic then return classicSize end
+    return spanOf
 end
 
 -- Row index and position of `x`, or nil.
@@ -89,10 +152,11 @@ local function slice(list, from, to)
     return out
 end
 
-local function diff(old, new, ids)
+local function diff(old, new, ids, size)
+    size = size or spanOf
     local changed = {}
     for _, id in ipairs(ids) do
-        if spanOf(old, id) ~= spanOf(new, id) then changed[#changed + 1] = id end
+        if size(old, id) ~= size(new, id) then changed[#changed + 1] = id end
     end
     return changed
 end
@@ -141,8 +205,8 @@ function Bento.setSpan(ids, spans, x, s, adjust)
     return out, diff(spans, out, ids)
 end
 
-function Bento.canMove(ids, spans, x)
-    local rows = Bento.pack(ids, spans)
+function Bento.canMove(ids, spans, x, mode)
+    local rows = Bento.packFor(ids, spans, mode)
     local r = locate(rows, x)
     local k
     for idx, id in ipairs(ids) do if id == x then k = idx; break end end
@@ -156,15 +220,16 @@ function Bento.canMove(ids, spans, x)
 end
 
 -- Moves `x` one step. left/right swap it with the previous/next module; when
--- that module sits in another row the two exchange spans (slots), so every row
+-- that module sits in another row the two exchange widths (slots), so every row
 -- keeps its sum. up/down swap the whole row of `x` with the adjacent row.
-function Bento.move(ids, spans, x, dir)
-    local can = Bento.canMove(ids, spans, x)
+function Bento.move(ids, spans, x, dir, mode)
+    local size = sizeFor(mode)
+    local can = Bento.canMove(ids, spans, x, mode)
     local nids, nspans = slice(ids, 1, #ids), copyMap(spans)
-    for _, id in ipairs(ids) do nspans[id] = spanOf(spans, id) end
+    for _, id in ipairs(ids) do nspans[id] = size(spans, id) end
     if not can[dir] then return nids, nspans, {} end
 
-    local rows = Bento.pack(ids, spans)
+    local rows = Bento.packFor(ids, spans, mode)
     local r = locate(rows, x)
 
     if dir == "up" or dir == "down" then
@@ -173,7 +238,7 @@ function Bento.move(ids, spans, x, dir)
         local order = {}
         for idx, row in ipairs(rows) do
             local src = (idx == a) and rows[b] or (idx == b) and rows[a] or row
-            for _, id in ipairs(src.ids) do order[#order + 1] = id end
+            for _, id in ipairs(src.order) do order[#order + 1] = id end
         end
         return order, nspans, {}
     end
@@ -185,9 +250,9 @@ function Bento.move(ids, spans, x, dir)
     nids[k], nids[j] = nids[j], nids[k]
     local ry = locate(rows, y)
     if ry ~= r then
-        nspans[x], nspans[y] = spanOf(spans, y), spanOf(spans, x)
+        nspans[x], nspans[y] = size(spans, y), size(spans, x)
     end
-    return nids, nspans, diff(spans, nspans, ids)
+    return nids, nspans, diff(spans, nspans, ids, size)
 end
 
 return Bento

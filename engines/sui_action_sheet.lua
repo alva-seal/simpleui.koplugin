@@ -135,6 +135,8 @@
 --   chevron        bool      rows only; draws a chevron at the end of the row,
 --                            for an item that shows a page; not drawn when the
 --                            item is disabled
+--   value          string    rows only; the current value, drawn small at the end
+--                            of the row, before the chevron or the check box
 --
 -- ActionSheet.pick(opts) shows a one-column chooser: `title`, `icon`, `name`,
 -- `fit_width` as in show, plus `items` and `on_cancel`. Tapping an item closes
@@ -527,6 +529,18 @@ local function trailingWidth(item, scale)
     return scale(base)
 end
 
+-- Text of the value of `item` shown at the end of its row, in the size of the
+-- values of the settings windows; nil without a value.
+local function buildValue(ctx, item)
+    if not item.value then return nil end
+    return UI.makeColoredText{
+        text    = tostring(item.value),
+        face    = Font:getFace(SUIStyle.FACE_REGULAR, ctx.SZ(SUIStyle.FS_DETAIL)),
+        fgcolor = isEnabled(item) and COLOR.text_primary or COLOR.text_dim,
+        padding = 0,
+    }
+end
+
 -- Icon above the label, centred in a cell of `w` x `h`.
 local function buildTile(ctx, item, w, h)
     local fgcolor = isEnabled(item) and COLOR.text_primary or COLOR.text_dim
@@ -578,6 +592,8 @@ local function buildCellContent(ctx, item, cell_w, row_h, fgcolor, slot)
     local content  = HorizontalGroup:new{ align = "center" }
     local used     = 2 * pad + tick_w
     used = used + trailingWidth(item, function(base) return px(ctx, base) end)
+    local value = buildValue(ctx, item)
+    if value then used = used + value:getSize().w + gap end
 
     if slot then
         local icon = buildIcon(item,
@@ -618,6 +634,13 @@ end
 -- `cell_w` x `row_h`, inside the cell padding.
 local function buildTrailing(ctx, item, cell_w, row_h, fgcolor)
     local group = HorizontalGroup:new{ align = "center" }
+    local value = buildValue(ctx, item)
+    if value then
+        group[#group + 1] = value
+        if hasChevron(item) or hasToggle(item) then
+            group[#group + 1] = HorizontalSpan:new{ width = px(ctx, METRICS.cell_gap) }
+        end
+    end
     if item.value_preview then
         group[#group + 1] = SUIStyle.buildIconPreview(px(ctx, METRICS.cell_preview),
             { icon = item.value_preview, label = item.text })
@@ -657,7 +680,7 @@ local function buildCell(ctx, item, cell_w, row_h, slot)
         dimen = Geom:new{ w = cell_w, h = row_h },
         buildCellContent(ctx, item, cell_w, row_h, fgcolor, slot),
     }
-    if item.value_preview or hasChevron(item) or hasToggle(item) then
+    if item.value or item.value_preview or hasChevron(item) or hasToggle(item) then
         cell = OverlapGroup:new{
             dimen = Geom:new{ w = cell_w, h = row_h },
             cell,

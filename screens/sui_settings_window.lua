@@ -518,17 +518,20 @@ local function buildScreens(st)
         local page = st.layout.pages[st.current_page]
         if not page then return {} end
         local ids, spans = LayoutService.pageSpans(page, st.pfx)
+        local mode       = LayoutService.mode(st.pfx)
 
         return SUI.BentoMap{
             inner_w     = ctx.inner_w,
-            rows        = Bento.pack(ids, spans),
+            rows        = Bento.packFor(ids, spans, mode),
             spans       = spans,
+            row_total   = mode.classic and Bento.CLASSIC_MAX or Bento.ROW,
             label_for   = LayoutService.getModuleName,
             span_label  = function(span)
+                if mode.classic then return span .. "%" end
                 return span == Bento.FULL and _("Full Width") or Config.bentoSpanLabel(span)
             end,
             summary_for = function(mod_id) return Registry.getSummary(mod_id, st.pfx, st.pfx_qa) end,
-            can_move    = function(mod_id) return Bento.canMove(ids, spans, mod_id) end,
+            can_move    = function(mod_id) return Bento.canMove(ids, spans, mod_id, mode) end,
             on_move     = function(mod_id, dir)
                 LayoutService.move(st.layout, st.pfx, mod_id, dir)
                 saveAndRepaint(ctx)
@@ -541,21 +544,23 @@ local function buildScreens(st)
                     mod_id     = mod_id,
                     pfx        = st.pfx,
                     layout     = st.layout,
-                    subtitle   = Registry.getSummary(mod_id, st.pfx, st.pfx_qa),
+                    subtitle_for = function(id) return Registry.getSummary(id, st.pfx, st.pfx_qa) end,
                     on_changed = function() ctx.repaint() end,
-                    rows       = {
-                        {
-                            text = _("Module settings"), sui_icon = "settings", chevron = true,
-                            callback = function()
-                                st.current_module_id = mod_id
-                                ctx.push("module_settings")
-                            end,
-                        },
-                        {
-                            text = _("Move to page"), sui_icon = "move_page", chevron = true,
-                            callback = function() moveModuleToPage(ctx, mod_id) end,
-                        },
-                    },
+                    rows       = function(id)
+                        return {
+                            {
+                                text = _("Settings"), sui_icon = "settings", chevron = true,
+                                callback = function()
+                                    st.current_module_id = id
+                                    ctx.push("module_settings")
+                                end,
+                            },
+                            {
+                                text = _("To Page"), sui_icon = "move_page", chevron = true,
+                                callback = function() moveModuleToPage(ctx, id) end,
+                            },
+                        }
+                    end,
                 }
             end,
         }
