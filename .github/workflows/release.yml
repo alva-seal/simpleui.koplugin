@@ -3,34 +3,42 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'          # e.g. v1.0.0 -- change to whatever tag pattern you use
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v1.0.0)'
+        required: true
+        type: string
 
 permissions:
-  contents: write     # needed to create the release
+  contents: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      REPO_NAME: ${{ github.event.repository.name }}
+      # use the input when run manually, otherwise the pushed tag
+      TAG: ${{ github.event.inputs.tag || github.ref_name }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Build zip
-        env:
-          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           mkdir -p build/"$REPO_NAME"
-          # copy repo contents into a folder named after the repo, excluding git/CI files
           rsync -a \
             --exclude='.git' \
             --exclude='.github' \
             --exclude='build' \
             ./ build/"$REPO_NAME"/
           cd build
-          zip -r "../${REPO_NAME}-${GITHUB_REF_NAME}.zip" "$REPO_NAME"
+          zip -r "../${REPO_NAME}-${TAG}.zip" "$REPO_NAME"
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: ${{ github.event.repository.name }}-${{ github.ref_name }}.zip
+          tag_name: ${{ env.TAG }}
+          files: ${{ env.REPO_NAME }}-${{ env.TAG }}.zip
           generate_release_notes: true
