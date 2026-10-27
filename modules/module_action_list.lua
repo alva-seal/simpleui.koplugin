@@ -217,6 +217,7 @@ end
 local M = {}
 M.id         = MOD_ID
 M.name       = _("Action List")
+M.category   = "shortcuts"
 M.label      = nil
 M.default_on = false
 M.text_elems = { "label" }

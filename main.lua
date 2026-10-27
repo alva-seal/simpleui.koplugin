@@ -1408,7 +1408,7 @@ end
 --
 -- We close every currently live screen, EXCEPT one that is currently
 -- soft-parked (see ScreenWidget:onShowingReader / ScreenEngine.
--- SOFT_PARK_ENABLED in engines/sui_screen_engine.lua) — closing it here
+-- isSoftParkEnabled in engines/sui_screen_engine.lua) — closing it here
 -- would immediately undo what onShowingReader just decided to keep alive
 -- for a warm reader-return. By construction there is never more than one
 -- parked screen at a time (onShowingReader only parks when it is the sole

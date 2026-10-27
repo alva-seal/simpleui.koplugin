@@ -376,6 +376,7 @@ local source = Sources.bind("tbr")
 local tbr_module = GridRenderer.makeModule{
     id          = "tbr",
     name        = _("To Be Read"),
+    category    = "books",
     label       = Sources.label("tbr"),
     default_on  = false,
     is_book_mod = true,   -- needed for the surgical repaint of the swipe

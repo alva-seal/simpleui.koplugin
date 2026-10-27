@@ -2112,7 +2112,7 @@ end
 local function _displaceScreen(ctx)
     local widget, plugin = ctx.widget, ctx.plugin
     local engine = package.loaded["engines/sui_screen_engine"]
-    local keep_parked = engine and engine.SOFT_PARK_ENABLED and engine.KEEP_PARKED_ACROSS_SUSPEND
+    local keep_parked = engine and engine.isSoftParkEnabled() and engine.KEEP_PARKED_ACROSS_SUSPEND
     local stack = UI.getWindowStack()
     for i, entry in ipairs(stack) do
         local screen = entry.widget

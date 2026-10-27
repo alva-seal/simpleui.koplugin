@@ -163,6 +163,7 @@ end
 local M = {}
 M.id            = "coll_row"
 M.name          = _("Featured Collection")
+M.category      = "books"
 M.instanciable  = true
 M.instances_key = "simpleui_coll_row_instances"
 M.makeInstance  = makeInstance

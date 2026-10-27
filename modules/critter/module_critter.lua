@@ -464,6 +464,7 @@ local M = {}
 
 M.id          = "critter"
 M.name        = _("Tiny Critter")
+M.category    = "extras"
 M.enabled_key = "critter_enabled"
 M.default_on  = false
 M.text_elems  = TEXT_ELEMS

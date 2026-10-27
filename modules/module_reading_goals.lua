@@ -802,6 +802,7 @@ local M = {}
 
 M.id          = "reading_goals"
 M.name        = _("Reading Goals")
+M.category    = "stats"
 M.label       = _("Reading Goals")
 M.enabled_key = "reading_goals_enabled"
 M.default_on  = true

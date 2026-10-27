@@ -36,6 +36,7 @@
 
 local Memory          = require("infra/sui_memory")
 local T               = require("ffi/util").template
+local util            = require("util")
 local FrameContainer  = require("ui/widget/container/framecontainer")
 local Geom            = require("ui/geometry")
 local GestureRange    = require("ui/gesturerange")
@@ -1370,7 +1371,7 @@ function GridRenderer.listAllCollectionNames(exclude_names)
     end
     local others = {}
     for name in pairs(coll_set) do others[#others + 1] = name end
-    table.sort(others, function(a, b) return a:lower() < b:lower() end)
+    table.sort(others, function(a, b) return util.stringLower(a) < util.stringLower(b) end)
     for _, n in ipairs(others) do all[#all + 1] = n end
     return all
 end
@@ -1459,7 +1460,7 @@ function GridRenderer.sortCollection(coll_name, mode)
     local SH = getSH()
     if mode == "title_asc" or mode == "title_desc" then
         local titles = {}
-        for _, fp in ipairs(fps) do titles[fp] = GridRenderer.getBookTitle(fp):lower() end
+        for _, fp in ipairs(fps) do titles[fp] = util.stringLower(GridRenderer.getBookTitle(fp)) end
         table.sort(fps, function(a, b)
             if mode == "title_asc" then return titles[a] < titles[b] else return titles[a] > titles[b] end
         end)
@@ -1467,7 +1468,7 @@ function GridRenderer.sortCollection(coll_name, mode)
         local authors = {}
         for _, fp in ipairs(fps) do
             local bd = SH.getBookData(fp)
-            authors[fp] = (bd.authors or ""):lower()
+            authors[fp] = util.stringLower(bd.authors or "")
         end
         table.sort(fps, function(a, b) return authors[a] < authors[b] end)
     elseif mode == "percent_asc" or mode == "percent_desc" then
@@ -1709,6 +1710,7 @@ function GridRenderer.makeModule(spec)
     local M = {}
     M.id          = id
     M.name        = spec.name or id
+    M.category    = spec.category
     M.label       = spec.label
     M.enabled_key = spec.enabled_key or (id .. "_enabled")
     M.default_on  = spec.default_on or false

@@ -1098,6 +1098,7 @@ end
 local M = {}
 M.id               = "tab_grid"
 M.name             = _("Tabbed Grid")
+M.category         = "books"
 M.instanciable     = true
 M.instances_key    = "simpleui_tab_grid_instances"
 M.setting_suffixes = {

@@ -110,6 +110,7 @@ end
 local M = {}
 M.id            = "spacer_row"
 M.name          = _("Spacer")
+M.category      = "extras"
 M.instanciable  = true
 M.makeInstance  = makeInstance
 M.instances_key = "simpleui_spacer_row_instances"

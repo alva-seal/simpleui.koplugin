@@ -1129,6 +1129,7 @@ local M = {}
 M.id          = "quote"
 
 M.name        = _("Quote of the Day")
+M.category    = "extras"
 
 M.label       = nil
 

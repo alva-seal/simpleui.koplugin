@@ -25,6 +25,9 @@
 --                             descriptor is derived from M.label / M.label_right_func.
 --                             Visibility (the "Show section label" toggle) is applied by
 --                             the descriptor, never by mutating M.label.
+--   M.category       string?  group of the Add Module picker: "books", "stats",
+--                             "shortcuts" or "extras" (see Registry.getCategories);
+--                             unset → "other". An instance takes its base's.
 --   M.enabled_key    string?  settings suffix: pfx .. enabled_key → bool
 --   M.default_on     bool?    value when the key doesn't exist (default true)
 --
@@ -114,6 +117,7 @@
 
 local logger = require("logger")
 local SUISettings = require("infra/sui_store")
+local _ = require("infra/sui_i18n").translate
 
 local MODULES = {
     { require_mod = "modules/module_clock"         },
@@ -228,6 +232,29 @@ end
 function Registry.getMenuGroup(mod_id)
     local base = _baseOf(mod_id)
     return base and base.menu_group
+end
+
+-- Categories of the Add Module picker, in display order. Built per call so the
+-- titles follow the current language.
+function Registry.getCategories()
+    return {
+        { key = "books",     title = _("Books")      },
+        { key = "stats",     title = _("Statistics") },
+        { key = "shortcuts", title = _("Shortcuts")  },
+        { key = "extras",    title = _("Extras")     },
+        { key = "other",     title = _("Other")      },
+    }
+end
+
+-- Category key of a module, instance or instanciable base; "other" when unset
+-- or unknown.
+function Registry.getCategory(mod_id)
+    local mod = _baseOf(mod_id) or Registry.get(mod_id) or _instanciable[mod_id]
+    local cat = mod and mod.category
+    for _i, c in ipairs(Registry.getCategories()) do
+        if c.key == cat then return cat end
+    end
+    return "other"
 end
 
 -- Layout-editor summary of a module or instance, or nil when it provides none.

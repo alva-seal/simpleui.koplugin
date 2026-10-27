@@ -481,6 +481,7 @@ end
 local mod = GridRenderer.makeModule{
     id          = MODULE_ID,
     name        = _("Collections"),
+    category    = "books",
     label       = _("Collections"),
     text_label  = _("Label"),
     default_on  = false,

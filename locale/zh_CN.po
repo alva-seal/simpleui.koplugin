@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: simpleui\n"
-"POT-Creation-Date: 2026-10-26 02:36+0000\n"
-"PO-Revision-Date: 2026-10-12 15:11+0800\n"
+"POT-Creation-Date: 2026-10-26 11:06+0000\n"
+"PO-Revision-Date: 2026-10-27 09:00+0800\n"
 "Last-Translator: gsWang <gs.wang@outlook.com>\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -15,19 +15,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.9\n"
 
-#: modules/module_reading_goals.lua:1225
+#: modules/module_reading_goals.lua:1224
 msgid "  Set Goal  (%d hr/month)"
 msgstr "  设定目标（%d 小时/月）"
 
-#: modules/module_reading_goals.lua:1237
+#: modules/module_reading_goals.lua:1236
 msgid "  Set Goal  (%d min/day)"
 msgstr "  设定目标（%d 分钟/天）"
 
-#: modules/module_reading_goals.lua:1213
+#: modules/module_reading_goals.lua:1212
 msgid "  Set Goal  (%s)"
 msgstr "  设定目标（%s 年）"
 
-#: modules/module_reading_goals.lua:1224 modules/module_reading_goals.lua:1236
+#: modules/module_reading_goals.lua:1223 modules/module_reading_goals.lua:1235
 msgid "  Set Goal  (disabled)"
 msgstr "  设定目标（已禁用）"
 
@@ -49,12 +49,12 @@ msgstr "阅读进度（降序）"
 
 #: modules/critter/phrases.lua:195
 msgid "%.1f hours read today!"
-msgstr ""
+msgstr "今天已经读了 %.1f 个小时！"
 
-#: features/dialogs/sui_bento_sheet.lua:59
+#: features/dialogs/sui_bento_sheet.lua:75
 #: modules/reading_stats/width_sheet.lua:152
 msgid "%1 adjusted to %2"
-msgstr ""
+msgstr "%1 已调整为 %2"
 
 #: modules/module_heatmap.lua:226
 msgid "%1 weeks"
@@ -62,7 +62,7 @@ msgstr "%1 周"
 
 #: engines/sui_book_grid.lua:1905 engines/sui_book_grid.lua:1910
 #: modules/reading_stats/module_reading_stats.lua:1648
-#: screens/sui_menu.lua:3145 screens/sui_menu.lua:3149
+#: screens/sui_menu.lua:3195 screens/sui_menu.lua:3199
 msgid "%1 × %2"
 msgstr "%1 × %2"
 
@@ -70,11 +70,11 @@ msgstr "%1 × %2"
 msgid "%d files (%s)"
 msgstr "%d 个文件（%s）"
 
-#: modules/module_reading_goals.lua:1163
+#: modules/module_reading_goals.lua:1162
 msgid "%d hr/month"
 msgstr "%d 小时/月"
 
-#: modules/module_reading_goals.lua:1165
+#: modules/module_reading_goals.lua:1164
 msgid "%d min/day"
 msgstr "%d 分钟/天"
 
@@ -92,7 +92,7 @@ msgstr "已读 %d%%"
 
 #: modules/critter/reaction_lines.lua:179
 msgid "%d%% left. I'll be brave."
-msgstr ""
+msgstr "还剩 %d%%，我会勇敢面对的。"
 
 #: screens/sui_stats_windows.lua:2438
 msgid "%d/%d days · %d/%d min to next freeze"
@@ -100,69 +100,69 @@ msgstr "%d/%d 天 · 距下一个冻结权还需 %d/%d 分钟"
 
 #: modules/reading_stats/module_reading_stats.lua:412
 msgid "%dh"
-msgstr ""
+msgstr "%d 小时"
 
 #: modules/reading_stats/module_reading_stats.lua:411
 msgid "%dh %dm"
-msgstr ""
+msgstr "%d 小时 %d 分"
 
 #: modules/reading_stats/module_reading_stats.lua:409
 #: modules/reading_stats/module_reading_stats.lua:413
 msgid "%dm"
-msgstr ""
+msgstr "%d 分"
 
 #: screens/insights/sui_insights_charts.lua:121
 msgid "%s a day on average"
-msgstr ""
+msgstr "平均每天 %s"
 
 #: screens/insights/sui_insights_charts.lua:96
 msgid "%s against the same days last week"
-msgstr ""
+msgstr "较上周同期 %s"
 
 #: modules/critter/reaction_lines.lua:287
 msgid "%s already?"
-msgstr ""
+msgstr "已经 %s 了？"
 
 #: modules/critter/reaction_lines.lua:298
 msgid "%s arrives! A new act begins!"
-msgstr ""
+msgstr "%s 来了！新的一幕开始了！"
 
 #: modules/critter/reaction_lines.lua:66
 msgid "%s is over. Good for you."
-msgstr ""
+msgstr "%s 结束了，算你厉害。"
 
 #: infra/sui_book_stats.lua:192
 msgid "%s left"
 msgstr "剩余 %s"
 
-#: infra/sui_book_stats.lua:191 modules/module_reading_goals.lua:748
-#: modules/module_reading_goals.lua:768
+#: infra/sui_book_stats.lua:191 modules/module_reading_goals.lua:747
+#: modules/module_reading_goals.lua:767
 msgid "%s read"
 msgstr "已读 %s"
 
 #: modules/critter/reaction_lines.lua:71
 msgid "%s was a good one."
-msgstr ""
+msgstr "%s 是本好书。"
 
 #: modules/critter/reaction_lines.lua:75
 msgid "%s will be sung about."
-msgstr ""
+msgstr "%s 将被传唱。"
 
 #: modules/critter/reaction_lines.lua:67
 msgid "%s! DONE! Incredible!"
-msgstr ""
+msgstr "%s！读完了！太厉害了！"
 
 #: modules/critter/reaction_lines.lua:291
 msgid "%s! New month, new adventures!"
-msgstr ""
+msgstr "%s！新月，新冒险！"
 
 #: modules/critter/reaction_lines.lua:60
 msgid "%s, finished!"
-msgstr ""
+msgstr "%s，读完了！"
 
 #: modules/critter/reaction_lines.lua:290
 msgid "%s. Another month of the same pile."
-msgstr ""
+msgstr "%s。又是跟同一摞书相处的一个月。"
 
 #: modules/module_quick_actions.lua:367
 msgid "(%d/%d — at limit)"
@@ -175,37 +175,37 @@ msgstr "（未找到书单）"
 #: screens/sui_menu.lua:199
 msgid ""
 "0% transparent, 100% solid. Applies across the full width of the title bar."
-msgstr "0% 为透明，100% 为完全不透明。应用于标题栏的整个宽度。"
+msgstr "0% 即完全透明，100% 即完全不透明。效果覆盖整个标题栏。"
 
 #: screens/sui_menu.lua:203
 msgid ""
 "0% transparent, 100% solid. Applies to the native page bar in Library, "
 "History, Collections and similar screens."
 msgstr ""
-"0% 为透明，100% 为纯色。应用于“书库”、“历史记录”与“书单”等原生页面导航栏。"
+"0% 即完全透明，100% 即完全不透明。应用于“书库”“历史记录”“书单”等原生页面栏。"
 
 #: features/library/sui_label_options.lua:151
 msgid ""
 "0% transparent, 100% solid. Only the background changes; the text stays "
 "solid."
-msgstr ""
+msgstr "0% 即完全透明，100% 即完全不透明。只有背景会变化，文本保持实心。"
 
 #: infra/sui_config.lua:1478
 msgid ""
 "0% transparent, 100% solid. Values in between add a scrim over the wallpaper."
-msgstr "0% 透明，100% 纯色。介于两者之间的值会在壁纸上叠加一层遮罩。"
+msgstr "0% 即完全透明，100% 即完全不透明。中间值会在壁纸上叠加一层遮罩。"
 
-#: infra/sui_config.lua:1752
+#: infra/sui_config.lua:1793
 msgid "1/2"
-msgstr ""
+msgstr "1/2"
 
-#: infra/sui_config.lua:1751
+#: infra/sui_config.lua:1792
 msgid "1/3"
-msgstr ""
+msgstr "1/3"
 
-#: infra/sui_config.lua:1753
+#: infra/sui_config.lua:1794
 msgid "2/3"
-msgstr ""
+msgstr "2/3"
 
 #: engines/sui_group_cell.lua:262
 msgid "4-Cover Grid"
@@ -217,51 +217,51 @@ msgstr "四封面网格（仅限网格视图）"
 
 #: modules/critter/reaction_lines.lua:157
 msgid "A MARATHON! You're unstoppable!"
-msgstr ""
+msgstr "马拉松啊！根本停不下来！"
 
 #: modules/critter/dialog.lua:523
 msgid "A bit behind."
-msgstr ""
+msgstr "有点落后了。"
 
 #: modules/critter/reaction_lines.lua:73
 msgid "A book finished. I need to lie down."
-msgstr ""
+msgstr "一本书读完了，我得躺一会儿。"
 
 #: modules/critter/reaction_lines.lua:88
 msgid "A book is over. Good for you."
-msgstr ""
+msgstr "一本书结束了，算你厉害。"
 
 #: modules/critter/reaction_lines.lua:122
 msgid "A brief, brilliant visit to another world!"
-msgstr ""
+msgstr "一次短暂而精彩的异世界之旅！"
 
 #: modules/critter/dialog.lua:340
 msgid "A chapter helps."
-msgstr ""
+msgstr "读一章就有了。"
 
 #: modules/critter/phrases.lua:97
 msgid "A chapter pairs well with a coffee."
-msgstr ""
+msgstr "一章配一杯咖啡，正好。"
 
 #: modules/critter/reaction_lines.lua:186
 msgid "A charger would be lovely."
-msgstr ""
+msgstr "有个充电器就好了。"
 
 #: modules/critter/dialog.lua:225
 msgid "A cosy one."
-msgstr ""
+msgstr "惬意的那种。"
 
 #: modules/critter/dialog.lua:231
 msgid "A cosy one. Mostly naps."
-msgstr ""
+msgstr "惬意的那种，多半在打瞌睡。"
 
 #: modules/critter/reaction_lines.lua:252
 msgid "A day for books, at last."
-msgstr ""
+msgstr "终于到了属于书的日子。"
 
 #: modules/critter/reaction_lines.lua:142
 msgid "A decent session. I almost stayed awake."
-msgstr ""
+msgstr "还不错的一段时间，我差点没睡着。"
 
 #: screens/sui_onboarding.lua:188
 msgid "A folder named \"Books\" will be created and set as the library home."
@@ -275,67 +275,67 @@ msgstr "冻结补签仅可衔接一次紧接有效阅读日之后的缺勤 — �
 
 #: modules/critter/phrases.lua:89
 msgid "A fresh day, a fresh page."
-msgstr ""
+msgstr "新的一天，新的一页。"
 
 #: modules/critter/reaction_lines.lua:285
 msgid "A fresh month, a fresh stack."
-msgstr ""
+msgstr "新月，新书堆。"
 
 #: modules/critter/dialog.lua:631
 msgid "A friendly eye."
-msgstr ""
+msgstr "友善的目光。"
 
 #: modules/critter/phrases.lua:245
 msgid "A good book helps."
-msgstr ""
+msgstr "好书能治百病。"
 
 #: modules/critter/dialog.lua:141
 msgid "A little. Thanks for asking."
-msgstr ""
+msgstr "有一点。谢谢你关心。"
 
 #: modules/critter/dialog.lua:221
 msgid "A map! A sword! A tiny backpack!"
-msgstr ""
+msgstr "地图！佩剑！还有一个小背包！"
 
 #: modules/critter/reaction_lines.lua:156
 msgid "A marathon. I'm tired just watching."
-msgstr ""
+msgstr "马拉松啊，我看着都累了。"
 
 #: modules/critter/reaction_lines.lua:357
 msgid "A month. I kept busy. Mostly sulking."
-msgstr ""
+msgstr "整整一个月。我可没闲着，大部分时间在生闷气。"
 
 #: modules/critter/dialog.lua:235
 msgid "A mystery."
-msgstr ""
+msgstr "是个谜。"
 
 #: modules/critter/phrases.lua:175
 msgid "A new book awaits!"
-msgstr ""
+msgstr "一本新书在等你！"
 
 #: modules/critter/reaction_lines.lua:74
 msgid "A new chapter of your legend is complete!"
-msgstr ""
+msgstr "你的传奇翻开了崭新的一章！"
 
 #: modules/critter/phrases.lua:208
 msgid "A new personal best!"
-msgstr ""
+msgstr "新纪录！"
 
 #: modules/critter/phrases.lua:241
 msgid "A new week of stories."
-msgstr ""
+msgstr "新的一周，新的故事。"
 
 #: modules/critter/reaction_lines.lua:235
 msgid "A new year, a new saga! Onward!"
-msgstr ""
+msgstr "新的一年，新的史诗！出发！"
 
 #: modules/critter/reaction_lines.lua:234
 msgid "A new year. Wake me in January. Oh, wait."
-msgstr ""
+msgstr "新年了。一月再叫我。算了，就现在吧。"
 
 #: modules/critter/reaction_lines.lua:125
 msgid "A page here, a page there."
-msgstr ""
+msgstr "一页两页，慢慢来。"
 
 #: features/sui_presets.lua:354
 msgid "A preset named \"%s\" already exists."
@@ -346,20 +346,20 @@ msgid ""
 "A preset named \"%s\" already exists.\n"
 "Overwrite it?"
 msgstr ""
-"名为“%s”的预设已存在。\n"
-"是否覆盖？"
+"已存在名为“%s”的预设。\n"
+"要覆盖吗？"
 
 #: modules/critter/reaction_lines.lua:130
 msgid "A proper stretch."
-msgstr ""
+msgstr "像样的一段时间。"
 
 #: modules/critter/dialog.lua:294
 msgid "A purist. I knew I liked you."
-msgstr ""
+msgstr "正人君子，我就知道我会喜欢你。"
 
 #: modules/critter/reaction_lines.lua:108
 msgid "A quick peek?"
-msgstr ""
+msgstr "匆匆翻了几页？"
 
 #: screens/sui_menu.lua:985 screens/sui_menu.lua:1124 screens/sui_menu.lua:1730
 msgid ""
@@ -367,31 +367,31 @@ msgid ""
 "\n"
 "Restart now?"
 msgstr ""
-"需要重启才能使新栏大小在所有布局中生效。\n"
+"需要重启才能使新的栏大小在所有布局中生效。\n"
 "\n"
 "是否立即重启？"
 
-#: screens/sui_menu.lua:4015
+#: screens/sui_menu.lua:4065
 msgid ""
 "A restart is required to apply the new text size everywhere.\n"
 "\n"
 "Restart now?"
 msgstr ""
-"需要重启才能全局应用新的文本大小。\n"
+"需要重启才能使新的文本大小在所有位置生效。\n"
 "\n"
 "是否立即重启？"
 
 #: modules/critter/reaction_lines.lua:143
 msgid "A session worthy of the great libraries!"
-msgstr ""
+msgstr "这一趟，配得上大图书馆！"
 
 #: modules/critter/reaction_lines.lua:319
 msgid "A short holiday?"
-msgstr ""
+msgstr "去度了个短假？"
 
 #: modules/critter/reaction_lines.lua:121
 msgid "A short one. My kind of effort."
-msgstr ""
+msgstr "挺短的一次。正合我意。"
 
 #: _meta.lua:6
 msgid "A simple UI for KOReader"
@@ -399,33 +399,33 @@ msgstr "SimpleUI 是 KOReader 的一个简约界面插件"
 
 #: modules/critter/reaction_lines.lua:424
 msgid "A small goal, a big grin."
-msgstr ""
+msgstr "小目标，大笑脸。"
 
 #: modules/critter/dialog.lua:242
 msgid "A very short one."
-msgstr ""
+msgstr "很短的那种。"
 
 #: modules/critter/reaction_lines.lua:222
 msgid "A whole year of unread pages awaits."
-msgstr ""
+msgstr "整整一年没读的书在等着你。"
 
 #: modules/reading_stats/module_reading_stats.lua:422
 msgid "AM"
-msgstr ""
+msgstr "上午"
 
-#: screens/sui_menu.lua:4251 screens/sui_settings_window.lua:203
-#: screens/sui_settings_window.lua:871
+#: screens/sui_menu.lua:4301 screens/sui_settings_window.lua:203
+#: screens/sui_settings_window.lua:876
 msgid "About"
 msgstr "关于"
 
 #: features/library/sui_label_options.lua:134 features/sui_style.lua:1444
 #: modules/reading_stats/module_reading_stats.lua:1715
 msgid "Accent"
-msgstr ""
+msgstr "强调色"
 
-#: screens/sui_menu.lua:3249
+#: screens/sui_menu.lua:3299
 msgid "Accent Color"
-msgstr ""
+msgstr "强调色"
 
 #: features/sui_quickactions.lua:2387 features/sui_quickactions.lua:2620
 msgid "Action"
@@ -453,12 +453,12 @@ msgstr "操作不可用：%s"
 
 #: modules/module_tab_grid.lua:642
 msgid "Active Tab Color"
-msgstr ""
+msgstr "当前选项卡颜色"
 
 #: modules/reading_stats/module_reading_stats.lua:483
 #: screens/insights/sui_insights_charts.lua:138
 msgid "Activity"
-msgstr ""
+msgstr "活跃度"
 
 #: screens/sui_quicksettings_bar.lua:1510
 msgid "Add Action"
@@ -466,7 +466,7 @@ msgstr "添加操作"
 
 #: features/sui_manual_books.lua:105
 msgid "Add Book"
-msgstr ""
+msgstr "添加书籍"
 
 #: screens/sui_menu.lua:1418 screens/sui_menu.lua:1456
 msgid "Add Button"
@@ -475,56 +475,54 @@ msgstr "添加按钮"
 #: engines/sui_screen_engine.lua:2056 engines/sui_window.lua:1167
 #: features/sui_arrange.lua:434 screens/sui_menu.lua:917
 #: screens/sui_menu.lua:954 screens/sui_menu.lua:1997 screens/sui_menu.lua:2027
-#: screens/sui_quicksettings_bar.lua:1426 screens/sui_settings_window.lua:879
+#: screens/sui_quicksettings_bar.lua:1426 screens/sui_settings_window.lua:884
 msgid "Add Item"
 msgstr "添加项目"
 
 #: features/sui_manual_books.lua:159
 msgid "Add Manual Books"
-msgstr ""
+msgstr "添加手动跟踪的书籍"
 
 #: features/sui_manual_books.lua:172
 msgid "Add Manual Count"
-msgstr ""
+msgstr "添加年度数量"
 
-#: screens/sui_settings_window.lua:876 screens/sui_settings_window.lua:1004
+#: screens/sui_settings_window.lua:881 screens/sui_settings_window.lua:1009
 msgid "Add Module"
 msgstr "添加模块"
 
-#: screens/sui_settings_window.lua:973
+#: screens/sui_settings_window.lua:978
 msgid "Add Page"
 msgstr "添加页面"
 
 #: features/sui_manual_books.lua:167
 msgid "Add Single Book"
-msgstr ""
+msgstr "添加单本书籍"
 
 #: modules/module_tab_grid.lua:869
-#, fuzzy
 msgid "Add Tab"
-msgstr "添加页面"
+msgstr "添加选项卡"
 
 #: modules/module_action_list.lua:298 modules/module_quick_actions.lua:349
 #: screens/sui_menu.lua:1917 screens/sui_quicksettings_bar.lua:1509
 msgid "Add at least 2 actions to arrange."
-msgstr "请至少添加 2 个操作以进行排序。"
+msgstr "请至少添加 2 个操作以便整理。"
 
 #: features/sui_collection_arrange.lua:35
 msgid "Add at least 2 books to arrange."
-msgstr "请至少添加 2 本书以便排序。"
+msgstr "请至少添加 2 本书以便整理。"
 
 #: modules/critter/module_critter.lua:748
 msgid "Add at least 2 decorations to arrange."
-msgstr ""
+msgstr "请至少添加 2 个装饰以便整理。"
 
 #: modules/reading_stats/module_reading_stats.lua:1626
 msgid "Add at least 2 stats to arrange."
-msgstr "请至少添加 2 个统计项以便排序。"
+msgstr "请至少添加 2 个统计项以便整理。"
 
 #: modules/module_tab_grid.lua:868 screens/sui_menu.lua:364
-#, fuzzy
 msgid "Add at least 2 tabs to arrange."
-msgstr "请至少添加 2 个统计项以便排序。"
+msgstr "请至少添加 2 个选项卡以便整理。"
 
 #: modules/module_tbr.lua:342
 msgid "Add to To Be Read"
@@ -532,15 +530,15 @@ msgstr "添加到待读"
 
 #: modules/critter/module_critter.lua:729
 msgid "Add your own critters in %1"
-msgstr ""
+msgstr "在 %1 中添加自己的小宠物"
 
 #: modules/critter/module_critter.lua:905
 msgid "Add your own decorations in %1"
-msgstr ""
+msgstr "在 %1 中添加自己的装饰"
 
-#: features/dialogs/sui_bento_sheet.lua:188
-msgid "Adjust row automatically"
-msgstr ""
+#: screens/sui_menu.lua:2588
+msgid "Adjust Row Automatically"
+msgstr "自动调整行"
 
 #: screens/sui_menu.lua:2354
 msgid "After closing a book"
@@ -548,23 +546,23 @@ msgstr "关闭书籍后"
 
 #: infra/sui_datenames.lua:57
 msgid "Afternoon"
-msgstr ""
+msgstr "下午"
 
-#: infra/sui_config.lua:2094 modules/critter/module_critter.lua:898
+#: infra/sui_config.lua:2155 modules/critter/module_critter.lua:898
 #: modules/module_action_list.lua:353 modules/module_quick_actions.lua:472
 #: modules/module_quote.lua:1484
 msgid "Alignment"
 msgstr "对齐方式"
 
-#: screens/sui_menu.lua:3314 screens/sui_menu.lua:3990
+#: screens/sui_menu.lua:3364 screens/sui_menu.lua:4040
 msgid "All caps"
-msgstr ""
+msgstr "全部大写"
 
-#: engines/sui_window.lua:4537 screens/sui_settings_window.lua:636
+#: engines/sui_window.lua:4552 screens/sui_settings_window.lua:641
 msgid "All items have already been added."
 msgstr "所有项目都已添加。"
 
-#: screens/sui_settings_window.lua:614
+#: screens/sui_settings_window.lua:619
 msgid "All modules have already been added."
 msgstr "所有模块都已添加。"
 
@@ -574,49 +572,49 @@ msgstr "近期书籍已全部读完。"
 
 #: modules/critter/reaction_lines.lua:163
 msgid "All that reading. Wake me when it's over."
-msgstr ""
+msgstr "读那么多，结束了叫我。"
 
 #: modules/reading_stats/module_reading_stats.lua:452
 #: modules/reading_stats/module_reading_stats.lua:453
 #: screens/sui_stats_windows.lua:1905
 msgid "All time"
-msgstr ""
+msgstr "累计"
 
 #: modules/critter/dialog.lua:161
 msgid "Almost."
-msgstr ""
+msgstr "差不多了。"
 
-#: screens/sui_menu.lua:2462
+#: screens/sui_menu.lua:2390
 msgid "Always"
 msgstr "始终"
 
 #: modules/critter/dialog.lua:314
 msgid "Always."
-msgstr ""
+msgstr "每次都看。"
 
 #: modules/critter/dialog.lua:216
 msgid "An adventure."
-msgstr ""
+msgstr "冒险那一类。"
 
 #: modules/critter/reaction_lines.lua:276
 msgid "An anniversary. Cake? No? Nap, then."
-msgstr ""
+msgstr "纪念日啊。有蛋糕吗？没有？那我睡一会儿。"
 
 #: modules/critter/reaction_lines.lua:269
 msgid "An anniversary. I suppose I'm fond of you."
-msgstr ""
+msgstr "纪念日啊。看来我挺喜欢你的。"
 
 #: modules/critter/reaction_lines.lua:164
 msgid "An epic voyage! The sagas will remember it!"
-msgstr ""
+msgstr "一场壮阔的远航！史诗都会记住它！"
 
 #: modules/critter/dialog.lua:183
 msgid "An old bus ticket."
-msgstr ""
+msgstr "一张旧公交票。"
 
 #: modules/module_clock.lua:1104 modules/module_clock.lua:1123
 msgid "Analogue"
-msgstr "模拟"
+msgstr "指针"
 
 #: infra/sui_goals.lua:44
 msgid "Annual Goal"
@@ -628,39 +626,39 @@ msgstr "年度阅读目标"
 
 #: modules/critter/phrases.lua:220
 msgid "Annual goal reached!"
-msgstr ""
+msgstr "年度目标达成！"
 
 #: modules/critter/reaction_lines.lua:70
 msgid "Another book on the done pile."
-msgstr ""
+msgstr "读完的书堆又高了一本。"
 
 #: modules/critter/reaction_lines.lua:96
 msgid "Another chapter of your legend is complete!"
-msgstr ""
+msgstr "你的传奇又添一章！"
 
 #: modules/critter/reaction_lines.lua:280
 msgid "Another lap around the sun."
-msgstr ""
+msgstr "又绕太阳跑了一圈。"
 
 #: modules/critter/dialog.lua:751
 msgid "Another one"
-msgstr ""
+msgstr "换一个"
 
 #: modules/critter/reaction_lines.lua:92
 msgid "Another one for the done pile."
-msgstr ""
+msgstr "读完的书堆又添一本。"
 
 #: modules/critter/reaction_lines.lua:227
 msgid "Another year. The pile is still there."
-msgstr ""
+msgstr "又一年。那摞书还在。"
 
 #: modules/critter/dialog.lua:255
 msgid "Anywhere I can."
-msgstr ""
+msgstr "到哪儿都行。"
 
 #: features/sui_module_chrome.lua:294 features/sui_module_chrome.lua:315
 #: infra/sui_config.lua:1233 modules/module_heatmap.lua:354
-#: modules/module_reading_goals.lua:1279 modules/module_reading_goals.lua:1345
+#: modules/module_reading_goals.lua:1278 modules/module_reading_goals.lua:1344
 msgid "Appearance"
 msgstr "外观"
 
@@ -686,9 +684,9 @@ msgstr "4月"
 
 #: features/dialogs/sui_dialogs.lua:227
 msgid "Are you sure you want to reboot the device?"
-msgstr ""
+msgstr "确定要重启设备吗？"
 
-#: features/sui_arrange.lua:433 infra/sui_config.lua:2267
+#: features/sui_arrange.lua:433 infra/sui_config.lua:2328
 msgid "Arrange"
 msgstr "整理"
 
@@ -699,7 +697,7 @@ msgstr "整理 %s"
 
 #: screens/sui_quicksettings_bar.lua:1581
 msgid "Arrange Book Details"
-msgstr ""
+msgstr "整理书籍详情"
 
 #: screens/sui_menu.lua:1374 screens/sui_menu.lua:1381
 #: screens/sui_menu.lua:1558 screens/sui_menu.lua:1573
@@ -714,17 +712,17 @@ msgstr "整理书单"
 #: modules/module_currently.lua:1344 screens/sui_bottombar.lua:787
 #: screens/sui_menu.lua:657 screens/sui_menu.lua:724 screens/sui_menu.lua:731
 #: screens/sui_menu.lua:1911 screens/sui_quicksettings_bar.lua:1425
-#: screens/sui_settings_window.lua:900 screens/sui_topbar.lua:635
+#: screens/sui_settings_window.lua:905 screens/sui_topbar.lua:635
 msgid "Arrange Items"
 msgstr "整理项目"
 
 #: screens/sui_quicksettings_bar.lua:1507
 msgid "Arrange Quick Settings"
-msgstr "整理快捷设置"
+msgstr "整理快速设置"
 
 #: modules/reading_stats/module_reading_stats.lua:1624
 msgid "Arrange Reading Stats"
-msgstr "整理阅读统计"
+msgstr "整理阅读统计项"
 
 #: modules/module_coverdeck.lua:1585 modules/module_currently.lua:1336
 #: screens/sui_quicksettings_bar.lua:1568
@@ -741,7 +739,7 @@ msgstr "整理待读列表"
 
 #: modules/critter/dialog.lua:246
 msgid "Ask anyone my size."
-msgstr ""
+msgstr "问问任何人我的尺码。"
 
 #: features/sui_presets.lua:165
 msgid "At a Glance"
@@ -770,7 +768,7 @@ msgstr "作者"
 msgid "Author (A–Z)"
 msgstr "作者（A–Z）"
 
-#: screens/sui_menu.lua:4069
+#: screens/sui_menu.lua:4119
 msgid "Author: %s"
 msgstr "作者：%s"
 
@@ -791,30 +789,30 @@ msgstr "自动（第一本书）"
 msgid "Auto-rotate"
 msgstr "自动旋转"
 
-#: screens/sui_menu.lua:4074
+#: screens/sui_menu.lua:4124
 msgid "Automatic Update Check"
 msgstr "自动检查更新"
 
 #: screens/sui_stats_windows.lua:1149 screens/sui_stats_windows.lua:1882
 #: screens/sui_stats_windows.lua:2858
 msgid "Average per day"
-msgstr "每日均值"
+msgstr "每日平均时长"
 
 #: screens/sui_stats_windows.lua:1151 screens/sui_stats_windows.lua:2860
 msgid "Average per page"
-msgstr "每页均值"
+msgstr "每页平均时长"
 
 #: modules/reading_stats/module_reading_stats.lua:464
 msgid "Average session"
-msgstr ""
+msgstr "平均单次阅读"
 
 #: modules/reading_stats/module_reading_stats.lua:463
 msgid "Average session, 90 days"
-msgstr ""
+msgstr "平均单次阅读（最近 90 天）"
 
 #: modules/critter/phrases.lua:273
 msgid "Aww, you're here!"
-msgstr ""
+msgstr "哇，你来了！"
 
 #: screens/sui_titlebar.lua:114 screens/sui_titlebar.lua:120
 msgid "Back"
@@ -833,7 +831,7 @@ msgstr "背景不透明度"
 msgid "Backup"
 msgstr "备份"
 
-#: screens/sui_menu.lua:4096
+#: screens/sui_menu.lua:4146
 msgid "Backup & Restore"
 msgstr "备份与恢复"
 
@@ -859,7 +857,7 @@ msgid ""
 "Restart KOReader now to finish applying all changes?"
 msgstr ""
 "备份已恢复。\n"
-"是否立即重启 KOReader 以应用所有更改？"
+"要立即重启 KOReader 以应用所有更改吗？"
 
 #: features/sui_backup.lua:615
 msgid ""
@@ -894,10 +892,10 @@ msgstr "栏大小"
 
 #: modules/module_quick_actions.lua:459 screens/sui_quicksettings_bar.lua:1659
 msgid "Bare"
-msgstr "极简模式"
+msgstr "无边框"
 
-#: features/sui_backup.lua:122 screens/sui_menu.lua:4213
-#: screens/sui_settings_window.lua:164 screens/sui_settings_window.lua:868
+#: features/sui_backup.lua:122 screens/sui_menu.lua:4263
+#: screens/sui_settings_window.lua:164 screens/sui_settings_window.lua:873
 msgid "Bars"
 msgstr "功能栏"
 
@@ -908,66 +906,65 @@ msgstr "电池"
 
 #: modules/critter/reaction_lines.lua:182
 msgid "Battery low! Quick, adventure's calling!"
-msgstr ""
+msgstr "电量低了！快点，冒险在召唤！"
 
 #: modules/critter/dialog.lua:288
 msgid "Be honest: do you read the last page first?"
-msgstr ""
+msgstr "老实说：你会先看最后一页吗？"
 
-#: infra/sui_config.lua:1239 screens/sui_menu.lua:2651
-#: screens/sui_settings_window.lua:288 screens/sui_settings_window.lua:881
+#: infra/sui_config.lua:1239 screens/sui_menu.lua:2701
+#: screens/sui_settings_window.lua:288 screens/sui_settings_window.lua:886
 msgid "Behaviour"
 msgstr "行为"
 
 #: engines/sui_group_cell.lua:231
-#, fuzzy
 msgid "Below Cover"
-msgstr "单封面"
+msgstr "封面下方"
 
 #: screens/sui_stats_windows.lua:1728
 msgid "Best streak"
-msgstr "最佳连续"
+msgstr "最佳连续阅读"
 
 #: modules/reading_stats/module_reading_stats.lua:1704
 #: modules/reading_stats/module_reading_stats.lua:1715
 msgid "Black"
-msgstr ""
+msgstr "黑色"
 
 #: infra/sui_config.lua:201
 msgid "Bluetooth"
 msgstr "蓝牙"
 
-#: features/sui_style.lua:2506
+#: features/sui_style.lua:2509
 msgid "Bold"
 msgstr "粗体"
 
-#: features/sui_style.lua:2508
+#: features/sui_style.lua:2511
 msgid "Bold italic"
 msgstr "粗斜体"
 
 #: modules/critter/dialog.lua:633
 msgid "Bold. Let's see."
-msgstr ""
+msgstr "胆子不小。走着瞧。"
 
 #: modules/critter/dialog.lua:317
 msgid "Bold. You like to know who makes it."
-msgstr ""
+msgstr "胆子不小。你想知道是谁干的。"
 
 #: screens/sui_quicksettings_bar.lua:1603
 msgid "Book"
-msgstr ""
+msgstr "书籍"
 
-#: screens/sui_menu.lua:2505
+#: screens/sui_menu.lua:2433
 msgid "Book Cover Transition"
 msgstr "书籍封面过渡"
 
 #: modules/critter/reaction_lines.lua:255
 msgid "Book Day. A holiday for my favourite thing: sitting."
-msgstr ""
+msgstr "读书日。这可是为了我最爱的事——坐着——而设的节日。"
 
 #: screens/sui_quicksettings_bar.lua:1580
 msgid "Book Details"
-msgstr ""
+msgstr "书籍详情"
 
 #: screens/sui_menu.lua:2359
 msgid "Book Folder"
@@ -977,17 +974,17 @@ msgstr "书籍文件夹"
 msgid "Book Info"
 msgstr "书籍信息"
 
-#: infra/sui_config.lua:1901
+#: infra/sui_config.lua:1962
 msgid "Book Menu"
-msgstr "图书菜单"
+msgstr "书籍菜单"
 
 #: features/sui_cover_elements.lua:107
 msgid "Book Stack"
-msgstr ""
+msgstr "书堆"
 
-#: screens/sui_menu.lua:2917
+#: screens/sui_menu.lua:2967
 msgid "Book Stack Style"
-msgstr ""
+msgstr "书堆样式"
 
 #: screens/sui_stats_windows.lua:2913
 msgid "Book Statistics"
@@ -995,7 +992,7 @@ msgstr "书籍统计"
 
 #: modules/critter/reaction_lines.lua:82
 msgid "Book finished!"
-msgstr ""
+msgstr "一本书读完了！"
 
 #: main.lua:1237
 msgid "Book statistics"
@@ -1018,42 +1015,43 @@ msgid "Bookmarks"
 msgstr "书签"
 
 #: engines/sui_book_sources.lua:400 modules/module_library.lua:266
-#: modules/reading_stats/module_reading_stats.lua:662
+#: modules/reading_stats/module_reading_stats.lua:662 screens/sui_menu.lua:2612
+#: modules/moduleregistry.lua:241
 msgid "Books"
 msgstr "书籍"
 
 #: modules/reading_stats/module_reading_stats.lua:503
 msgid "Books abandoned"
-msgstr ""
+msgstr "已搁置书籍"
 
 #: modules/critter/dialog.lua:351
 msgid "Books are good at that."
-msgstr ""
+msgstr "书最擅长这个。"
 
 #: modules/critter/phrases.lua:266
 msgid "Books are tiny adventures."
-msgstr ""
+msgstr "每本书都是一场小小的冒险。"
 
 #: modules/critter/dialog.lua:164
 msgid "Books don't have feelings."
-msgstr ""
+msgstr "书又没有感情。"
 
 #: modules/reading_stats/module_reading_stats.lua:453
 #: screens/sui_stats_windows.lua:1908
 msgid "Books finished"
-msgstr ""
+msgstr "已读完书籍"
 
 #: modules/reading_stats/module_reading_stats.lua:502
 msgid "Books in progress"
-msgstr ""
+msgstr "在读书籍"
 
 #: modules/reading_stats/module_reading_stats.lua:501
 msgid "Books not started"
-msgstr ""
+msgstr "未读书籍"
 
 #: modules/critter/phrases.lua:47
 msgid "Books this year"
-msgstr ""
+msgstr "今年读完的书"
 
 #: infra/sui_goals.lua:46
 msgid "Books to read in %s:"
@@ -1069,7 +1067,7 @@ msgstr "底部"
 msgid "Bottom Margin"
 msgstr "下边距"
 
-#: screens/sui_menu.lua:2506
+#: screens/sui_menu.lua:2434
 msgid ""
 "Briefly show the book cover full-screen when opening or closing a book, "
 "masking the page-layout flash. Normally requires the book to already be "
@@ -1077,9 +1075,9 @@ msgid ""
 "a grid/list view) — see \"High-Quality Cover\" below to also cover un-"
 "indexed books."
 msgstr ""
-"在打开或关闭书籍时以全屏封面短暂显示，以遮盖页面布局刷新。通常要求该书已被封"
-"面浏览器索引（即在网格/列表视图中至少显示过一次封面）。如需覆盖未索引书籍，请"
-"参阅下方的“高质量封面”选项。"
+"打开或关闭书籍时短暂全屏显示该书封面，以遮盖页面布局的刷新闪烁。通常要求该书"
+"已被封面浏览器索引（其封面需在网格或列表视图中至少出现过一次）；若需覆盖未索"
+"引的书籍，请参阅下方的“高质量封面”。"
 
 #: features/sui_accent_picker.lua:92 features/sui_quickactions.lua:930
 #: infra/sui_config.lua:136 infra/sui_config.lua:202
@@ -1112,7 +1110,7 @@ msgstr "浏览图标"
 
 #: engines/sui_book_sources.lua:433 features/library/sui_library_browse.lua:571
 msgid "Browse by"
-msgstr "浏览方式"
+msgstr "浏览方式为"
 
 #: features/sui_quickactions.lua:666
 msgid "Browse by Authors/Series/Tags not available."
@@ -1123,13 +1121,13 @@ msgid "Browse library"
 msgstr "浏览书库"
 
 #: features/sui_quickactions.lua:2142 screens/sui_menu.lua:2212
-#: screens/sui_menu.lua:3522
+#: screens/sui_menu.lua:3572
 msgid "Browse…"
 msgstr "浏览…"
 
 #: modules/critter/module_critter.lua:803
 msgid "Bubble style"
-msgstr ""
+msgstr "气泡样式"
 
 #: modules/module_quick_actions.lua:455 screens/sui_quicksettings_bar.lua:1655
 msgid "Button Type"
@@ -1141,24 +1139,24 @@ msgstr "按作者"
 
 #: screens/insights/sui_insights_charts.lua:161
 msgid "By day of the week"
-msgstr ""
+msgstr "按星期分布"
 
-#: screens/sui_menu.lua:2545
+#: screens/sui_menu.lua:2473
 msgid ""
 "By default the cover is stretched to fill the whole screen, which can "
 "distort it if its proportions don't match your screen's. When on, the cover "
 "keeps its original proportions instead, centered over a black background."
 msgstr ""
-"默认情况下，封面会拉伸以填满整个屏幕；如果封面的宽高比与屏幕不匹配，可能会导"
-"致变形。开启后，封面将保持原始比例，并以黑色背景居中显示。"
+"默认情况下封面会被拉伸以填满整个屏幕，若其比例与屏幕不符则会失真。开启后，封"
+"面改为保持原始比例，居中显示在黑色背景上。"
 
 #: screens/insights/sui_insights_charts.lua:153
 msgid "By hour of the day"
-msgstr ""
+msgstr "按小时分布"
 
 #: screens/sui_stats_windows.lua:1937
 msgid "By month"
-msgstr ""
+msgstr "按月"
 
 #: screens/sui_titlebar.lua:1153
 msgid "By series"
@@ -1170,11 +1168,11 @@ msgstr "按标签"
 
 #: screens/insights/sui_insights_charts.lua:187
 msgid "By time of day"
-msgstr ""
+msgstr "按时段分布"
 
 #: screens/sui_stats_windows.lua:1941
 msgid "By year"
-msgstr ""
+msgstr "按年"
 
 #: screens/sui_heatmap_popup.lua:67
 msgid "CALENDAR"
@@ -1186,11 +1184,11 @@ msgstr "日历"
 
 #: modules/critter/dialog.lua:101
 msgid "Can I stay up while you read tonight?"
-msgstr ""
+msgstr "今晚你读书时我能一起熬吗？"
 
 #: modules/critter/dialog.lua:558
 msgid "Can't say. Spoilers."
-msgstr ""
+msgstr "不能说，剧透。"
 
 #: features/dialogs/sui_dialogs.lua:176 features/dialogs/sui_dialogs.lua:299
 #: features/dialogs/sui_dialogs.lua:413
@@ -1203,9 +1201,9 @@ msgstr ""
 #: features/sui_quickactions.lua:2581 features/sui_quickactions.lua:2933
 #: features/sui_quickactions.lua:3250 features/sui_style.lua:1284
 #: infra/sui_updater.lua:500 infra/sui_updater.lua:517
-#: modules/module_quote.lua:1303 screens/sui_menu.lua:3775
-#: screens/sui_menu.lua:3795 screens/sui_menu.lua:3836
-#: screens/sui_menu.lua:3858 screens/sui_menu.lua:4112
+#: modules/module_quote.lua:1303 screens/sui_menu.lua:3825
+#: screens/sui_menu.lua:3845 screens/sui_menu.lua:3886
+#: screens/sui_menu.lua:3908 screens/sui_menu.lua:4162
 #: screens/sui_stats_windows.lua:623
 msgid "Cancel"
 msgstr "取消"
@@ -1216,46 +1214,46 @@ msgstr "卡片"
 
 #: modules/critter/dialog.lua:281
 msgid "Careful. Books fall on faces."
-msgstr ""
+msgstr "小心，书会砸到脸上的。"
 
-#: features/library/sui_label_options.lua:145 infra/sui_config.lua:2085
+#: features/library/sui_label_options.lua:145 infra/sui_config.lua:2146
 #: screens/sui_menu.lua:673 screens/sui_menu.lua:880
 msgid "Center"
 msgstr "居中"
 
 #: modules/critter/dialog.lua:627
 msgid "Challenge accepted"
-msgstr ""
+msgstr "接受挑战"
 
 #: modules/critter/reaction_lines.lua:411
 msgid "Challenge crushed! Take a bow, champion!"
-msgstr ""
+msgstr "挑战拿下了！冠军，请受我一拜！"
 
 #: modules/critter/reaction_lines.lua:407
 msgid "Challenge met!"
-msgstr ""
+msgstr "挑战达成！"
 
 #: modules/reading_stats/module_reading_stats.lua:487
 msgid "Change against last week"
-msgstr ""
+msgstr "较上周变化"
 
 #: modules/critter/dialog.lua:320
 msgid "Chaos. I respect it."
-msgstr ""
+msgstr "一团乱。我服。"
 
 #: modules/critter/reaction_lines.lua:202
 msgid "Charging. About time."
-msgstr ""
+msgstr "充电中。总算想起来。"
 
 #: modules/critter/reaction_lines.lua:199
 msgid "Charging. Bliss."
-msgstr ""
+msgstr "充电中。太幸福了。"
 
 #: modules/critter/reaction_lines.lua:209
 msgid "Charging. Wake me at 100%."
-msgstr ""
+msgstr "充电中。充到 100% 再叫我。"
 
-#: screens/sui_menu.lua:4085
+#: screens/sui_menu.lua:4135
 msgid "Check for Updates"
 msgstr "检查更新"
 
@@ -1265,7 +1263,7 @@ msgstr "检查更新中…"
 
 #: features/sui_accent_picker.lua:80
 msgid "Choose a color"
-msgstr ""
+msgstr "选择颜色"
 
 #: screens/sui_onboarding.lua:192
 msgid "Choose a different folder"
@@ -1287,7 +1285,7 @@ msgstr "选择文件"
 msgid "Choose icon"
 msgstr "选择图标"
 
-#: screens/sui_menu.lua:3532
+#: screens/sui_menu.lua:3582
 msgid "Choose icon pack"
 msgstr "选择图标包"
 
@@ -1296,14 +1294,13 @@ msgid ""
 "Choose the folder where you will place all your books. Simple UI uses it to "
 "show your books in the Library."
 msgstr ""
-"请选择用于存放所有书籍的文件夹。SimpleUI 将使用该文件夹在“书库”中显示你的书"
-"籍。"
+"请选择用于放置所有书籍的文件夹。SimpleUI 会在书库中用它来显示您的书籍。"
 
 #: screens/sui_quicksettings_bar.lua:1691
 msgid ""
 "Choose the menus that open directly on the Quick Settings tab instead of the "
 "last used tab."
-msgstr ""
+msgstr "选择在快速设置选项卡中直接打开的菜单，而非在上次使用的选项卡中打开。"
 
 #: screens/sui_menu.lua:2220
 msgid "Choose wallpaper"
@@ -1314,16 +1311,16 @@ msgid "Choose your initial layout"
 msgstr "选择初始布局"
 
 #: features/sui_cover_elements.lua:114 modules/module_coverdeck.lua:1484
-#: screens/sui_menu.lua:1762 screens/sui_menu.lua:2920
-#: screens/sui_menu.lua:3313 screens/sui_menu.lua:3990
+#: screens/sui_menu.lua:1762 screens/sui_menu.lua:2970
+#: screens/sui_menu.lua:3363 screens/sui_menu.lua:4040
 #: screens/sui_quicksettings_bar.lua:1602
 #: screens/sui_quicksettings_bar.lua:1614
 msgid "Classic"
 msgstr "经典"
 
-#: features/sui_accent_picker.lua:101 screens/sui_menu.lua:3251
+#: features/sui_accent_picker.lua:101 screens/sui_menu.lua:3301
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: features/sui_presets.lua:180 features/sui_presets.lua:244
 #: infra/sui_config.lua:199 modules/module_clock.lua:194
@@ -1337,13 +1334,13 @@ msgstr "时钟样式"
 
 #: modules/module_currently.lua:1434
 msgid "Clock icon"
-msgstr ""
+msgstr "时钟图标"
 
 #: screens/sui_titlebar.lua:119
 msgid "Close"
 msgstr "关闭"
 
-#: screens/sui_menu.lua:2458
+#: screens/sui_menu.lua:2386
 msgid "Closing Book Notice"
 msgstr "关闭书籍提示"
 
@@ -1403,20 +1400,20 @@ msgstr "书单：返回按钮"
 
 #: features/library/sui_label_options.lua:148
 #: features/sui_cover_elements.lua:257 infra/sui_config.lua:1091
-#: infra/sui_config.lua:1524 screens/sui_menu.lua:3344
+#: infra/sui_config.lua:1524 screens/sui_menu.lua:3394
 msgid "Color"
 msgstr "颜色"
 
-#: screens/sui_menu.lua:4048
+#: screens/sui_menu.lua:4098
 msgid "Colors"
-msgstr ""
+msgstr "颜色"
 
 #: engines/sui_book_grid.lua:1916
 #: modules/reading_stats/module_reading_stats.lua:1658
 msgid "Columns"
 msgstr "列数"
 
-#: modules/module_currently.lua:1426 modules/module_reading_goals.lua:1285
+#: modules/module_currently.lua:1426 modules/module_reading_goals.lua:1284
 msgid "Compact"
 msgstr "紧凑"
 
@@ -1424,7 +1421,7 @@ msgstr "紧凑"
 msgid "Confirm"
 msgstr "确认"
 
-#: infra/sui_config.lua:1214 screens/sui_menu.lua:2782
+#: infra/sui_config.lua:1214 screens/sui_menu.lua:2832
 msgid "Content"
 msgstr "内容"
 
@@ -1444,22 +1441,22 @@ msgstr "角落徽章"
 
 #: modules/critter/dialog.lua:389
 msgid "Correct. Don't get smug."
-msgstr ""
+msgstr "答对了。别得意。"
 
 #: modules/critter/dialog.lua:386
 msgid "Correct. You get a gold star."
-msgstr ""
+msgstr "答对了。给你贴颗金星。"
 
 #: modules/critter/dialog.lua:347
 msgid "Could be better."
-msgstr ""
+msgstr "还能更好。"
 
 #: features/sui_backup.lua:916 features/sui_backup.lua:991
 #: features/sui_backup.lua:1110
 msgid "Could not determine backup folder."
 msgstr "无法确定备份文件夹。"
 
-#: features/sui_style.lua:2681
+#: features/sui_style.lua:2684
 msgid "Could not determine packs folder"
 msgstr "无法确定包文件夹位置"
 
@@ -1471,7 +1468,7 @@ msgstr "无法打开备份文件进行写入"
 msgid "Could not open statistics database."
 msgstr "无法打开统计数据库。"
 
-#: features/sui_style.lua:2683
+#: features/sui_style.lua:2686
 msgid "Could not open zip (invalid format or corrupted)"
 msgstr "无法打开 .zip 文件（格式无效或已损坏）"
 
@@ -1483,18 +1480,18 @@ msgstr "无法写入备份文件"
 msgid ""
 "Count manually tracked books in the all-time total of books finished. They "
 "always count towards the year they belong to."
-msgstr ""
+msgstr "将手动记录的书籍计入已读完书籍的总计中。它们始终计入其所属年份的统计。"
 
 #: features/sui_presets.lua:200 features/sui_presets.lua:218
 #: modules/module_coverdeck.lua:837
 msgid "Cover Deck"
 msgstr "封面轮播"
 
-#: screens/sui_menu.lua:3033
+#: screens/sui_menu.lua:3083
 msgid "Cover Settings"
 msgstr "封面设置"
 
-#: screens/sui_menu.lua:2813
+#: screens/sui_menu.lua:2863
 msgid "Cover Shadow"
 msgstr "封面阴影"
 
@@ -1514,7 +1511,7 @@ msgstr "封面样式"
 
 #: features/sui_cover_elements.lua:331
 msgid "Cover Type"
-msgstr ""
+msgstr "封面类型"
 
 #: engines/sui_group_cell.lua:587 modules/module_collections.lua:315
 msgid "Cover for \"%s\""
@@ -1525,12 +1522,12 @@ msgid ""
 "CoverBrowser plugin is not enabled, some features will not work correctly."
 msgstr "封面浏览器插件未启用，部分功能将无法正常工作。"
 
-#: modules/module_coverdeck.lua:123 screens/sui_menu.lua:3970
+#: modules/module_coverdeck.lua:123 screens/sui_menu.lua:4020
 msgid "Covers"
 msgstr "封面"
 
 #: features/library/sui_group_actions.lua:105
-#: screens/sui_settings_window.lua:961
+#: screens/sui_settings_window.lua:966
 msgid "Create"
 msgstr "创建"
 
@@ -1538,23 +1535,23 @@ msgstr "创建"
 msgid "Create Quick Action"
 msgstr "创建快捷操作"
 
-#: screens/sui_settings_window.lua:954
+#: screens/sui_settings_window.lua:959
 msgid "Create Screen"
 msgstr "创建屏幕"
 
 #: screens/sui_onboarding.lua:187
 msgid "Create a \"Books\" folder"
-msgstr "创建“书籍”文件夹"
+msgstr "创建“Books”文件夹"
 
 #: features/library/sui_facet_groups.lua:139
 #: features/library/sui_foldercovers.lua:607
 #: features/library/sui_foldercovers.lua:622
 #: features/library/sui_library_browse.lua:887
-#: features/library/sui_series_grouping.lua:401
+#: features/library/sui_series_grouping.lua:402
 msgid "Create collection"
 msgstr "创建书单"
 
-#: screens/sui_settings_window.lua:959
+#: screens/sui_settings_window.lua:964
 msgid "Create screen"
 msgstr "创建屏幕"
 
@@ -1564,19 +1561,19 @@ msgstr "正在创建备份…"
 
 #: modules/critter/module_critter.lua:710
 msgid "Critter"
-msgstr ""
+msgstr "小宠物"
 
 #: features/sui_backup.lua:161
 msgid "Critter images and phrases from sui_critters/"
-msgstr ""
+msgstr "来自 sui_critters/ 的小宠物图片与语句"
 
 #: modules/critter/module_critter.lua:890
 msgid "Critter position"
-msgstr ""
+msgstr "小宠物位置"
 
 #: screens/sui_stats_windows.lua:1727
 msgid "Current streak"
-msgstr "当前连续"
+msgstr "当前连续阅读"
 
 #: features/sui_presets.lua:166 features/sui_presets.lua:180
 #: features/sui_presets.lua:244 modules/module_currently.lua:325
@@ -1584,7 +1581,7 @@ msgstr "当前连续"
 msgid "Currently Reading"
 msgstr "正在阅读"
 
-#: infra/sui_config.lua:3104
+#: infra/sui_config.lua:3165
 msgid "Custom"
 msgstr "自定义"
 
@@ -1598,7 +1595,7 @@ msgstr "自定义文件"
 
 #: modules/module_quote.lua:1427
 msgid "Custom File + My Highlights"
-msgstr "自定义文件 + 我的高亮标注"
+msgstr "自定义文件 + 我的高亮"
 
 #: features/sui_quickactions.lua:1525 features/sui_quickactions.lua:1629
 msgid "Custom Quick Actions"
@@ -1626,7 +1623,7 @@ msgstr "自定义操作、操作行与调度器绑定"
 
 #: features/sui_backup.lua:160
 msgid "Custom critters"
-msgstr ""
+msgstr "自定义小宠物"
 
 #: features/sui_backup.lua:154
 msgid "Custom icons"
@@ -1646,11 +1643,11 @@ msgstr "更多自定义设置"
 
 #: features/library/sui_hold_rows.lua:239
 msgid "Cut"
-msgstr ""
+msgstr "剪切"
 
 #: modules/critter/reaction_lines.lua:89
 msgid "DONE! Incredible!"
-msgstr ""
+msgstr "读完了！太厉害了！"
 
 #: infra/sui_goals.lua:65
 msgid "Daily Goal"
@@ -1663,15 +1660,15 @@ msgstr "每日阅读目标"
 #: modules/reading_stats/module_reading_stats.lua:448
 #: modules/reading_stats/module_reading_stats.lua:449
 msgid "Daily average"
-msgstr ""
+msgstr "每日平均时长"
 
 #: modules/reading_stats/module_reading_stats.lua:448
 msgid "Daily average, last 7 days"
-msgstr ""
+msgstr "每日平均时长（最近 7 天）"
 
 #: modules/critter/phrases.lua:224 modules/critter/phrases.lua:231
 msgid "Daily goal reached!"
-msgstr ""
+msgstr "今日目标达成！"
 
 #: features/library/sui_label_options.lua:131 features/sui_style.lua:1500
 msgid "Dark"
@@ -1707,23 +1704,23 @@ msgstr "开始日期"
 
 #: modules/critter/dialog.lua:435 modules/critter/dialog.lua:437
 msgid "Day %d, here we come!"
-msgstr ""
+msgstr "第 %d 天，冲！"
 
 #: modules/critter/dialog.lua:475
 msgid "Day one with you. My favourite."
-msgstr ""
+msgstr "和你相处的第一天。我的最爱。"
 
 #: modules/critter/dialog.lua:474
 msgid "Day one. Again. Fine."
-msgstr ""
+msgstr "又是第一天。行吧。"
 
 #: modules/critter/dialog.lua:471
 msgid "Day one. My favourite kind."
-msgstr ""
+msgstr "第一天。我最爱的日子。"
 
 #: screens/sui_stats_windows.lua:1733
 msgid "Day streak"
-msgstr ""
+msgstr "连续阅读天数"
 
 #: screens/sui_stats_windows.lua:891 screens/sui_stats_windows.lua:2627
 msgid "Days"
@@ -1731,7 +1728,7 @@ msgstr "天数"
 
 #: modules/critter/phrases.lua:50
 msgid "Days and months"
-msgstr ""
+msgstr "日与月"
 
 #: infra/sui_book_stats.lua:177
 msgid "Days of reading"
@@ -1739,7 +1736,7 @@ msgstr "阅读天数"
 
 #: modules/critter/dialog.lua:630
 msgid "Deal. I'll keep an eye on it."
-msgstr ""
+msgstr "成交。我会帮你盯着。"
 
 #: infra/sui_datenames.lua:32
 msgid "Dec"
@@ -1751,16 +1748,16 @@ msgstr "12月"
 
 #: modules/critter/module_critter.lua:741
 msgid "Decorations"
-msgstr ""
+msgstr "装饰"
 
 #: features/dialogs/sui_dialogs.lua:285 features/sui_cover_elements.lua:113
 #: features/sui_quickactions.lua:2126 features/sui_quickactions.lua:2388
-#: features/sui_style.lua:2483 features/sui_style.lua:2530
+#: features/sui_style.lua:2486 features/sui_style.lua:2533
 #: infra/sui_config.lua:1019 infra/sui_config.lua:1086
-#: modules/module_currently.lua:1298 modules/module_reading_goals.lua:1284
+#: modules/module_currently.lua:1298 modules/module_reading_goals.lua:1283
 #: modules/module_tab_grid.lua:645 screens/sui_menu.lua:440
-#: screens/sui_menu.lua:569 screens/sui_menu.lua:2919 screens/sui_menu.lua:3290
-#: screens/sui_menu.lua:3341 screens/sui_titlebar.lua:1151
+#: screens/sui_menu.lua:569 screens/sui_menu.lua:2969 screens/sui_menu.lua:3340
+#: screens/sui_menu.lua:3391 screens/sui_titlebar.lua:1151
 msgid "Default"
 msgstr "默认"
 
@@ -1801,19 +1798,19 @@ msgid "Default: System"
 msgstr "默认：系统"
 
 #: engines/sui_window.lua:2445 engines/sui_window.lua:3807
-#: features/dialogs/sui_bento_sheet.lua:121
+#: features/dialogs/sui_bento_sheet.lua:134
 #: features/library/sui_hold_rows.lua:135 features/sui_manual_books.lua:85
 #: features/sui_manual_books.lua:90 features/sui_presets.lua:976
 #: features/sui_presets.lua:979 features/sui_presets.lua:1017
 #: features/sui_quickactions.lua:1595 features/sui_quickactions.lua:2927
-#: features/sui_quickactions.lua:2932 screens/sui_menu.lua:3791
-#: screens/sui_menu.lua:3794 screens/sui_menu.lua:3835
+#: features/sui_quickactions.lua:2932 screens/sui_menu.lua:3841
+#: screens/sui_menu.lua:3844 screens/sui_menu.lua:3885
 #: screens/sui_settings_window.lua:366 screens/sui_settings_window.lua:414
 #: screens/sui_settings_window.lua:473
 msgid "Delete"
 msgstr "删除"
 
-#: screens/sui_menu.lua:4111
+#: screens/sui_menu.lua:4161
 msgid "Delete Settings"
 msgstr "删除设置"
 
@@ -1822,7 +1819,7 @@ msgid "Delete \"%s\"? This removes its layout, modules and Quick Action."
 msgstr "删除“%s”？这将移除其布局、模块和快捷操作。"
 
 #: features/sui_presets.lua:978 features/sui_presets.lua:1016
-#: screens/sui_menu.lua:3793 screens/sui_menu.lua:3834
+#: screens/sui_menu.lua:3843 screens/sui_menu.lua:3884
 msgid "Delete preset \"%s\"?"
 msgstr "删除预设“%s”？"
 
@@ -1832,7 +1829,7 @@ msgstr "删除快捷操作“%s”？"
 
 #: features/sui_manual_books.lua:89
 msgid "Delete this book?"
-msgstr ""
+msgstr "确定删除这本书？"
 
 #: modules/module_currently.lua:271 modules/module_currently.lua:1371
 msgid "Description"
@@ -1840,17 +1837,17 @@ msgstr "描述"
 
 #: modules/module_currently.lua:1488
 msgid "Description Alignment"
-msgstr "描述对齐"
+msgstr "描述对齐方式"
 
-#: modules/module_reading_goals.lua:1150
+#: modules/module_reading_goals.lua:1149
 msgid "Detail"
 msgstr "详情"
 
-#: modules/module_reading_goals.lua:1297
+#: modules/module_reading_goals.lua:1296
 msgid "Detail Below Ring"
 msgstr "详情置于环下方"
 
-#: modules/module_reading_goals.lua:1296
+#: modules/module_reading_goals.lua:1295
 msgid "Detail Inside Ring"
 msgstr "详情置于环内"
 
@@ -1860,11 +1857,11 @@ msgstr "详细"
 
 #: modules/reading_stats/module_reading_stats.lua:1684
 msgid "Detailed Cards"
-msgstr ""
+msgstr "详细卡片"
 
 #: modules/critter/module_critter.lua:918
 msgid "Details"
-msgstr ""
+msgstr "详情"
 
 #: features/sui_quickactions.lua:2204
 msgid "Dictionary Lookup"
@@ -1874,7 +1871,7 @@ msgstr "词典查询"
 msgid "Digital"
 msgstr "数字"
 
-#: screens/sui_menu.lua:2421
+#: screens/sui_menu.lua:2540
 msgid "Disable \"Lock Scale\" first to set a custom label scale."
 msgstr "请先禁用“锁定缩放”以设置自定义标签缩放。"
 
@@ -1890,29 +1887,29 @@ msgstr "磁盘使用"
 msgid "Dispatcher not available."
 msgstr "调度器不可用。"
 
-#: screens/sui_menu.lua:2308 screens/sui_menu.lua:3086
+#: screens/sui_menu.lua:2308 screens/sui_menu.lua:3136
 msgid "Display"
 msgstr "显示"
 
 #: modules/critter/dialog.lua:135
 msgid "Do you get lonely?"
-msgstr ""
+msgstr "你会觉得孤单吗？"
 
 #: modules/critter/dialog.lua:132
 msgid "Do you think books get lonely?"
-msgstr ""
+msgstr "你说书会孤单吗？"
 
-#: screens/sui_menu.lua:3956
+#: screens/sui_menu.lua:4006
 msgid "Don't Invert Colored Icons in Night Mode"
 msgstr "在夜间模式下不反转彩色图标"
 
 #: modules/critter/phrases.lua:113
 msgid "Don't forget to rest."
-msgstr ""
+msgstr "别忘了休息。"
 
 #: modules/critter/dialog.lua:494
 msgid "Don't remind me."
-msgstr ""
+msgstr "别提醒我。"
 
 #: features/sui_quickactions.lua:2582
 msgid "Done"
@@ -1920,19 +1917,19 @@ msgstr "完成"
 
 #: modules/critter/reaction_lines.lua:421
 msgid "Done and dusted! Look at you go!"
-msgstr ""
+msgstr "搞定！你看你这干劲！"
 
 #: modules/critter/reaction_lines.lua:417
 msgid "Done and dusted."
-msgstr ""
+msgstr "大功告成。"
 
 #: modules/critter/dialog.lua:201
 msgid "Done. It was holding someone's place."
-msgstr ""
+msgstr "搞定。它刚才在帮人占位呢。"
 
 #: modules/critter/reaction_lines.lua:420
 msgid "Done. Now I need a nap."
-msgstr ""
+msgstr "完成了。现在我得睡一会儿。"
 
 #: screens/sui_menu.lua:477
 msgid "Dot Pager"
@@ -1956,7 +1953,7 @@ msgstr "正在下载 SimpleUI %s…"
 
 #: modules/critter/reaction_lines.lua:151
 msgid "Drink some water, hero."
-msgstr ""
+msgstr "喝点水，英雄。"
 
 #: modules/module_currently.lua:1301
 msgid "Dynamic"
@@ -1968,7 +1965,7 @@ msgstr "编辑"
 
 #: features/sui_manual_books.lua:105
 msgid "Edit Book"
-msgstr ""
+msgstr "编辑书籍"
 
 #: screens/sui_menu.lua:624 screens/sui_menu.lua:626 screens/sui_menu.lua:855
 msgid "Edit Custom Text"
@@ -1978,10 +1975,6 @@ msgstr "编辑自定义文本"
 msgid "Edit Home Screen Layout"
 msgstr "编辑主页布局"
 
-#: engines/sui_screen_engine.lua:2102
-msgid "Edit Home Screen page"
-msgstr ""
-
 #: features/sui_quickactions.lua:2320
 msgid "Edit Quick Action"
 msgstr "编辑快捷操作"
@@ -1989,7 +1982,7 @@ msgstr "编辑快捷操作"
 #: modules/reading_stats/module_reading_stats.lua:1195
 #: modules/reading_stats/module_reading_stats.lua:1627
 msgid "Edit card"
-msgstr ""
+msgstr "编辑卡片"
 
 #: modules/module_clock.lua:255
 msgid "Eight"
@@ -2001,7 +1994,7 @@ msgstr "十八"
 
 #: modules/critter/reaction_lines.lua:214
 msgid "Electrons, my favourite."
-msgstr ""
+msgstr "电子，我的最爱。"
 
 #: modules/module_clock.lua:256
 msgid "Eleven"
@@ -2013,7 +2006,7 @@ msgstr "空"
 
 #: features/library/sui_foldercovers.lua:1431
 msgid "Empty folder"
-msgstr ""
+msgstr "空文件夹"
 
 #: infra/sui_compat_check.lua:132
 msgid "Enable"
@@ -2023,11 +2016,11 @@ msgstr "启用"
 msgid "Enable 'Browse by Author / Series / Tags' in the library menu first."
 msgstr "请先在书库菜单中启用“按作者/丛书/标签浏览”。"
 
-#: screens/sui_menu.lua:2971
+#: screens/sui_menu.lua:3021
 msgid "Enable Browse by Author / Series / Tags"
 msgstr "启用按作者/丛书/标签浏览"
 
-#: screens/sui_menu.lua:2955
+#: screens/sui_menu.lua:3005
 msgid "Enable Library Custom Covers"
 msgstr "启用书库自定义封面"
 
@@ -2037,7 +2030,7 @@ msgstr "启用导航栏"
 
 #: screens/sui_quicksettings_bar.lua:1484
 msgid "Enable Quick Settings Bar"
-msgstr "启用快捷设置栏"
+msgstr "启用快速设置栏"
 
 #: screens/sui_menu.lua:802
 msgid "Enable Status Bar"
@@ -2051,17 +2044,17 @@ msgstr "启用标题栏"
 msgid "Enable Wallpaper"
 msgstr "启用壁纸"
 
-#: features/sui_style.lua:2321
+#: features/sui_style.lua:2324
 msgid "Enable custom UI font"
 msgstr "启用自定义界面字体"
 
 #: modules/critter/reaction_lines.lua:210
 msgid "Energy flows! I am reborn!"
-msgstr ""
+msgstr "能量涌进来了！我重生了！"
 
 #: features/sui_accent_picker.lua:54
 msgid "Enter a color like #2F6FDB."
-msgstr ""
+msgstr "请输入诸如 #2F6FDB 的颜色值。"
 
 #: features/sui_quickactions.lua:2096
 msgid ""
@@ -2070,12 +2063,12 @@ msgid ""
 "  /koreader/fonts/nerdfonts/symbols.ttf\n"
 "Leave blank and press OK to remove a Nerd Font icon."
 msgstr ""
-"输入 Nerd Fonts 符号的 Unicode 码点（十六进制）。\n"
-"你可以使用 wakamaifondue.com 查看代码，使用文件：\n"
+"请输入 Nerd Fonts 符号的 Unicode 码位（十六进制）。\n"
+"您可借助以下文件，在 wakamaifondue.com 上查询码位：\n"
 "  /koreader/fonts/nerdfonts/symbols.ttf\n"
-"留空并按确定可移除 Nerd Font 图标。"
+"留空并按“确定”可移除 Nerd Font 图标。"
 
-#: screens/sui_menu.lua:3593
+#: screens/sui_menu.lua:3643
 msgid "Error applying pack:"
 msgstr "应用图标包时出错："
 
@@ -2087,65 +2080,65 @@ msgstr "检查更新时出错。"
 msgid "Error checking for updates: "
 msgstr "检查更新时出错："
 
-#: features/sui_presets.lua:1116 screens/sui_menu.lua:3940
+#: features/sui_presets.lua:1116 screens/sui_menu.lua:3990
 msgid "Error exporting preset: "
 msgstr "导出预设时出错："
 
-#: features/sui_style.lua:2730
+#: features/sui_style.lua:2733
 msgid "Error extracting zip: "
 msgstr "解压 .zip 文件时出错："
 
-#: features/sui_presets.lua:1090 screens/sui_menu.lua:3913
+#: features/sui_presets.lua:1090 screens/sui_menu.lua:3963
 msgid "Error importing preset: "
 msgstr "导入预设时出错："
 
-#: modules/module_reading_goals.lua:1049
+#: modules/module_reading_goals.lua:1048
 msgid "Error in Reading Goals: check crash.log"
 msgstr "阅读目标出错：请查看 crash.log"
 
-#: screens/sui_menu.lua:3511
+#: screens/sui_menu.lua:3561
 msgid "Error installing pack:"
 msgstr "安装图标包时出错："
 
 #: modules/critter/reaction_lines.lua:112
 msgid "Even a few pages count."
-msgstr ""
+msgstr "哪怕几页也算数。"
 
 #: infra/sui_datenames.lua:57
 msgid "Evening"
-msgstr ""
+msgstr "傍晚"
 
 #: modules/critter/dialog.lua:110
 msgid "Eventually."
-msgstr ""
+msgstr "早晚都是。"
 
 #: modules/critter/dialog.lua:67
 msgid "Every book opened! Look at you!"
-msgstr ""
+msgstr "每本书都翻过了！厉害啊！"
 
 #: modules/critter/dialog.lua:383
 msgid "Every day is a reading day."
-msgstr ""
+msgstr "每一天都是阅读日。"
 
 #: modules/critter/reaction_lines.lua:115
 msgid "Every page counts! Hooray for pages!"
-msgstr ""
+msgstr "每一页都算数！为书页欢呼！"
 
 #: modules/critter/phrases.lua:270
 msgid "Every page counts."
-msgstr ""
+msgstr "每一页都算数。"
 
 #: modules/critter/dialog.lua:305
 msgid "Every time."
-msgstr ""
+msgstr "每次都查。"
 
 #: modules/critter/dialog.lua:109
 msgid "Everything is about books."
-msgstr ""
+msgstr "什么都离不开书。"
 
 #: modules/critter/dialog.lua:472
 msgid "Everything starts here."
-msgstr ""
+msgstr "一切都从这里开始。"
 
 #: screens/sui_stats_windows.lua:1160
 msgid "Exclude from goals"
@@ -2157,11 +2150,11 @@ msgstr "已排除"
 
 #: screens/sui_quicksettings_bar.lua:1008
 msgid "Exit"
-msgstr ""
+msgstr "退出"
 
 #: features/sui_style.lua:202
 msgid "Exit Book Button"
-msgstr ""
+msgstr "退出书籍按钮"
 
 #: features/sui_backup.lua:1118
 msgid "Export"
@@ -2175,11 +2168,11 @@ msgstr "导出完整备份…"
 msgid "Export now…"
 msgstr "立即导出…"
 
-#: features/sui_presets.lua:1104 screens/sui_menu.lua:3927
+#: features/sui_presets.lua:1104 screens/sui_menu.lua:3977
 msgid "Export preset"
 msgstr "导出预设"
 
-#: screens/sui_settings_window.lua:254 screens/sui_settings_window.lua:867
+#: screens/sui_settings_window.lua:254 screens/sui_settings_window.lua:872
 msgid "Extra Custom Screens"
 msgstr "额外自定义屏幕"
 
@@ -2189,21 +2182,25 @@ msgstr "超小"
 
 #: features/sui_manual_books.lua:129
 msgid "Extra books read in %d, on top of the automatic count:"
-msgstr ""
+msgstr "%d 年中额外阅读的书籍（在自动统计数量之外）："
 
 #: infra/sui_updater.lua:442
 msgid "Extraction error: "
 msgstr "提取错误："
 
-#: screens/sui_menu.lua:4105
+#: modules/moduleregistry.lua:244
+msgid "Extras"
+msgstr "附加功能"
+
+#: screens/sui_menu.lua:4155
 msgid "Factory Reset"
 msgstr "恢复出厂设置"
 
 #: features/library/sui_finished_books.lua:62
 msgid "Fade"
-msgstr ""
+msgstr "淡化"
 
-#: screens/sui_menu.lua:2702
+#: screens/sui_menu.lua:2752
 msgid "Fade Intensity"
 msgstr "淡化强度"
 
@@ -2211,19 +2208,19 @@ msgstr "淡化强度"
 msgid ""
 "Fades finished book covers in the file browser. Other lists show them as "
 "usual."
-msgstr ""
+msgstr "在文件浏览器中淡化已读完书籍的封面。其他列表按常规方式显示。"
 
-#: screens/sui_menu.lua:2703
+#: screens/sui_menu.lua:2753
 msgid ""
 "Fades finished book covers towards white.\n"
 "50% is the default."
 msgstr ""
-"将已读完的书籍封面向白色淡化。\n"
+"将已读完书籍的封面向白色淡化。\n"
 "默认值为 50%。"
 
 #: screens/sui_menu.lua:2268
 msgid "Fades the wallpaper towards black."
-msgstr "​将壁纸渐变为黑色。"
+msgstr "将壁纸渐变为黑色。"
 
 #: screens/sui_menu.lua:2262
 msgid "Fades the wallpaper towards white to improve text readability."
@@ -2231,15 +2228,19 @@ msgstr "将壁纸淡化为白色，以提高文本的可读性。"
 
 #: modules/critter/dialog.lua:490
 msgid "Fair. Even streaks get tired."
-msgstr ""
+msgstr "有理。连续阅读也会累。"
 
 #: modules/critter/dialog.lua:561
 msgid "Fair. I'll find out myself one day."
-msgstr ""
+msgstr "好吧。总有一天我自己会明白。"
 
 #: modules/critter/phrases.lua:123
 msgid "Fancy a chapter or two?"
-msgstr ""
+msgstr "来一章两章的？"
+
+#: screens/sui_menu.lua:2489
+msgid "Fast Book Closing"
+msgstr "快速关闭书籍"
 
 #: features/sui_quickactions.lua:851 features/sui_quickactions.lua:2200
 #: infra/sui_config.lua:132 modules/module_coverdeck.lua:1495
@@ -2268,7 +2269,7 @@ msgstr "2月"
 
 #: modules/critter/reaction_lines.lua:185
 msgid "Feeling a bit faint."
-msgstr ""
+msgstr "有点头晕眼花了。"
 
 #: features/sui_quickactions.lua:460
 msgid "Fetching bookmarks…"
@@ -2284,7 +2285,7 @@ msgstr "五十"
 
 #: screens/sui_quicksettings_bar.lua:1678
 msgid "File Browser"
-msgstr ""
+msgstr "文件浏览器"
 
 #: features/sui_quickactions.lua:839
 msgid "File Manager not available."
@@ -2298,7 +2299,7 @@ msgstr "文件搜索"
 msgid "File not found."
 msgstr "文件未找到。"
 
-#: features/sui_style.lua:2677
+#: features/sui_style.lua:2680
 msgid "File not found: "
 msgstr "未找到文件："
 
@@ -2316,23 +2317,23 @@ msgstr "按名称筛选…"
 
 #: modules/critter/reaction_lines.lua:135
 msgid "Fine. A decent session. Don't let it go to your head."
-msgstr ""
+msgstr "行吧，还不错。可别得意忘形。"
 
 #: modules/critter/dialog.lua:125
 msgid "Fine. It'll keep."
-msgstr ""
+msgstr "行吧。放着又不会跑。"
 
 #: modules/critter/dialog.lua:77
 msgid "Fine. The books can wait. So can I."
-msgstr ""
+msgstr "好吧。书可以等，我也可以。"
 
 #: modules/critter/reaction_lines.lua:410
 msgid "Fine. You did it. Don't expect a parade."
-msgstr ""
+msgstr "好吧，你做到了。别指望我敲锣打鼓。"
 
 #: features/sui_manual_books.lua:111
 msgid "Finished"
-msgstr ""
+msgstr "完成日期"
 
 #: features/library/sui_finished_books.lua:84 features/sui_stats_menu.lua:138
 #: modules/reading_stats/module_reading_stats.lua:1180
@@ -2347,7 +2348,7 @@ msgstr "五"
 msgid "Fixed Height"
 msgstr "固定高度"
 
-#: screens/sui_menu.lua:4022
+#: screens/sui_menu.lua:4072
 msgid "Flat"
 msgstr "扁平"
 
@@ -2357,11 +2358,11 @@ msgstr "平面书库"
 
 #: features/library/sui_label_options.lua:140 screens/sui_menu.lua:1099
 msgid "Floating"
-msgstr ""
+msgstr "浮动"
 
 #: modules/module_coverdeck.lua:1485
 msgid "Flow"
-msgstr ""
+msgstr "封面流"
 
 #: features/sui_quickactions.lua:2595
 msgid "Folder"
@@ -2369,7 +2370,7 @@ msgstr "文件夹"
 
 #: features/sui_cover_elements.lua:89
 msgid "Folder Count"
-msgstr ""
+msgstr "文件夹计数"
 
 #: features/sui_style.lua:1268
 msgid "Folder Covers"
@@ -2381,11 +2382,11 @@ msgstr "文件夹封面：空文件夹"
 
 #: features/sui_cover_elements.lua:121
 msgid "Folder Name"
-msgstr "文件夹名称"
+msgstr "文件夹名"
 
 #: features/sui_cover_elements.lua:128
 msgid "Folder Name Text Size"
-msgstr "文件夹名称文本大小"
+msgstr "文件夹名文本大小"
 
 #: features/sui_quickactions.lua:2203
 msgid "Folder Shortcuts"
@@ -2402,22 +2403,22 @@ msgstr "文件夹封面"
 msgid "Folder covers, browse modes, series grouping"
 msgstr "文件夹封面、浏览模式与丛书分组"
 
-#: screens/sui_menu.lua:2869
+#: screens/sui_menu.lua:2919
 msgid "Folders"
-msgstr ""
+msgstr "文件夹"
 
 #: engines/sui_book_grid.lua:1978 modules/module_coverdeck.lua:1650
 #: modules/module_currently.lua:1402
 msgid "Follow Style"
-msgstr ""
+msgstr "跟随样式"
 
-#: screens/sui_menu.lua:3272
+#: screens/sui_menu.lua:3322
 msgid "Follow accent"
-msgstr ""
+msgstr "跟随强调色"
 
-#: screens/sui_menu.lua:3275
+#: screens/sui_menu.lua:3325
 msgid "Follows accent"
-msgstr ""
+msgstr "跟随强调色"
 
 #: infra/sui_config.lua:1045 screens/sui_quicksettings_bar.lua:1646
 msgid "Font"
@@ -2433,7 +2434,7 @@ msgstr "字体、图标分配与图标预设"
 
 #: modules/critter/dialog.lua:497
 msgid "Forgotten. What streak?"
-msgstr ""
+msgstr "早忘了。什么连续阅读？"
 
 #: modules/module_clock.lua:263
 msgid "Forty"
@@ -2451,9 +2452,13 @@ msgstr "十四"
 msgid "Frame"
 msgstr "边框"
 
-#: screens/sui_menu.lua:4033
+#: screens/sui_menu.lua:4083
 msgid "Framed"
 msgstr "有边框"
+
+#: features/dialogs/sui_bento_sheet.lua:216
+msgid "Free widths"
+msgstr "自由宽度"
 
 #: features/sui_stats_menu.lua:64 screens/sui_stats_windows.lua:2434
 msgid "Freezes"
@@ -2464,8 +2469,8 @@ msgid ""
 "Freezes can only cover a single missed day, and only right after an active "
 "one. Tap yesterday's cell to use one, when eligible."
 msgstr ""
-" 冻结权只能补救连续阅读日后错过第一天的情况。符合条件时，点击昨天的格子即可使"
-"用。"
+"冻结权只能覆盖一个缺勤日，且仅能紧接在一个有效阅读日之后使用。符合条件时，点"
+"击昨天的格子即可使用一次。"
 
 #: engines/sui_heatmap_widgets.lua:127 infra/sui_datenames.lua:45
 msgid "Fri"
@@ -2487,27 +2492,27 @@ msgstr "前光滑块"
 msgid "Frontlight not available on this device."
 msgstr "此设备不支持前光。"
 
-#: infra/sui_config.lua:1754
+#: infra/sui_config.lua:1795
 msgid "Full"
-msgstr ""
+msgstr "整行"
 
-#: engines/sui_screen_engine.lua:2076
+#: engines/sui_screen_engine.lua:2079
 #: features/library/sui_label_options.lua:141
-#: screens/sui_settings_window.lua:528
+#: screens/sui_settings_window.lua:531
 msgid "Full Width"
-msgstr ""
+msgstr "全宽"
 
 #: modules/reading_stats/width_sheet.lua:69
 msgid "Full row"
-msgstr ""
+msgstr "整行"
 
 #: screens/sui_menu.lua:1098
 msgid "Full-width"
-msgstr ""
+msgstr "全宽"
 
 #: modules/critter/phrases.lua:51
 msgid "General"
-msgstr ""
+msgstr "综合"
 
 #: features/sui_backup.lua:681
 msgid "General — %d settings"
@@ -2515,13 +2520,13 @@ msgstr "常规 — %d 项设置"
 
 #: modules/critter/dialog.lua:590
 msgid "Gently."
-msgstr ""
+msgstr "轻轻地。"
 
-#: screens/sui_menu.lua:2477
+#: screens/sui_menu.lua:2405
 msgid "Gesture Only"
 msgstr "仅手势"
 
-#: screens/sui_menu.lua:4004 screens/sui_menu.lua:4005
+#: screens/sui_menu.lua:4054 screens/sui_menu.lua:4055
 msgid "Global Text Size"
 msgstr "全局文本大小"
 
@@ -2529,7 +2534,7 @@ msgstr "全局文本大小"
 msgid "Global custom actions & icons"
 msgstr "全局自定义操作与图标"
 
-#: screens/sui_menu.lua:4006
+#: screens/sui_menu.lua:4056
 msgid ""
 "Global scale applied to all of KOReader's interface text — menus, dialogs, "
 "titles, and Simple UI. It does not change the book's reading font size, "
@@ -2537,35 +2542,35 @@ msgid ""
 "100% is the default size. Useful when a chosen UI font (see UI Font above) "
 "renders smaller or larger than usual."
 msgstr ""
-"作用于 KOReader 所有界面文本的全局缩放，包括菜单、对话框、标题及 SimpleUI。不"
-"影响书籍正文的阅读字号（其有独立设置）。\n"
-"默认大小为 100%。当所选界面文本（见上方界面字体）显示偏大或偏小时，可通过此项"
-"调整。"
+"应用于 KOReader 全部界面文本（菜单、对话框、标题以及 SimpleUI）的全局缩放。它"
+"不会改变书籍的阅读字号，后者有独立设置。\n"
+"默认大小为 100%。当选用的界面字体（见上方的“界面字体”）渲染得偏小或偏大时，此"
+"设置很有用。"
 
-#: screens/sui_menu.lua:2403
+#: screens/sui_menu.lua:2522
 msgid ""
 "Global scale for all modules.\n"
 "Individual overrides in Module Settings take precedence.\n"
 "100% is the default size."
 msgstr ""
 "所有模块的全局缩放。\n"
-"模块设置中的单独覆盖将优先。\n"
+"模块设置中的单独调整优先生效。\n"
 "默认大小为 100%。"
 
 #: modules/critter/reaction_lines.lua:260
 msgid "Go on, pick something shiny."
-msgstr ""
+msgstr "去挑一本闪亮的吧。"
 
 #: screens/sui_onboarding.lua:326
 msgid "Go to Settings > Home Screen to edit your layout whenever you want."
-msgstr "随时前往「设置 > 主页」编辑你的布局。"
+msgstr "随时前往“设置 > 主页”编辑你的布局。"
 
 #: modules/critter/dialog.lua:657
 msgid "Go! I'll be here, counting."
-msgstr ""
+msgstr "去吧！我在这儿数着。"
 
-#: modules/module_reading_goals.lua:1205 modules/module_reading_goals.lua:1246
-#: modules/module_reading_goals.lua:1258
+#: modules/module_reading_goals.lua:1204 modules/module_reading_goals.lua:1245
+#: modules/module_reading_goals.lua:1257
 msgid "Goals"
 msgstr "目标"
 
@@ -2575,70 +2580,70 @@ msgstr "目标与连续阅读"
 
 #: modules/critter/dialog.lua:534
 msgid "Goals are like that."
-msgstr ""
+msgstr "目标就是那样。"
 
 #: modules/critter/phrases.lua:92
 msgid "Good afternoon!"
-msgstr ""
+msgstr "下午好！"
 
 #: modules/critter/phrases.lua:122
 msgid "Good afternoon, %s!"
-msgstr ""
+msgstr "下午好，%s！"
 
 #: modules/critter/phrases.lua:100
 msgid "Good evening!"
-msgstr ""
+msgstr "晚上好！"
 
 #: modules/critter/phrases.lua:126
 msgid "Good evening, %s!"
-msgstr ""
+msgstr "晚上好，%s！"
 
 #: modules/critter/phrases.lua:84
 msgid "Good morning!"
-msgstr ""
+msgstr "早上好！"
 
 #: modules/critter/phrases.lua:118
 msgid "Good morning, %s!"
-msgstr ""
+msgstr "早上好，%s！"
 
 #: modules/critter/phrases.lua:108
 msgid "Good night!"
-msgstr ""
+msgstr "晚安！"
 
 #: modules/critter/phrases.lua:130
 msgid "Good night, %s!"
-msgstr ""
+msgstr "晚安，%s！"
 
 #: modules/critter/dialog.lua:438
 msgid "Good. I'd hate to start over."
-msgstr ""
+msgstr "还好。我可不想从头再来。"
 
 #: modules/critter/dialog.lua:339
 msgid "Good. Let's keep it that way."
-msgstr ""
+msgstr "很好。就这么保持下去。"
 
 #: modules/critter/dialog.lua:296
 msgid "Good. Some rules matter."
-msgstr ""
+msgstr "很好。有些规矩还是要守。"
 
 #: features/library/sui_label_options.lua:130 infra/sui_config.lua:1515
 #: modules/module_tab_grid.lua:647
 #: modules/reading_stats/module_reading_stats.lua:1705
 #: modules/reading_stats/module_reading_stats.lua:1715
 msgid "Gray"
-msgstr ""
+msgstr "灰色"
 
 #: modules/critter/phrases.lua:150
 msgid "Great going, %s!"
-msgstr ""
+msgstr "干得漂亮，%s！"
 
 #: modules/critter/dialog.lua:152
 msgid "Great. Now I'll worry all night."
-msgstr ""
+msgstr "太好了。这下我要担心一整晚了。"
 
 #: modules/critter/phrases.lua:45
 msgid "Greetings"
-msgstr ""
+msgstr "问候"
 
 #: engines/sui_book_grid.lua:1903 engines/sui_book_grid.lua:1914
 #: modules/reading_stats/module_reading_stats.lua:1653
@@ -2651,11 +2656,10 @@ msgid "Group"
 msgstr "分组"
 
 #: modules/module_tab_grid.lua:923
-#, fuzzy
 msgid "Group Covers"
-msgstr "封面"
+msgstr "分组封面"
 
-#: screens/sui_menu.lua:2751
+#: screens/sui_menu.lua:2801
 msgid "Group by Book Series"
 msgstr "按书籍丛书分组"
 
@@ -2675,53 +2679,53 @@ msgid ""
 "The Cover size setting still applies on top of this, and the cover never "
 "shrinks below its 100% size."
 msgstr ""
-"根据文本栏高度自动放大或缩小封面，并保持封面比例。\n"
-"封面与文本之间的间距保持为上述设置。\n"
-"“封面大小”设置仍在此基础上叠加生效，且封面永远不会小于其 100% 大小。"
+"自动放大或缩小封面，使其高度始终与文本栏一致，并保持封面比例。\n"
+"封面与文本之间的间距保持为上方所设。\n"
+"“封面大小”设置仍在此基础之上叠加生效，且封面永远不会小于其 100% 大小。"
 
 #: modules/critter/reaction_lines.lua:270
 msgid "HAPPY ANNIVERSARY! I love us!"
-msgstr ""
+msgstr "纪念日快乐！我们俩真棒！"
 
 #: modules/critter/reaction_lines.lua:228
 msgid "HAPPY NEW YEAR! Let's read everything!"
-msgstr ""
+msgstr "新年快乐！咱们把所有的书都读了吧！"
 
 #: modules/reading_stats/module_reading_stats.lua:663
 msgid "Habits"
-msgstr ""
+msgstr "习惯"
 
 #: modules/critter/reaction_lines.lua:259
 msgid "Happy Book Day!"
-msgstr ""
+msgstr "读书日快乐！"
 
 #: modules/critter/phrases.lua:240
 msgid "Happy Monday!"
-msgstr ""
+msgstr "周一快乐！"
 
 #: modules/critter/phrases.lua:234
 msgid "Happy New Year!"
-msgstr ""
+msgstr "新年快乐！"
 
 #: modules/critter/reaction_lines.lua:242
 msgid "Happy World Book Day!"
-msgstr ""
+msgstr "世界读书日快乐！"
 
 #: modules/critter/reaction_lines.lua:266
 msgid "Happy anniversary!"
-msgstr ""
+msgstr "纪念日快乐！"
 
 #: modules/critter/reaction_lines.lua:221
 msgid "Happy new year!"
-msgstr ""
+msgstr "新年快乐！"
 
 #: modules/critter/phrases.lua:252
 msgid "Happy weekend!"
-msgstr ""
+msgstr "周末快乐！"
 
 #: modules/critter/phrases.lua:85
 msgid "Have a great %s."
-msgstr ""
+msgstr "祝你%s愉快。"
 
 #: screens/sui_menu.lua:1105
 msgid ""
@@ -2737,9 +2741,9 @@ msgid ""
 "100% is the default size.\n"
 "Tap the arrows for fine steps, hold for larger ones."
 msgstr ""
-"间隔条的高度。\n"
-"100% 为默认大小。\n"
-"点击箭头可进行微调，长按可大幅调整。"
+"间隔元件的高度。\n"
+"默认大小为 100%。\n"
+"点击箭头进行微调，长按可大幅调整。"
 
 #: screens/sui_menu.lua:966
 msgid ""
@@ -2751,15 +2755,15 @@ msgstr ""
 
 #: modules/critter/phrases.lua:281
 msgid "Hello, %s!"
-msgstr ""
+msgstr "你好呀，%s！"
 
 #: modules/critter/phrases.lua:262
 msgid "Hello, reader!"
-msgstr ""
+msgstr "你好呀，读书人！"
 
 #: features/sui_accent_picker.lua:56
 msgid "Hex Color"
-msgstr ""
+msgstr "十六进制颜色"
 
 #: engines/sui_group_cell.lua:285 modules/module_tab_grid.lua:588
 #: screens/sui_menu.lua:461 screens/sui_menu.lua:520
@@ -2783,7 +2787,7 @@ msgstr "隐藏正在阅读的书籍"
 msgid "Hide Label"
 msgstr "隐藏标签"
 
-#: screens/sui_menu.lua:3047
+#: screens/sui_menu.lua:3097
 msgid "Hide Selection Underline"
 msgstr "隐藏选择下划线"
 
@@ -2796,24 +2800,24 @@ msgid ""
 "Hides the pagination bar on the homescreen.\n"
 "Not available when Navpager is active."
 msgstr ""
-"隐藏主屏幕上的分页栏。\n"
-"启用导航分页器时不可用。"
+"在主页上隐藏分页栏。\n"
+"导航分页器启用时不可用。"
 
-#: screens/sui_menu.lua:2532
+#: screens/sui_menu.lua:2460
 msgid "High-Quality Cover"
 msgstr "高质量封面"
 
 #: modules/reading_stats/width_sheet.lua:294
 msgid "Highlight card"
-msgstr ""
+msgstr "高亮卡片"
 
 #: modules/reading_stats/module_reading_stats.lua:1698
 msgid "Highlight color"
-msgstr ""
+msgstr "高亮颜色"
 
 #: screens/sui_stats_windows.lua:1154 screens/sui_stats_windows.lua:2863
 msgid "Highlights"
-msgstr "高亮标注"
+msgstr "高亮"
 
 #: features/sui_quickactions.lua:510 features/sui_quickactions.lua:765
 #: features/sui_quickactions.lua:2198 infra/sui_config.lua:128
@@ -2828,14 +2832,14 @@ msgstr "历史记录不可用。"
 msgid "Home"
 msgstr "主页"
 
-#: engines/sui_screen_engine.lua:925 features/sui_backup.lua:117
+#: engines/sui_screen_engine.lua:928 features/sui_backup.lua:117
 #: infra/sui_patches.lua:1041 infra/sui_patches.lua:1051
-#: screens/sui_menu.lua:2357 screens/sui_menu.lua:4218
-#: screens/sui_settings_window.lua:156 screens/sui_settings_window.lua:866
+#: screens/sui_menu.lua:2357 screens/sui_menu.lua:4268
+#: screens/sui_settings_window.lua:156 screens/sui_settings_window.lua:871
 msgid "Home Screen"
 msgstr "主页"
 
-#: screens/sui_settings_window.lua:882
+#: screens/sui_settings_window.lua:887
 msgid "Home Screen Presets"
 msgstr "主页预设"
 
@@ -2843,10 +2847,10 @@ msgstr "主页预设"
 msgid "Home Screen Style"
 msgstr "主页样式"
 
-#: features/dialogs/sui_bento_sheet.lua:222
-#: features/dialogs/sui_bento_sheet.lua:223
+#: features/dialogs/sui_bento_sheet.lua:64
+#: features/dialogs/sui_bento_sheet.lua:65
 msgid "Home Screen row preview"
-msgstr ""
+msgstr "主页行预览"
 
 #: features/sui_quickactions.lua:527
 msgid "Home folder"
@@ -2856,17 +2860,17 @@ msgstr "主目录"
 msgid "Home folder + subfolders"
 msgstr "主目录 + 子目录"
 
-#: screens/sui_menu.lua:2592
+#: screens/sui_menu.lua:2642
 msgid "Home key opens Home Screen"
 msgstr "主页键打开主页"
 
 #: features/sui_quickactions.lua:747
 msgid "Homescreen not available."
-msgstr "主屏幕不可用。"
+msgstr "主页不可用。"
 
 #: modules/critter/reaction_lines.lua:320
 msgid "Hope the books were jealous."
-msgstr ""
+msgstr "希望那些书吃醋了。"
 
 #: modules/module_currently.lua:1276
 msgid ""
@@ -2878,7 +2882,7 @@ msgstr ""
 
 #: modules/module_heatmap.lua:225 modules/module_heatmap.lua:342
 msgid "Hours of day"
-msgstr ""
+msgstr "一天中的时段"
 
 #: infra/sui_goals.lua:56
 msgid "Hours per month:"
@@ -2886,7 +2890,7 @@ msgstr "每月小时数："
 
 #: screens/sui_stats_windows.lua:1906 screens/sui_stats_windows.lua:1913
 msgid "Hours read"
-msgstr ""
+msgstr "已读小时数"
 
 #: modules/module_heatmap.lua:310
 msgid ""
@@ -2895,184 +2899,184 @@ msgid ""
 "cells. In Time of day view, this only changes how much history feeds the "
 "shading — the grid itself always has one column per hour."
 msgstr ""
-"要包含多少周的历史记录，以及（在日历视图中）网格显示多少周，此数值不受缩放设"
-"定影响，缩放只改变格子大小。在时间段视图中，此设置只改变有多少历史记录数据参"
-"与深浅渲染 — 网格本身始终每小时一列。"
+"要包含多少周的历史记录，以及（在日历视图中）网格显示多少周——此数值不受“缩放”"
+"影响，缩放只会改变格子大小。在“时段”视图中，此设置只决定有多少历史记录参与深"
+"浅渲染——网格本身始终每小时一列。"
 
 #: modules/critter/dialog.lua:331
 msgid "How was your day?"
-msgstr ""
+msgstr "你今天过得怎么样？"
 
 #: modules/critter/dialog.lua:330
 msgid "How's the afternoon going?"
-msgstr ""
+msgstr "下午还好吗？"
 
 #: features/sui_accent_picker.lua:84
 msgid "Hue"
-msgstr ""
+msgstr "色相"
 
 #: modules/critter/dialog.lua:139
 msgid "I can hear the pages."
-msgstr ""
+msgstr "我能听见翻页声。"
 
 #: modules/critter/dialog.lua:527
 msgid "I checked the rules."
-msgstr ""
+msgstr "我查过规矩了。"
 
 #: modules/critter/reaction_lines.lua:193
 msgid "I didn't want to say anything."
-msgstr ""
+msgstr "我本来不想说的。"
 
 #: modules/critter/reaction_lines.lua:334
 msgid "I dusted the shelves twice."
-msgstr ""
+msgstr "书架我擦了两遍。"
 
 #: modules/critter/dialog.lua:530
 msgid "I forgot I had one."
-msgstr ""
+msgstr "我都忘了我还有这个。"
 
 #: modules/critter/dialog.lua:177
 msgid "I found something between the pages."
-msgstr ""
+msgstr "我在书页之间捡到了东西。"
 
 #: modules/critter/dialog.lua:342
 msgid "I had a feeling it would be."
-msgstr ""
+msgstr "我就感觉会是这样。"
 
 #: modules/critter/dialog.lua:239
 msgid "I have a suspect."
-msgstr ""
+msgstr "我有嫌疑人。"
 
 #: modules/critter/reaction_lines.lua:312
 msgid "I kept your place."
-msgstr ""
+msgstr "你的位置我还留着。"
 
 #: modules/critter/dialog.lua:513
 msgid "I knew it. I've seen the shelf."
-msgstr ""
+msgstr "我就知道。我见过那个书架。"
 
 #: modules/critter/dialog.lua:297
 msgid "I knew it. The good kind of reader."
-msgstr ""
+msgstr "我就知道。是那种好的读者。"
 
 #: modules/critter/dialog.lua:635
 msgid "I knew you'd say yes."
-msgstr ""
+msgstr "我就知道你会答应。"
 
 #: modules/critter/dialog.lua:432
 msgid "I love counting."
-msgstr ""
+msgstr "我最爱数数了。"
 
 #: modules/critter/phrases.lua:285
 msgid "I missed you, %s!"
-msgstr ""
+msgstr "想你了，%s！"
 
 #: modules/critter/dialog.lua:491
 msgid "I nap all the time."
-msgstr ""
+msgstr "我一直在打瞌睡。"
 
 #: modules/critter/reaction_lines.lua:355
 #: modules/critter/reaction_lines.lua:408
 msgid "I never doubted you. Much."
-msgstr ""
+msgstr "我从没怀疑过你。也就一点点。"
 
 #: modules/critter/dialog.lua:116
 msgid "I only have small ones."
-msgstr ""
+msgstr "我只有小个子的。"
 
 #: modules/critter/reaction_lines.lua:273
 msgid "I remember the day we met."
-msgstr ""
+msgstr "我还记得我们相遇的那天。"
 
 #: modules/critter/dialog.lua:282
 msgid "I speak from experience."
-msgstr ""
+msgstr "我是过来人。"
 
 #: modules/critter/reaction_lines.lua:347
 msgid "I started talking to the bookcase."
-msgstr ""
+msgstr "我已经开始跟书柜聊天了。"
 
 #: modules/critter/dialog.lua:148
 msgid "I visit them at night."
-msgstr ""
+msgstr "我夜里会去看它们。"
 
 #: modules/critter/dialog.lua:318
 msgid "I won't tell anyone."
-msgstr ""
+msgstr "我不会告诉任何人。"
 
 #: modules/critter/dialog.lua:99
 msgid "I'd hate to keep them waiting."
-msgstr ""
+msgstr "我不想让它们久等。"
 
 #: modules/critter/dialog.lua:365
 msgid "I'd rather not talk."
-msgstr ""
+msgstr "我还是不说了。"
 
 #: modules/critter/dialog.lua:480
 msgid "I'll be back soon."
-msgstr ""
+msgstr "我很快就回来。"
 
 #: modules/critter/dialog.lua:191
 msgid "I'll give it back. Warm."
-msgstr ""
+msgstr "我会还回去的。暖暖的。"
 
 #: modules/critter/reaction_lines.lua:200
 msgid "I'll just rest my eyes."
-msgstr ""
+msgstr "我就闭目养个神。"
 
 #: modules/critter/dialog.lua:483
 msgid "I'll keep your place."
-msgstr ""
+msgstr "我帮你占着位置。"
 
 #: modules/critter/dialog.lua:397
 msgid "I'll look."
-msgstr ""
+msgstr "我看看。"
 
 #: modules/critter/dialog.lua:589
 msgid "I'll remind you."
-msgstr ""
+msgstr "我会提醒你的。"
 
 #: modules/critter/reaction_lines.lua:175
 msgid "I'm at %d%%."
-msgstr ""
+msgstr "我电量 %d%%。"
 
 #: modules/critter/dialog.lua:484
 msgid "I'm good at that."
-msgstr ""
+msgstr "这个我最拿手。"
 
 #: modules/critter/reaction_lines.lua:425
 msgid "I'm keeping count, you know."
-msgstr ""
+msgstr "我一直在数着呢。"
 
 #: modules/critter/reaction_lines.lua:64 modules/critter/reaction_lines.lua:86
 msgid "I'm not crying. It's dust."
-msgstr ""
+msgstr "我才没哭，是灰尘。"
 
 #: modules/critter/dialog.lua:387
 msgid "I'm out of stars. Imagine one."
-msgstr ""
+msgstr "我的星星发完了。你想象一颗吧。"
 
 #: modules/critter/dialog.lua:404
 msgid "I'm the one who counts."
-msgstr ""
+msgstr "数数的可是我。"
 
 #: modules/critter/reaction_lines.lua:253
 msgid "I've been waiting all year."
-msgstr ""
+msgstr "我等了整整一年。"
 
 #: modules/critter/dialog.lua:160
 msgid "I've noticed. Not a speck of dust."
-msgstr ""
+msgstr "我早注意到了。一尘不染。"
 
 #: features/sui_quickactions.lua:2355 features/sui_quickactions.lua:2359
 msgid "Icon"
 msgstr "图标"
 
-#: screens/sui_menu.lua:3431
+#: screens/sui_menu.lua:3481
 msgid "Icon Packs"
 msgstr "图标包"
 
-#: screens/sui_menu.lua:3608
+#: screens/sui_menu.lua:3658
 msgid "Icon Presets"
 msgstr "图标预设"
 
@@ -3089,7 +3093,7 @@ msgstr "来自 sui_icons 文件夹中的图标文件与已安装包"
 msgid "Icon: Default"
 msgstr "图标：默认"
 
-#: screens/sui_menu.lua:242 screens/sui_menu.lua:3377
+#: screens/sui_menu.lua:242 screens/sui_menu.lua:3427
 msgid "Icons"
 msgstr "图标"
 
@@ -3097,15 +3101,15 @@ msgstr "图标"
 msgid "Icons only"
 msgstr "仅图标"
 
-#: screens/sui_menu.lua:3957
+#: screens/sui_menu.lua:4007
 msgid ""
 "Icons that contain color keep their original colors in night mode instead of "
 "being inverted.\n"
 "Monochrome icons are not affected and keep following the interface colors.\n"
 "Requires a color screen."
 msgstr ""
-"包含颜色的图标在夜间模式下将保持其原始颜色，而不是被反转。\n"
-"单色图标不受影响，继续遵循界面配色。\n"
+"含彩色的图标在夜间模式下保留其原始颜色，而不进行反色。\n"
+"单色图标不受影响，仍会跟随界面颜色。\n"
 "需要彩色屏幕。"
 
 #: screens/sui_settings_window.lua:182
@@ -3114,91 +3118,93 @@ msgstr "图标、字体与外观"
 
 #: modules/critter/dialog.lua:400
 msgid "If I find the time."
-msgstr ""
+msgstr "腾出时间的话。"
 
 #: modules/critter/dialog.lua:213
 msgid "If I were in a book, what kind would it be?"
-msgstr ""
+msgstr "我要是活在一本书里，会是哪一类？"
 
 #: screens/sui_onboarding.lua:330
 msgid ""
 "If you selected the Momentum Preset, long press the Reading Goal module to "
 "choose and set your reading goals."
-msgstr ""
-"如果你选择了“阅读势头”预设，请长按“阅读目标”模块以选择和设置你的阅读目标。"
+msgstr "若您选择了“阅读势头”预设，请长按阅读目标模块来选择并设置您的阅读目标。"
 
 #: features/sui_backup.lua:1148
 msgid "Import Backup…"
 msgstr "导入备份…"
 
-#: features/sui_presets.lua:1067 screens/sui_menu.lua:3889
+#: features/sui_presets.lua:1067 screens/sui_menu.lua:3939
 msgid "Import preset"
 msgstr "导入预设"
 
 #: modules/critter/dialog.lua:64
 msgid "Impressive. And a bit worrying."
-msgstr ""
+msgstr "厉害。也有点让人担心。"
 
 #: modules/critter/dialog.lua:278
 msgid "In bed."
-msgstr ""
+msgstr "在床上。"
 
 #: modules/critter/dialog.lua:447
 msgid "In big letters."
-msgstr ""
+msgstr "用大字写着。"
 
 #: features/sui_stats_menu.lua:114
 msgid "Include Manual Books in All Time Total"
-msgstr ""
+msgstr "将手动跟踪的书籍纳入统计"
 
 #: modules/critter/module_critter.lua:819
 msgid "Included"
-msgstr ""
+msgstr "内置"
 
 #: modules/critter/module_critter.lua:820
 msgid "Included and mine"
-msgstr ""
+msgstr "内置 + 我的"
 
 #: infra/sui_compat_check.lua:219
 msgid "Incompatible items have been disabled:"
 msgstr "不兼容的项目已禁用："
 
-#: screens/sui_settings_window.lua:536
+#: screens/sui_settings_window.lua:539
 msgid "Incomplete row"
-msgstr ""
+msgstr "未排满的一行"
 
 #: engines/sui_group_cell.lua:232
-#, fuzzy
 msgid "Inside Cover"
-msgstr "单封面"
+msgstr "封面内"
 
-#: screens/sui_menu.lua:3516
+#: screens/sui_menu.lua:3566
 msgid "Install pack from ZIP"
 msgstr "从 .zip 安装图标包"
 
-#: screens/sui_menu.lua:2700
+#: screens/sui_menu.lua:2750
 msgid "Intensity"
 msgstr "强度"
 
+#: screens/sui_menu.lua:2615
+msgid "Interaction"
+msgstr "交互"
+
 #: features/sui_arrange.lua:749
 msgid "Invalid arrangement."
-msgstr ""
+msgstr "排列无效。"
 
 #: screens/sui_menu.lua:1328
 msgid ""
 "Invalid arrangement.\n"
 "Keep items between the Left and Right separators."
 msgstr ""
-"排序无效。\n"
-"请将项目保持在左侧和右侧分隔符之间。"
+"排列无效。\n"
+"请保持项目位于“左”与“右”分隔项之间。"
 
 #: screens/sui_menu.lua:696
 msgid ""
 "Invalid arrangement.\n"
 "Keep the Left, Center and Right separators in order."
 msgstr ""
-"排序无效。\n"
-"请按顺序保持左侧、居中、右侧分隔符。"
+"排列无效。\n"
+"请保持“左”“中”“右”三个分隔项的顺序。"
 
 #: features/sui_presets.lua:562 features/sui_presets.lua:745
 msgid "Invalid data"
@@ -3218,57 +3224,57 @@ msgstr "夜间模式下反转颜色"
 
 #: modules/critter/dialog.lua:106
 msgid "Is it about books?"
-msgstr ""
+msgstr "是关于书的吗？"
 
 #: modules/critter/dialog.lua:533
 msgid "It didn't forget you."
-msgstr ""
+msgstr "它没有忘记你。"
 
 #: modules/critter/dialog.lua:487
 msgid "It needed a rest."
-msgstr ""
+msgstr "它需要休息。"
 
 #: modules/critter/reaction_lines.lua:97
 msgid "It will be sung about."
-msgstr ""
+msgstr "它会被写成歌传唱。"
 
 #: modules/critter/dialog.lua:379
 msgid "It's %s. Any reading planned?"
-msgstr ""
+msgstr "%s 了。有读书计划吗？"
 
 #: modules/critter/reaction_lines.lua:297
 msgid "It's %s. I barely noticed."
-msgstr ""
+msgstr "都 %s 了。我都没怎么注意。"
 
 #: modules/critter/dialog.lua:377
 msgid "It's %s. Reading day, surely?"
-msgstr ""
+msgstr "%s 了。读书天，对吧？"
 
 #: modules/critter/phrases.lua:248
 msgid "It's Friday!"
-msgstr ""
+msgstr "周五啦！"
 
 #: modules/critter/reaction_lines.lua:245
 msgid "It's World Book Day!"
-msgstr ""
+msgstr "今天是世界读书日！"
 
 #: modules/critter/reaction_lines.lua:348
 msgid "It's a good listener."
-msgstr ""
+msgstr "它很会倾听。"
 
 #: modules/critter/reaction_lines.lua:333
 msgid "It's been a while."
-msgstr ""
+msgstr "好久不见了。"
 
 #: modules/critter/reaction_lines.lua:361
 msgid "It's been so long."
-msgstr ""
+msgstr "太久了。"
 
-#: features/sui_style.lua:2507
+#: features/sui_style.lua:2510
 msgid "Italic"
 msgstr "斜体"
 
-#: infra/sui_config.lua:1209 infra/sui_config.lua:2182
+#: infra/sui_config.lua:1209 infra/sui_config.lua:2243
 #: modules/module_coverdeck.lua:1593 modules/module_coverdeck.lua:1605
 #: modules/module_currently.lua:1343 modules/module_currently.lua:1355
 #: modules/reading_stats/module_reading_stats.lua:1622 screens/sui_menu.lua:814
@@ -3304,9 +3310,9 @@ msgstr "6月"
 
 #: modules/critter/reaction_lines.lua:118
 msgid "Just a little one today."
-msgstr ""
+msgstr "今天就只是翻了一小会儿。"
 
-#: infra/sui_config.lua:2087 modules/module_quick_actions.lua:474
+#: infra/sui_config.lua:2148 modules/module_quick_actions.lua:474
 msgid "Justified"
 msgstr "两端对齐"
 
@@ -3316,20 +3322,28 @@ msgstr "KOReader"
 
 #: modules/critter/phrases.lua:137
 msgid "Keep it going."
-msgstr ""
+msgstr "继续保持。"
 
 #: modules/critter/phrases.lua:171
 msgid "Keep turning pages."
-msgstr ""
+msgstr "继续翻页吧。"
 
 #: modules/critter/phrases.lua:154
 msgid "Keep your streak alive!"
+msgstr "别让连续阅读断掉！"
+
+#: screens/sui_menu.lua:2490
+msgid ""
+"Keeps the Home Screen in memory while you read, so closing a book returns to "
+"it instantly instead of rebuilding it. Uses more RAM while a book is open."
 msgstr ""
+"阅读期间将主页保留在内存中，关闭书籍时可立即返回主页，而无需重新加载。打开书"
+"籍期间会占用更多内存。"
 
 #: engines/sui_group_cell.lua:321 infra/sui_config.lua:1148
 #: modules/module_action_list.lua:351 modules/module_action_list.lua:366
 #: modules/module_collections.lua:485 modules/module_quick_actions.lua:441
-#: modules/module_reading_goals.lua:1150
+#: modules/module_reading_goals.lua:1149
 #: modules/reading_stats/module_reading_stats.lua:1611
 #: screens/sui_quicksettings_bar.lua:1634
 msgid "Label"
@@ -3339,7 +3353,7 @@ msgstr "标签"
 msgid "Label Font"
 msgstr "标签字体"
 
-#: screens/sui_menu.lua:2423
+#: screens/sui_menu.lua:2542
 msgid "Label Scale"
 msgstr "标签缩放"
 
@@ -3348,33 +3362,33 @@ msgstr "标签缩放"
 msgid "Label Size"
 msgstr "标签大小"
 
-#: infra/sui_config.lua:2119
+#: infra/sui_config.lua:2180
 msgid "Label inside background"
-msgstr ""
+msgstr "标签置于背景内"
 
-#: screens/sui_menu.lua:2418
+#: screens/sui_menu.lua:2537
 msgid "Labels"
 msgstr "标签"
 
-#: screens/sui_menu.lua:3147
+#: screens/sui_menu.lua:3197
 msgid "Landscape mosaic mode"
 msgstr "横向网格模式"
 
 #: modules/reading_stats/width_sheet.lua:64
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #: screens/sui_stats_windows.lua:2416
 msgid "Last %d days"
-msgstr ""
+msgstr "最近 %d 天"
 
 #: screens/insights/sui_insights_charts.lua:140
 msgid "Last %d weeks"
-msgstr ""
+msgstr "最近 %d 周"
 
 #: screens/sui_stats_windows.lua:1882 screens/sui_stats_windows.lua:1884
 msgid "Last 7 days"
-msgstr ""
+msgstr "最近 7 天"
 
 #: features/sui_backup.lua:1061
 msgid "Last backup: %s%s"
@@ -3390,14 +3404,15 @@ msgstr "稍后"
 
 #: modules/critter/dialog.lua:586
 msgid "Later tonight."
-msgstr ""
+msgstr "今晚晚些时候。"
 
 #: features/library/sui_label_options.lua:139 modules/module_currently.lua:1295
-#: modules/module_reading_goals.lua:1282 screens/sui_menu.lua:1096
+#: modules/module_reading_goals.lua:1281 screens/sui_menu.lua:1096
+#: screens/sui_menu.lua:2613
 msgid "Layout"
 msgstr "布局"
 
-#: screens/sui_settings_window.lua:873 screens/sui_settings_window.lua:874
+#: screens/sui_settings_window.lua:878 screens/sui_settings_window.lua:879
 msgid "Layout Editor"
 msgstr "布局编辑"
 
@@ -3405,7 +3420,7 @@ msgstr "布局编辑"
 msgid ""
 "Layout of the Quick Settings panel in the reader. The file browser always "
 "uses the classic layout."
-msgstr ""
+msgstr "阅读器中快速设置面板的布局。文件浏览器始终使用经典布局。"
 
 #: features/sui_backup.lua:118
 msgid "Layout, modules, custom screens, presets"
@@ -3417,9 +3432,9 @@ msgstr "布局、壁纸、预设与行为"
 
 #: modules/critter/dialog.lua:198
 msgid "Leave it where it is."
-msgstr ""
+msgstr "就放在原处吧。"
 
-#: infra/sui_config.lua:2084 modules/critter/module_critter.lua:755
+#: infra/sui_config.lua:2145 modules/critter/module_critter.lua:755
 #: modules/module_quick_actions.lua:475 screens/sui_menu.lua:667
 #: screens/sui_menu.lua:876 screens/sui_menu.lua:1295 screens/sui_menu.lua:1502
 msgid "Left"
@@ -3431,76 +3446,80 @@ msgstr "较少"
 
 #: modules/critter/dialog.lua:659
 msgid "Less talking. More reading."
-msgstr ""
+msgstr "少说话，多读书。"
 
 #: modules/critter/dialog.lua:428
 msgid "Let's keep it going."
-msgstr ""
+msgstr "我们继续坚持下去。"
 
 #: modules/critter/reaction_lines.lua:239
 msgid "Let's make it a good chapter."
-msgstr ""
+msgstr "咱们把它变成精彩的一章。"
 
 #: modules/critter/phrases.lua:278 modules/critter/phrases.lua:286
 msgid "Let's read something."
-msgstr ""
+msgstr "咱们读点什么吧。"
 
 #: modules/critter/reaction_lines.lua:295
 msgid "Let's see what %s brings."
-msgstr ""
+msgstr "看看 %s 会带来什么。"
 
 #: modules/critter/dialog.lua:468
 msgid "Let's start again today."
-msgstr ""
+msgstr "今天重新开始吧。"
 
-#: screens/sui_menu.lua:3358 screens/sui_menu.lua:3360
+#: screens/sui_menu.lua:3408 screens/sui_menu.lua:3410
 msgid "Letter Spacing"
-msgstr ""
+msgstr "字距"
 
 #: features/library/sui_library_browse.lua:76 features/sui_backup.lua:127
 #: features/sui_quickactions.lua:677 infra/sui_config.lua:125
 #: infra/sui_config.lua:443 modules/reading_stats/module_reading_stats.lua:501
 #: modules/reading_stats/module_reading_stats.lua:502
 #: modules/reading_stats/module_reading_stats.lua:503 screens/sui_menu.lua:2358
-#: screens/sui_menu.lua:2829 screens/sui_menu.lua:2902
-#: screens/sui_menu.lua:4222 screens/sui_settings_window.lua:172
-#: screens/sui_settings_window.lua:869 screens/sui_titlebar.lua:1208
+#: screens/sui_menu.lua:2879 screens/sui_menu.lua:2952
+#: screens/sui_menu.lua:4272 screens/sui_settings_window.lua:172
+#: screens/sui_settings_window.lua:874 screens/sui_titlebar.lua:1208
 #: screens/sui_titlebar.lua:1253
 msgid "Library"
 msgstr "书库"
 
-#: screens/sui_menu.lua:2938
+#: screens/sui_menu.lua:2988
 msgid "Library Badges"
-msgstr ""
+msgstr "书库徽章"
 
 #: screens/sui_menu.lua:1776 screens/sui_menu.lua:1779
 msgid "Library Buttons"
 msgstr "书库按钮"
 
-#: screens/sui_menu.lua:2769
+#: screens/sui_menu.lua:2819
 msgid "Library Captions"
-msgstr ""
+msgstr "书库说明栏"
 
 #: features/sui_presets.lua:217
 msgid "Library View"
 msgstr "书库视图"
 
-#: screens/sui_menu.lua:2892
+#: screens/sui_menu.lua:2942
 msgid ""
 "Library captions are enabled. Folder names are shown in the caption strip "
 "under each cover instead of on the cover."
 msgstr ""
+"书库说明栏已启用。文件夹名将显示在每个封面下方的说明栏中，而非叠在封面上。"
 
-#: screens/sui_menu.lua:2765
+#: screens/sui_menu.lua:2815
 msgid ""
 "Library captions changed.\n"
 "\n"
 "Restart now?"
 msgstr ""
+"书库说明栏已更改。\n"
+"\n"
+"是否立即重启？"
 
 #: screens/sui_menu.lua:2278
 msgid "Library/History/Collections"
-msgstr ""
+msgstr "书库/历史记录/书单"
 
 #: features/library/sui_label_options.lua:129 features/sui_style.lua:1501
 msgid "Light"
@@ -3514,7 +3533,7 @@ msgstr "变亮"
 msgid "List"
 msgstr "列表"
 
-#: screens/sui_menu.lua:3008
+#: screens/sui_menu.lua:3058
 msgid ""
 "Lists books without an author, series or tag as a separate group in the "
 "Authors, Series and Tags views."
@@ -3523,17 +3542,17 @@ msgstr ""
 
 #: modules/critter/reaction_lines.lua:119
 msgid "Little reads add up."
-msgstr ""
+msgstr "一点点读也能积少成多。"
 
 #: screens/sui_stats_launcher.lua:48
 msgid "Loading statistics…"
 msgstr "正在加载统计数据…"
 
-#: screens/sui_menu.lua:2388
+#: screens/sui_menu.lua:2507
 msgid "Lock Scale"
 msgstr "锁定缩放"
 
-#: infra/sui_config.lua:1903
+#: infra/sui_config.lua:1964
 msgid "Long Press"
 msgstr "长按"
 
@@ -3543,39 +3562,39 @@ msgstr "长按以自定义"
 
 #: modules/reading_stats/module_reading_stats.lua:461
 msgid "Longest session"
-msgstr ""
+msgstr "最长单次阅读"
 
 #: modules/reading_stats/module_reading_stats.lua:460
 msgid "Longest session, 90 days"
-msgstr ""
+msgstr "最长单次阅读（最近 90 天）"
 
 #: modules/critter/dialog.lua:117
 msgid "Look at me."
-msgstr ""
+msgstr "你瞧瞧我。"
 
 #: modules/critter/reaction_lines.lua:264
 msgid "Look at us."
-msgstr ""
+msgstr "看看咱们。"
 
 #: screens/sui_quicksettings_bar.lua:1611
 msgid "Look of the frontlight and warmth sliders."
-msgstr ""
+msgstr "前光和色温滑块的外观。"
 
 #: modules/critter/reaction_lines.lua:309
 msgid "Look who's back!"
-msgstr ""
+msgstr "看看谁回来了！"
 
 #: modules/critter/reaction_lines.lua:139
 msgid "Look who's got staying power."
-msgstr ""
+msgstr "看看谁这么有耐力。"
 
 #: modules/critter/reaction_lines.lua:188
 msgid "Low battery. Finally, a reason to nap."
-msgstr ""
+msgstr "电量低了。终于有理由睡一觉了。"
 
 #: modules/critter/reaction_lines.lua:181
 msgid "Low battery. Typical."
-msgstr ""
+msgstr "电量低了。老样子。"
 
 #: features/sui_backup.lua:553 features/sui_backup.lua:602
 #: features/sui_presets.lua:541 features/sui_presets.lua:553
@@ -3585,39 +3604,39 @@ msgstr "LuaSettings 模块不可用"
 
 #: modules/critter/dialog.lua:553
 msgid "Lucky. I stayed here. On the shelf."
-msgstr ""
+msgstr "算你走运。我一直待在书架上。"
 
 #: modules/critter/dialog.lua:550
 msgid "Lucky. I've never left this shelf."
-msgstr ""
+msgstr "算你走运。我从没离开过这个书架。"
 
 #: screens/sui_onboarding.lua:287
 msgid "Make it yours"
 msgstr "打造成你的专属样式"
 
-#: screens/sui_menu.lua:2593
+#: screens/sui_menu.lua:2643
 msgid ""
 "Makes the device's physical Home key open the SimpleUI Home Screen — while "
 "reading and while browsing files — instead of KOReader's native Home "
 "behaviour. The file browser title-bar home icon still goes to the home "
 "folder."
 msgstr ""
-"使设备的物理主页键打开 SimpleUI 主页，无论是在阅读时还是在浏览文件时，而非 "
-"KOReader 的原生主页行为。文件浏览器标题栏的主页图标仍会进入主文件夹。"
+"让设备实体的 Home 键打开 SimpleUI 主页——无论正在阅读还是浏览文件——而非 "
+"KOReader 原生的 Home 行为。文件浏览器标题栏上的主页图标仍会前往主目录。"
 
 #: features/sui_presets.lua:952 features/sui_presets.lua:997
-#: features/sui_presets.lua:1002 screens/sui_menu.lua:3763
-#: screens/sui_menu.lua:3814 screens/sui_menu.lua:3819
+#: features/sui_presets.lua:1002 screens/sui_menu.lua:3813
+#: screens/sui_menu.lua:3864 screens/sui_menu.lua:3869
 msgid "Manage presets"
 msgstr "管理预设"
 
 #: features/sui_manual_books.lua:145 screens/sui_stats_windows.lua:768
 msgid "Manual Yearly Count"
-msgstr ""
+msgstr "手动记录的年度数量"
 
 #: features/sui_manual_books.lua:128
 msgid "Manual Yearly Count — %d"
-msgstr ""
+msgstr "手动记录的年度数量 — %d"
 
 #: modules/module_collections.lua:215
 msgid "Manual order"
@@ -3629,7 +3648,7 @@ msgstr "3月"
 
 #: modules/critter/reaction_lines.lua:153
 msgid "Marathon reader!"
-msgstr ""
+msgstr "马拉松读者！"
 
 #: infra/sui_datenames.lua:38
 msgid "March"
@@ -3637,7 +3656,7 @@ msgstr "3月"
 
 #: screens/sui_quicksettings_bar.lua:625
 msgid "Max"
-msgstr "最大值"
+msgstr "最大"
 
 #: infra/sui_datenames.lua:31 infra/sui_datenames.lua:39
 msgid "May"
@@ -3645,15 +3664,15 @@ msgstr "5月"
 
 #: modules/critter/phrases.lua:235
 msgid "May your year be full of good books."
-msgstr ""
+msgstr "愿你的新年装满好书。"
 
 #: modules/critter/dialog.lua:639
 msgid "Maybe later"
-msgstr ""
+msgstr "以后再说"
 
 #: modules/reading_stats/width_sheet.lua:64
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #: screens/sui_titlebar.lua:113 screens/sui_titlebar.lua:118
 msgid "Menu"
@@ -3665,7 +3684,7 @@ msgstr "菜单按钮"
 
 #: modules/critter/module_critter.lua:918
 msgid "Message"
-msgstr ""
+msgstr "消息"
 
 #: modules/module_clock.lua:324
 msgid "Midnight"
@@ -3673,7 +3692,7 @@ msgstr "午夜"
 
 #: modules/critter/phrases.lua:49
 msgid "Milestones and goals"
-msgstr ""
+msgstr "里程碑与目标"
 
 #: features/sui_presets.lua:179
 msgid "Mindful Reading"
@@ -3681,19 +3700,19 @@ msgstr "正念阅读"
 
 #: modules/critter/dialog.lua:157
 msgid "Mine are well looked after."
-msgstr ""
+msgstr "我的那些被照顾得很好。"
 
 #: modules/critter/reaction_lines.lua:232
 msgid "Mine is to nap more. Yours?"
-msgstr ""
+msgstr "我的是多睡点。你呢？"
 
 #: modules/critter/module_critter.lua:821
 msgid "Mine only"
-msgstr ""
+msgstr "仅我的"
 
 #: screens/sui_quicksettings_bar.lua:1615
 msgid "Minimal"
-msgstr ""
+msgstr "极简"
 
 #: screens/sui_menu.lua:371
 msgid "Minimum 1 tab required in navpager mode."
@@ -3709,34 +3728,34 @@ msgstr "每天分钟数："
 
 #: modules/critter/phrases.lua:277
 msgid "Missed me?"
-msgstr ""
+msgstr "想我了没？"
 
 #: screens/sui_menu.lua:437
 msgid "Mode"
 msgstr "模式"
 
-#: screens/sui_menu.lua:3328 screens/sui_menu.lua:3988
+#: screens/sui_menu.lua:3378 screens/sui_menu.lua:4038
 msgid "Module Labels"
-msgstr ""
+msgstr "模块标签"
 
-#: screens/sui_menu.lua:2399
+#: screens/sui_menu.lua:2518
 msgid "Module Scale"
 msgstr "模块缩放"
 
-#: infra/sui_config.lua:1900 screens/sui_menu.lua:2170
+#: infra/sui_config.lua:1961 screens/sui_menu.lua:2170
 msgid "Module Settings"
 msgstr "模块设置"
 
-#: screens/sui_settings_window.lua:548
-msgid "Module settings"
-msgstr ""
+#: features/dialogs/sui_bento_sheet.lua:202
+msgid "Module Width"
+msgstr "模块宽度"
 
-#: screens/sui_menu.lua:3435
+#: screens/sui_menu.lua:3485
 msgid "Module unavailable"
 msgstr "模块不可用"
 
-#: screens/sui_menu.lua:2398 screens/sui_menu.lua:2619
-#: screens/sui_menu.lua:2834 screens/sui_menu.lua:2908
+#: screens/sui_menu.lua:2517 screens/sui_menu.lua:2669
+#: screens/sui_menu.lua:2884 screens/sui_menu.lua:2958
 msgid "Modules"
 msgstr "模块"
 
@@ -3744,12 +3763,12 @@ msgstr "模块"
 msgid "Modules  (%d)"
 msgstr "模块（%d）"
 
-#: engines/sui_screen_engine.lua:2779
+#: engines/sui_screen_engine.lua:2808
 msgid ""
 "Modules exceed the visible area.\n"
 "Move some to another page or adjust the scale."
 msgstr ""
-"模块超出可见区域。\n"
+"模块已超出可见区域。\n"
 "请将部分模块移至其他页面，或调整缩放。"
 
 #: features/sui_presets.lua:199
@@ -3766,7 +3785,7 @@ msgstr "星期一"
 
 #: modules/critter/phrases.lua:244
 msgid "Mondays, right?"
-msgstr ""
+msgstr "周一嘛，懂的。"
 
 #: infra/sui_goals.lua:54
 msgid "Monthly Goal"
@@ -3786,34 +3805,33 @@ msgstr "更多 %s 的作品（%d）"
 
 #: modules/critter/phrases.lua:182
 msgid "More than halfway there!"
-msgstr ""
+msgstr "已经过半啦！"
 
 #: infra/sui_datenames.lua:57
 msgid "Morning"
-msgstr ""
+msgstr "上午"
 
 #: modules/critter/dialog.lua:329
 msgid "Morning! How did you sleep?"
-msgstr ""
+msgstr "早呀！睡得好吗？"
 
 #: modules/reading_stats/module_reading_stats.lua:494
 msgid "Most-read time of day"
-msgstr ""
+msgstr "最常阅读的时段"
 
 #: modules/reading_stats/module_reading_stats.lua:477
 msgid "Most-read weekday"
-msgstr ""
+msgstr "最常阅读的星期"
 
 #: engines/sui_window.lua:3790
 msgid "Move down"
 msgstr "下移"
 
-#: features/dialogs/sui_bento_sheet.lua:158
+#: features/dialogs/sui_bento_sheet.lua:173
 msgid "Move row"
-msgstr ""
+msgstr "移动此行"
 
 #: engines/sui_window.lua:3784 screens/sui_settings_window.lua:514
-#: screens/sui_settings_window.lua:555
 msgid "Move to page"
 msgstr "移至页面"
 
@@ -3823,11 +3841,11 @@ msgstr "上移"
 
 #: modules/reading_stats/width_sheet.lua:192
 msgid "Moved to row %1 to keep its width"
-msgstr ""
+msgstr "已移至第 %1 行以保持其宽度"
 
 #: modules/module_quote.lua:1418
 msgid "My Highlights"
-msgstr "我的高亮标注"
+msgstr "我的高亮"
 
 #: features/sui_presets.lua:316
 msgid "My Presets"
@@ -3835,7 +3853,7 @@ msgstr "我的预设"
 
 #: modules/critter/reaction_lines.lua:189
 msgid "My light is fading! Fetch the charger, brave soul!"
-msgstr ""
+msgstr "我的光在变暗！快去拿充电器，勇士！"
 
 #: features/sui_quickactions.lua:2612 modules/critter/module_critter.lua:784
 msgid "Name"
@@ -3853,7 +3871,7 @@ msgstr "名称（Z–A）"
 msgid "Native"
 msgstr "原生"
 
-#: screens/sui_bottombar.lua:788 screens/sui_menu.lua:2660
+#: screens/sui_bottombar.lua:788 screens/sui_menu.lua:2710
 msgid "Navigation Bar"
 msgstr "导航栏"
 
@@ -3871,17 +3889,17 @@ msgid ""
 "\n"
 "Restart now?"
 msgstr ""
-"重启后导航栏将变为 %s。\n"
+"导航栏将在重启后%s。\n"
 "\n"
 "是否立即重启？"
 
 #: features/sui_backup.lua:123
 msgid "Navigation, status, title and quick settings bars"
-msgstr "导航栏、状态栏、标题栏与快捷设置栏"
+msgstr "导航栏、状态栏、标题栏与快速设置栏"
 
 #: features/sui_style.lua:1267 screens/sui_menu.lua:450
 msgid "Navpager"
-msgstr "导航页"
+msgstr "导航分页器"
 
 #: screens/sui_menu.lua:457
 msgid ""
@@ -3901,13 +3919,13 @@ msgstr "导航分页器：下一页"
 msgid "Navpager: Previous"
 msgstr "导航分页器：上一页"
 
-#: features/dialogs/sui_bento_sheet.lua:62
+#: features/dialogs/sui_bento_sheet.lua:78
 msgid "Neighbouring modules adjusted"
-msgstr ""
+msgstr "相邻模块已调整"
 
 #: modules/reading_stats/width_sheet.lua:154
 msgid "Neighbouring stats adjusted"
-msgstr ""
+msgstr "相邻统计项已调整"
 
 #: features/sui_quickactions.lua:2095
 msgid "Nerd Font Icon"
@@ -3921,17 +3939,17 @@ msgstr "Nerd Font 符号…"
 msgid "Network manager unavailable."
 msgstr "网络管理器不可用。"
 
-#: screens/sui_menu.lua:2488
+#: screens/sui_menu.lua:2416
 msgid "Never"
 msgstr "从不"
 
 #: modules/critter/dialog.lua:291
 msgid "Never!"
-msgstr ""
+msgstr "从不！"
 
 #: modules/critter/dialog.lua:207
 msgid "Never. Things in books are clues."
-msgstr ""
+msgstr "从不。书里的东西都是线索。"
 
 #: engines/sui_book_grid.lua:519 engines/sui_book_sources.lua:336
 #: features/library/sui_cover_widgets.lua:509
@@ -3942,7 +3960,7 @@ msgstr "新"
 
 #: engines/sui_book_grid.lua:2113
 msgid "New Badge Color"
-msgstr "新徽章颜色"
+msgstr "新书徽章颜色"
 
 #: features/sui_cover_elements.lua:75
 msgid "New Book"
@@ -3962,19 +3980,19 @@ msgstr "新建快捷操作"
 
 #: features/library/sui_group_actions.lua:103
 msgid "New collection name"
-msgstr "新的书单名字"
+msgstr "新书单名称"
 
 #: modules/critter/phrases.lua:256
 msgid "New month, new chapters!"
-msgstr ""
+msgstr "新月，新章节！"
 
 #: modules/critter/reaction_lines.lua:301
 msgid "New month, new goals."
-msgstr ""
+msgstr "新月，新目标。"
 
 #: modules/critter/reaction_lines.lua:224
 msgid "New year, new shelf."
-msgstr ""
+msgstr "新年，新书架。"
 
 #: features/sui_manual_books.lua:151 screens/sui_bottombar.lua:457
 msgid "Next"
@@ -3982,15 +4000,15 @@ msgstr "下一页"
 
 #: modules/critter/reaction_lines.lua:132
 msgid "Nice little session!"
-msgstr ""
+msgstr "读得不错嘛！"
 
 #: modules/critter/phrases.lua:197
 msgid "Nice work."
-msgstr ""
+msgstr "干得不错。"
 
 #: infra/sui_datenames.lua:57
 msgid "Night"
-msgstr ""
+msgstr "夜间"
 
 #: features/sui_quickactions.lua:939 infra/sui_config.lua:137
 msgid "Night Mode"
@@ -4012,7 +4030,7 @@ msgstr "否"
 msgid "No .lua files found in sui_quotes/"
 msgstr "sui_quotes 文件夹中未找到 .lua 文件"
 
-#: screens/sui_menu.lua:3554
+#: screens/sui_menu.lua:3604
 msgid ""
 "No .zip files found.\n"
 "Place .zip files in:\n"
@@ -4043,7 +4061,7 @@ msgid ""
 "Go to Bars → Quick Settings Bar."
 msgstr ""
 "未配置任何操作。\n"
-"请前往「功能栏 > 快捷设置栏」进行配置。"
+"请前往“功能栏 > 快速设置栏”进行配置。"
 
 #: features/sui_backup.lua:1183
 msgid "No backup loaded yet."
@@ -4055,7 +4073,7 @@ msgstr "历史记录中没有书籍。"
 
 #: screens/sui_stats_windows.lua:675
 msgid "No books finished"
-msgstr ""
+msgstr "暂无已读完的书籍"
 
 #: screens/sui_stats_windows.lua:788
 msgid "No books finished in %s"
@@ -4088,11 +4106,10 @@ msgid "No books in this collection."
 msgstr "此书单中没有书籍。"
 
 #: modules/module_tab_grid.lua:506
-#, fuzzy
 msgid "No books in this tab"
-msgstr "历史记录中没有书籍。"
+msgstr "此选项卡中没有书籍"
 
-#: engines/sui_screen_engine.lua:269
+#: engines/sui_screen_engine.lua:272
 msgid "No books opened yet"
 msgstr "尚未打开任何书籍"
 
@@ -4139,7 +4156,7 @@ msgstr "暂无自定义屏幕。"
 
 #: modules/critter/module_critter.lua:747
 msgid "No decorations selected."
-msgstr ""
+msgstr "未选择任何装饰。"
 
 #: infra/sui_updater.lua:498
 msgid ""
@@ -4149,7 +4166,7 @@ msgid ""
 msgstr ""
 "未找到下载文件。\n"
 "\n"
-"是否打开发布页面？"
+"要打开发布页面吗？"
 
 #: features/sui_presets.lua:533 features/sui_presets.lua:716
 msgid "No export directory"
@@ -4164,21 +4181,20 @@ msgid ""
 "No folder, collection or plugin configured.\n"
 "Go to Simple UI → Settings → Quick Actions to set one."
 msgstr ""
-"未配置文件夹、书单或插件。\n"
-"请前往「设置 > 快捷操作」进行配置。"
+"尚未配置文件夹、书单或插件。\n"
+"请前往 SimpleUI → 设置 → 快捷操作 进行设置。"
 
-#: features/sui_style.lua:2334
+#: features/sui_style.lua:2337
 msgid "No fonts found."
 msgstr "未找到字体。"
 
 #: modules/module_tab_grid.lua:506
-#, fuzzy
 msgid "No groups in this tab"
-msgstr "此书单中没有书籍。"
+msgstr "此选项卡中没有分组"
 
 #: modules/module_quote.lua:1014
 msgid "No highlights found. Open a book and highlight some passages."
-msgstr "未找到高亮标注，请打开一本书并划选一些段落。"
+msgstr "未找到高亮，请打开一本书并划选一些文本进行标记。"
 
 #: features/library/sui_library_search.lua:175
 msgid "No home folder set."
@@ -4188,13 +4204,13 @@ msgstr "主目录未设置"
 msgid "No icons found in:"
 msgstr "未在以下位置找到图标："
 
-#: engines/sui_window.lua:3490 engines/sui_window.lua:4268
+#: engines/sui_window.lua:3490 engines/sui_window.lua:4283
 msgid "No items available."
 msgstr "没有可用项目。"
 
-#: engines/sui_window.lua:4018 infra/sui_config.lua:2183
+#: engines/sui_window.lua:4018 infra/sui_config.lua:2244
 #: modules/module_action_list.lua:297 modules/module_collections.lua:383
-#: modules/module_quick_actions.lua:348 modules/module_reading_goals.lua:1252
+#: modules/module_quick_actions.lua:348 modules/module_reading_goals.lua:1251
 #: modules/reading_stats/module_reading_stats.lua:1625 screens/sui_menu.lua:363
 #: screens/sui_menu.lua:832 screens/sui_menu.lua:892 screens/sui_menu.lua:1411
 #: screens/sui_menu.lua:1518 screens/sui_menu.lua:1621
@@ -4202,8 +4218,8 @@ msgstr "没有可用项目。"
 msgid "No items selected."
 msgstr "未选中任何项目。"
 
-#: engines/sui_window.lua:4177 screens/sui_settings_window.lua:434
-#: screens/sui_settings_window.lua:537
+#: engines/sui_window.lua:4192 screens/sui_settings_window.lua:434
+#: screens/sui_settings_window.lua:540
 msgid "No modules"
 msgstr "无模块"
 
@@ -4211,7 +4227,7 @@ msgstr "无模块"
 msgid "No other pages available."
 msgstr "没有其他可用页面。"
 
-#: screens/sui_menu.lua:3575
+#: screens/sui_menu.lua:3625
 msgid "No packs found."
 msgstr "未找到图标包。"
 
@@ -4219,7 +4235,7 @@ msgstr "未找到图标包。"
 msgid "No plugins found."
 msgstr "未找到插件。"
 
-#: features/sui_presets.lua:1074 screens/sui_menu.lua:3897
+#: features/sui_presets.lua:1074 screens/sui_menu.lua:3947
 msgid ""
 "No preset files found.\n"
 "Place .lua files in:\n"
@@ -4229,13 +4245,13 @@ msgstr ""
 "请将 .lua 文件放入：\n"
 "%1"
 
-#: features/sui_presets.lua:1051 screens/sui_menu.lua:3873
+#: features/sui_presets.lua:1051 screens/sui_menu.lua:3923
 msgid "No presets found."
 msgstr "未找到预设。"
 
 #: modules/critter/dialog.lua:443
 msgid "No pressure? Really?"
-msgstr ""
+msgstr "没压力？真的？"
 
 #: modules/module_quote.lua:979
 msgid "No quotes found."
@@ -4243,11 +4259,11 @@ msgstr "未找到名言。"
 
 #: screens/insights/sui_insights_charts.lua:99
 msgid "No reading on the same days last week"
-msgstr ""
+msgstr "上周同期无阅读记录"
 
 #: modules/critter/dialog.lua:574
 msgid "No reading yet today. Shall we fix that?"
-msgstr ""
+msgstr "今天还没读书。咱们补救一下？"
 
 #: features/sui_quickactions.lua:3294
 msgid "No recent books."
@@ -4259,11 +4275,11 @@ msgstr "没有关于“%1”的搜索结果"
 
 #: modules/critter/dialog.lua:78
 msgid "No rush. The shelf isn't going anywhere."
-msgstr ""
+msgstr "不急。书架又不会跑。"
 
 #: modules/critter/reaction_lines.lua:101
 msgid "No spoilers. Okay, spoilers."
-msgstr ""
+msgstr "不许剧透。算了，剧透也行。"
 
 #: screens/sui_stats_windows.lua:65 screens/sui_stats_windows.lua:99
 #: screens/sui_stats_windows.lua:2544
@@ -4289,16 +4305,15 @@ msgstr "未找到系统操作。"
 
 #: modules/module_tab_grid.lua:1037 modules/module_tab_grid.lua:1118
 msgid "No tabs"
-msgstr ""
+msgstr "没有选项卡"
 
 #: modules/module_tab_grid.lua:1037
-#, fuzzy
 msgid "No tabs  —  long press to configure"
-msgstr "未选择任何统计项 — 长按以配置"
+msgstr "没有选项卡 — 长按以配置"
 
 #: modules/module_tab_grid.lua:867
 msgid "No tabs."
-msgstr ""
+msgstr "没有选项卡。"
 
 #: screens/sui_menu.lua:2243
 msgid "No wallpapers found."
@@ -4312,7 +4327,7 @@ msgstr "无"
 
 #: modules/critter/dialog.lua:446
 msgid "None at all. I'm just writing it on the wall."
-msgstr ""
+msgstr "一点都没有。我只是写在墙上罢了。"
 
 #: modules/module_clock.lua:327
 msgid "Noon"
@@ -4326,32 +4341,32 @@ msgstr "不是有效的备份文件。"
 
 #: modules/critter/dialog.lua:58
 msgid "Not now"
-msgstr ""
+msgstr "现在不要"
 
 #: modules/critter/dialog.lua:120
 msgid "Not now."
-msgstr ""
+msgstr "现在不要。"
 
 #: modules/critter/dialog.lua:66
 msgid "Not one unopened book. Show-off."
-msgstr ""
+msgstr "居然没有一本没翻开过。爱显摆。"
 
-#: modules/critter/module_critter.lua:778 modules/module_reading_goals.lua:1159
-#: screens/sui_menu.lua:3253 screens/sui_menu.lua:3275
+#: modules/critter/module_critter.lua:778 modules/module_reading_goals.lua:1158
+#: screens/sui_menu.lua:3303 screens/sui_menu.lua:3325
 msgid "Not set"
 msgstr "未设置"
 
 #: modules/critter/reaction_lines.lua:176
 msgid "Not to be dramatic, but find a charger."
-msgstr ""
+msgstr "不是我要夸张，快找个充电器。"
 
 #: modules/critter/dialog.lua:411 modules/critter/dialog.lua:593
 msgid "Not today."
-msgstr ""
+msgstr "今天不了。"
 
 #: modules/critter/dialog.lua:138
 msgid "Not when you're reading."
-msgstr ""
+msgstr "你读书的时候就不。"
 
 #: screens/sui_stats_windows.lua:1155 screens/sui_stats_windows.lua:2864
 msgid "Notes"
@@ -4363,7 +4378,7 @@ msgstr "未选择任何要导入的内容。"
 
 #: modules/critter/dialog.lua:362
 msgid "Nothing with maps."
-msgstr ""
+msgstr "不带地图的。"
 
 #: infra/sui_datenames.lua:32
 msgid "Nov"
@@ -4375,16 +4390,15 @@ msgstr "11月"
 
 #: modules/critter/dialog.lua:564
 msgid "Nowhere exciting yet."
-msgstr ""
+msgstr "还没什么刺激的地方。"
 
 #: engines/sui_book_grid.lua:1888 engines/sui_book_grid.lua:1889
 msgid "Number of Books"
-msgstr "图书数量"
+msgstr "书籍数量"
 
 #: modules/module_tab_grid.lua:586
-#, fuzzy
 msgid "Numbers"
-msgstr "11月"
+msgstr "页码"
 
 #: modules/module_clock.lua:345
 msgid "O'Clock"
@@ -4405,17 +4419,17 @@ msgstr "10月"
 
 #: modules/critter/dialog.lua:95
 msgid "Of course."
-msgstr ""
+msgstr "当然。"
 
 #: modules/critter/dialog.lua:645
 msgid "Of course. No pressure."
-msgstr ""
+msgstr "当然。别有压力。"
 
 #: engines/sui_book_grid.lua:2066 engines/sui_book_grid.lua:2092
 #: features/sui_cover_elements.lua:275 modules/module_coverdeck.lua:1687
 #: modules/module_currently.lua:1446 screens/sui_menu.lua:1259
-#: screens/sui_menu.lua:1469 screens/sui_menu.lua:2729
-#: screens/sui_menu.lua:2878 screens/sui_menu.lua:4196
+#: screens/sui_menu.lua:1469 screens/sui_menu.lua:2779
+#: screens/sui_menu.lua:2928 screens/sui_menu.lua:4246
 msgid "Off"
 msgstr "关闭"
 
@@ -4425,31 +4439,31 @@ msgstr "零"
 
 #: modules/critter/reaction_lines.lua:315
 msgid "Oh, you remember me."
-msgstr ""
+msgstr "哟，还记得我呢。"
 
 #: modules/critter/dialog.lua:190
 msgid "Oh. I was using it as a blanket."
-msgstr ""
+msgstr "哦。我刚拿它当毯子了。"
 
 #: modules/critter/dialog.lua:368
 msgid "Okay. I'll just sit here."
-msgstr ""
+msgstr "好吧。我就坐在这儿。"
 
 #: modules/critter/dialog.lua:75
 msgid "Okay. They'll wait."
-msgstr ""
+msgstr "好吧。它们会等的。"
 
 #: engines/sui_book_grid.lua:2066 engines/sui_book_grid.lua:2092
 #: features/sui_cover_elements.lua:277 features/sui_cover_elements.lua:282
 #: modules/module_coverdeck.lua:1687 modules/module_currently.lua:1446
 #: screens/sui_menu.lua:1259 screens/sui_menu.lua:1469
-#: screens/sui_menu.lua:2878 screens/sui_menu.lua:4196
+#: screens/sui_menu.lua:2928 screens/sui_menu.lua:4246
 msgid "On"
 msgstr "开启"
 
 #: modules/critter/dialog.lua:654
 msgid "On it!"
-msgstr ""
+msgstr "交给我！"
 
 #: modules/module_coverdeck.lua:1637
 msgid "On side covers too"
@@ -4457,19 +4471,19 @@ msgstr "两侧封面也显示"
 
 #: modules/critter/dialog.lua:264
 msgid "On the go."
-msgstr ""
+msgstr "在路上。"
 
 #: modules/critter/dialog.lua:271
 msgid "On the sofa."
-msgstr ""
+msgstr "在沙发上。"
 
 #: modules/critter/dialog.lua:516
 msgid "On track! I'm telling the whole shelf."
-msgstr ""
+msgstr "走上正轨了！我要告诉整个书架。"
 
 #: modules/critter/dialog.lua:515
 msgid "On track. Quietly proud of you."
-msgstr ""
+msgstr "走上正轨了。偷偷为你骄傲。"
 
 #: modules/module_clock.lua:253
 msgid "One"
@@ -4477,33 +4491,33 @@ msgstr "一"
 
 #: modules/critter/phrases.lua:105
 msgid "One more chapter before bed."
-msgstr ""
+msgstr "睡前再读一章。"
 
 #: modules/critter/reaction_lines.lua:95
 msgid "One more finished. I need to lie down."
-msgstr ""
+msgstr "又读完一本。我得躺一会儿。"
 
 #: modules/critter/phrases.lua:203
 msgid "One page at a time."
-msgstr ""
+msgstr "一页一页来。"
 
 #: modules/critter/dialog.lua:667
 msgid "One page at a time. They all count."
-msgstr ""
+msgstr "一次一页。都算数。"
 
 #: modules/critter/dialog.lua:113
 msgid "Only a small one."
-msgstr ""
+msgstr "只有一个小问题。"
 
 #: modules/critter/dialog.lua:301
 msgid "Only when I'm nervous."
-msgstr ""
+msgstr "只有紧张的时候。"
 
 #: modules/critter/reaction_lines.lua:196
 msgid "Ooh, that's nice."
-msgstr ""
+msgstr "唔，真舒服。"
 
-#: engines/sui_screen_engine.lua:588 features/library/sui_library_search.lua:56
+#: engines/sui_screen_engine.lua:591 features/library/sui_library_search.lua:56
 #: features/library/sui_library_search.lua:129
 #: features/sui_quickactions.lua:3249 modules/module_quote.lua:1302
 #: screens/sui_stats_windows.lua:622
@@ -4512,13 +4526,13 @@ msgstr "打开"
 
 #: screens/sui_quicksettings_bar.lua:1690
 msgid "Open Menu on Quick Settings"
-msgstr ""
+msgstr "在快速设置中打开菜单"
 
 #: engines/sui_group_cell.lua:606
 msgid "Open Module Settings"
 msgstr "打开模块设置"
 
-#: engines/sui_screen_engine.lua:278
+#: engines/sui_screen_engine.lua:281
 msgid "Open a book to get started"
 msgstr "打开一本书开始阅读"
 
@@ -4528,13 +4542,13 @@ msgstr "在浏览器中打开"
 
 #: modules/critter/dialog.lua:750
 msgid "Open it"
-msgstr ""
+msgstr "打开"
 
 #: features/library/sui_book_hold_dialog.lua:257
 msgid "Open module settings"
 msgstr "打开模块设置"
 
-#: engines/sui_screen_engine.lua:587 features/library/sui_library_search.lua:55
+#: engines/sui_screen_engine.lua:590 features/library/sui_library_search.lua:55
 #: features/sui_quickactions.lua:3248 modules/module_quote.lua:1301
 #: screens/sui_stats_windows.lua:620
 msgid "Open this file?"
@@ -4542,88 +4556,96 @@ msgstr "是否打开这个文件？"
 
 #: features/library/sui_book_hold_dialog.lua:197
 msgid "Open with…"
-msgstr "打开方式…"
+msgstr "打开方式"
 
 #: modules/critter/reaction_lines.lua:302
 msgid "Or the same ones. I'm not picky."
-msgstr ""
+msgstr "或者还是原来那套。我不挑。"
+
+#: modules/moduleregistry.lua:245
+msgid "Other"
+msgstr "其他"
 
 #: modules/critter/reaction_lines.lua:277
 msgid "Our story is the finest of all libraries!"
-msgstr ""
+msgstr "咱们的故事，胜过世间所有图书馆！"
 
-#: screens/sui_menu.lua:2558
+#: screens/sui_menu.lua:2598
 msgid "Overflow Warning"
 msgstr "溢出警告"
 
 #: features/sui_presets.lua:364 features/sui_presets.lua:963
-#: features/sui_presets.lua:1037 screens/sui_menu.lua:3774
-#: screens/sui_menu.lua:3857
+#: features/sui_presets.lua:1037 screens/sui_menu.lua:3824
+#: screens/sui_menu.lua:3907
 msgid "Overwrite"
 msgstr "覆盖"
 
 #: features/sui_presets.lua:361
 msgid "Overwrite preset"
-msgstr ""
+msgstr "覆盖预设"
 
 #: features/sui_presets.lua:962 features/sui_presets.lua:1036
 msgid "Overwrite preset \"%s\" with the current homescreen settings?"
-msgstr "用当前主屏幕设置覆盖预设“%s”？"
+msgstr "用当前主页设置覆盖预设“%s”？"
 
-#: screens/sui_menu.lua:3773 screens/sui_menu.lua:3856
+#: screens/sui_menu.lua:3823 screens/sui_menu.lua:3906
 msgid "Overwrite preset \"%s\" with the current icon settings?"
 msgstr "用当前图标设置覆盖预设“%s”？"
 
 #: modules/reading_stats/module_reading_stats.lua:422
 msgid "PM"
-msgstr ""
+msgstr "下午"
 
-#: screens/sui_menu.lua:3590
+#: screens/sui_menu.lua:3640
 msgid ""
 "Pack \"%s\" applied.\n"
 "%d icons replaced."
 msgstr ""
-"图标包“%s”已应用。\n"
-"替换了 %d 个图标。"
+"已应用图标包“%s”。\n"
+"已替换 %d 个图标。"
 
-#: screens/sui_menu.lua:3508
+#: screens/sui_menu.lua:3558
 msgid ""
 "Pack \"%s\" installed.\n"
 "You can now apply it from the list."
 msgstr ""
-"图标包“%s”已安装。\n"
-"你现在可以从列表中选择应用。"
+"已安装图标包“%s”。\n"
+"现在可以从列表中应用它。"
 
-#: features/sui_style.lua:2735
+#: features/sui_style.lua:2738
 msgid "Pack folder not accessible: "
 msgstr "无法访问包文件夹："
 
 #: infra/sui_book_stats.lua:175
 msgid "Page"
-msgstr ""
+msgstr "页面"
 
 #: engines/sui_screen_engine.lua:1933 engines/sui_window.lua:1827
 #: infra/sui_patches.lua:2050 infra/sui_patches.lua:2874
 msgid "Page %1 of %2"
-msgstr "第 %1 页，共 %2 页"
+msgstr "第 %1 页 · 共 %2 页"
 
 #: screens/sui_settings_window.lua:408 screens/sui_settings_window.lua:489
-#: screens/sui_settings_window.lua:888
+#: screens/sui_settings_window.lua:893
 msgid "Page %d"
 msgstr "第 %d 页"
 
 #: infra/sui_book_stats.lua:188
 msgid "Page %s/%s"
-msgstr ""
+msgstr "第 %s 页 · 共 %s 页"
 
 #: screens/sui_settings_window.lua:407 screens/sui_settings_window.lua:488
-#: screens/sui_settings_window.lua:887
+#: screens/sui_settings_window.lua:892
 msgid "Page 1 (Home)"
 msgstr "第 1 页（主页）"
 
+#: engines/sui_screen_engine.lua:2106
+msgid "Page Editor"
+msgstr "页面编辑"
+
 #: modules/critter/phrases.lua:269
 msgid "Page by page!"
-msgstr ""
+msgstr "一页一页来！"
 
 #: features/sui_cover_elements.lua:53 screens/sui_stats_windows.lua:893
 #: screens/sui_stats_windows.lua:2629
@@ -4645,11 +4667,11 @@ msgstr "每日页数"
 
 #: modules/reading_stats/module_reading_stats.lua:449
 msgid "Pages per day, last 7 days"
-msgstr ""
+msgstr "每日页数（最近 7 天）"
 
 #: modules/reading_stats/module_reading_stats.lua:467
 msgid "Pages per hour"
-msgstr ""
+msgstr "每小时页数"
 
 #: modules/reading_stats/module_reading_stats.lua:661
 #: screens/sui_stats_windows.lua:1869 screens/sui_stats_windows.lua:1879
@@ -4659,22 +4681,21 @@ msgstr "已读页数"
 
 #: modules/reading_stats/module_reading_stats.lua:451
 msgid "Pages read this month"
-msgstr ""
+msgstr "本月已读页数"
 
 #: modules/reading_stats/module_reading_stats.lua:446
 msgid "Pages read this week"
-msgstr ""
+msgstr "本周已读页数"
 
 #: modules/reading_stats/module_reading_stats.lua:444
 msgid "Pages read today"
-msgstr ""
+msgstr "今天阅读页数"
 
 #: modules/module_tab_grid.lua:581
-#, fuzzy
 msgid "Pagination"
-msgstr "分页栏"
+msgstr "分页指示器"
 
-#: features/sui_style.lua:1266 screens/sui_menu.lua:2662
+#: features/sui_style.lua:1266 screens/sui_menu.lua:2712
 msgid "Pagination Bar"
 msgstr "分页栏"
 
@@ -4732,15 +4753,15 @@ msgstr "分页：上一页"
 msgid "Path chooser not available."
 msgstr "路径选择器不可用。"
 
-#: features/sui_style.lua:2724
+#: features/sui_style.lua:2727
 msgid "Path does not exist: "
 msgstr "路径不存在："
 
 #: modules/reading_stats/module_reading_stats.lua:474
 msgid "Peak reading hour"
-msgstr ""
+msgstr "最常阅读时段"
 
-#: modules/module_reading_goals.lua:1150
+#: modules/module_reading_goals.lua:1149
 msgid "Percentage"
 msgstr "百分比"
 
@@ -4750,15 +4771,15 @@ msgstr "已读百分比"
 
 #: modules/critter/dialog.lua:229
 msgid "Perfect."
-msgstr ""
+msgstr "完美。"
 
 #: modules/critter/dialog.lua:396
 msgid "Perfect. I won't look."
-msgstr ""
+msgstr "完美。我不看。"
 
 #: modules/critter/module_critter.lua:817
 msgid "Phrases"
-msgstr ""
+msgstr "语句"
 
 #: screens/sui_onboarding.lua:193
 msgid "Pick any existing folder to use as the library home."
@@ -4766,17 +4787,17 @@ msgstr "请选择任意现有文件夹作为书库主目录。"
 
 #: modules/critter/phrases.lua:257
 msgid "Pick your next read."
-msgstr ""
+msgstr "挑下一本该读的吧。"
 
 #: modules/critter/module_critter.lua:805
 msgid "Pixel"
-msgstr ""
+msgstr "像素"
 
 #: modules/module_quote.lua:1407
 msgid "Place .lua files in the plugin's sui_quotes/ folder"
 msgstr "请将 .lua 文件放入插件的 sui_quotes/ 文件夹中"
 
-#: screens/sui_menu.lua:3576
+#: screens/sui_menu.lua:3626
 msgid "Place a folder or .zip in:"
 msgstr "请将文件夹或 .zip 文件放入："
 
@@ -4788,16 +4809,15 @@ msgstr "请将图片放入："
 msgid ""
 "Place your files in koreader/settings/simpleui/sui_wallpapers or sui_icons."
 msgstr ""
-"请将文件放入 koreader/settings/simpleui/sui_wallpapers 或 sui_icons 文件夹。"
+"请将您的文件放入 koreader/settings/simpleui/sui_wallpapers 或 sui_icons。"
 
-#: screens/sui_menu.lua:3053
+#: screens/sui_menu.lua:3103
 msgid "Placeholder Cover for Bookless Folders"
 msgstr "空文件夹的占位封面"
 
 #: engines/sui_group_cell.lua:228
-#, fuzzy
 msgid "Placement"
-msgstr "请将图片放入："
+msgstr "位置"
 
 #: infra/sui_compat_check.lua:155
 msgid ""
@@ -4815,15 +4835,15 @@ msgstr "请输入预设名称。"
 
 #: features/sui_manual_books.lua:56
 msgid "Please enter a start or finish date."
-msgstr ""
+msgstr "请输入开始或完成日期。"
 
 #: features/sui_manual_books.lua:50
 msgid "Please enter a title."
-msgstr ""
+msgstr "请输入书名。"
 
 #: features/sui_manual_books.lua:53
 msgid "Please enter dates as YYYY-MM-DD or YYYY."
-msgstr ""
+msgstr "请按 YYYY-MM-DD 或 YYYY 格式输入日期。"
 
 #: infra/sui_compat_check.lua:122
 msgid "Please restart KOReader for the change to take effect."
@@ -4835,7 +4855,7 @@ msgstr "请选择一个操作。"
 
 #: modules/critter/phrases.lua:253
 msgid "Plenty of time for reading."
-msgstr ""
+msgstr "有大把时间可以读书。"
 
 #: features/sui_quickactions.lua:2494 features/sui_quickactions.lua:2598
 msgid "Plugin"
@@ -4849,16 +4869,16 @@ msgstr "插件错误：%s"
 msgid "Plugin not available: %s"
 msgstr "插件不可用：%s"
 
-#: screens/sui_menu.lua:3151
+#: screens/sui_menu.lua:3201
 msgid "Portrait list mode"
 msgstr "纵向列表模式"
 
-#: screens/sui_menu.lua:3143
+#: screens/sui_menu.lua:3193
 msgid "Portrait mosaic mode"
 msgstr "纵向网格模式"
 
-#: features/dialogs/sui_bento_sheet.lua:156
-#: features/dialogs/sui_bento_sheet.lua:157
+#: features/dialogs/sui_bento_sheet.lua:171
+#: features/dialogs/sui_bento_sheet.lua:172
 #: features/library/sui_label_options.lua:143
 #: features/sui_cover_elements.lua:92 modules/module_tab_grid.lua:595
 #: modules/reading_stats/width_sheet.lua:300
@@ -4871,35 +4891,35 @@ msgstr "电源"
 
 #: modules/critter/reaction_lines.lua:203
 msgid "Power! Glorious power!"
-msgstr ""
+msgstr "力量！荣耀的力量！"
 
-#: screens/sui_menu.lua:2544
+#: screens/sui_menu.lua:2472
 msgid "Preserve Cover Proportions"
 msgstr "保持封面比例"
 
 #: features/sui_stats_menu.lua:101
 msgid "Preserve Deleted Books in Statistics"
-msgstr "删除书籍后仍保留统计"
+msgstr "删除书籍后仍保留统计数据"
 
-#: features/sui_presets.lua:1087 screens/sui_menu.lua:3908
+#: features/sui_presets.lua:1087 screens/sui_menu.lua:3958
 msgid "Preset \"%s\" imported."
 msgstr "已导入预设“%s”。"
 
 #: features/sui_presets.lua:867 features/sui_presets.lua:913
-#: screens/sui_menu.lua:3723
+#: screens/sui_menu.lua:3773
 msgid "Preset \"%s\" not found."
 msgstr "未找到预设“%s”。"
 
-#: features/sui_presets.lua:942 screens/sui_menu.lua:3751
+#: features/sui_presets.lua:942 screens/sui_menu.lua:3801
 msgid "Preset \"%s\" saved."
 msgstr "已保存预设“%s”。"
 
 #: features/sui_presets.lua:968 features/sui_presets.lua:1042
-#: screens/sui_menu.lua:3780 screens/sui_menu.lua:3863
+#: screens/sui_menu.lua:3830 screens/sui_menu.lua:3913
 msgid "Preset \"%s\" updated."
 msgstr "已更新预设“%s”。"
 
-#: features/sui_presets.lua:1114 screens/sui_menu.lua:3938
+#: features/sui_presets.lua:1114 screens/sui_menu.lua:3988
 msgid ""
 "Preset exported to:\n"
 "%s"
@@ -4907,7 +4927,7 @@ msgstr ""
 "预设已导出至：\n"
 "%s"
 
-#: features/sui_presets.lua:935 screens/sui_menu.lua:3745
+#: features/sui_presets.lua:935 screens/sui_menu.lua:3795
 msgid "Preset name"
 msgstr "预设名称"
 
@@ -4915,11 +4935,11 @@ msgstr "预设名称"
 msgid "Preset not found"
 msgstr "未找到预设"
 
-#: screens/sui_menu.lua:2631 screens/sui_settings_window.lua:276
+#: screens/sui_menu.lua:2681 screens/sui_settings_window.lua:276
 msgid "Presets"
 msgstr "预设"
 
-#: screens/sui_settings_window.lua:701
+#: screens/sui_settings_window.lua:706
 msgid "Presets module unavailable."
 msgstr "预设模块不可用。"
 
@@ -4931,7 +4951,7 @@ msgstr "长按屏幕上的任意元素（如模块或栏），快速自定义其
 
 #: modules/critter/dialog.lua:336
 msgid "Pretty good."
-msgstr ""
+msgstr "相当好。"
 
 #: screens/sui_bottombar.lua:457
 msgid "Prev"
@@ -4951,7 +4971,7 @@ msgstr "进度徽章"
 msgid "Progress Badge Color"
 msgstr "进度徽章颜色"
 
-#: screens/sui_menu.lua:4019
+#: screens/sui_menu.lua:4069
 msgid "Progress Bar Type"
 msgstr "进度条类型"
 
@@ -4994,38 +5014,38 @@ msgstr "比例"
 
 #: modules/critter/dialog.lua:89
 msgid "Psst, %s. Can I ask you something?"
-msgstr ""
+msgstr "喂，%s。我能问你一件事吗？"
 
 #: modules/critter/dialog.lua:91
 msgid "Psst. Can I ask you something?"
-msgstr ""
+msgstr "嘘。我能问你点事吗？"
 
 #: modules/critter/reaction_lines.lua:192
 msgid "Psst. The battery is low."
-msgstr ""
+msgstr "嘘。电量快没了。"
 
 #: modules/critter/dialog.lua:258
 msgid "Queues, buses, kitchens. I've seen you."
-msgstr ""
+msgstr "排队、公车、厨房。我都见过你。"
 
 #: features/sui_backup.lua:132 features/sui_quickactions.lua:1536
 #: features/sui_quickactions.lua:3213 modules/module_action_list.lua:294
 #: modules/module_quick_actions.lua:345 modules/module_quick_actions.lua:419
-#: screens/sui_menu.lua:2147 screens/sui_menu.lua:4239
+#: screens/sui_menu.lua:2147 screens/sui_menu.lua:4289
 #: screens/sui_quicksettings_bar.lua:1505 screens/sui_settings_window.lua:188
 msgid "Quick Actions"
 msgstr "快捷操作"
 
-#: screens/sui_menu.lua:4243
+#: screens/sui_menu.lua:4293
 msgid "Quick Actions  (%d/%d — %d left)"
 msgstr "快捷操作（%d/%d — 剩余 %d 个）"
 
-#: screens/sui_menu.lua:4241
+#: screens/sui_menu.lua:4291
 msgid "Quick Actions  (%d/%d — at limit)"
 msgstr "快捷操作（%d/%d — 已达限制）"
 
 #: features/sui_quickactions.lua:1518 features/sui_quickactions.lua:1856
-#: screens/sui_menu.lua:3414
+#: screens/sui_menu.lua:3464
 msgid "Quick Actions Icons"
 msgstr "快捷操作图标"
 
@@ -5036,11 +5056,11 @@ msgstr "快捷操作行"
 
 #: features/sui_style.lua:1269
 msgid "Quick Settings"
-msgstr ""
+msgstr "快速设置"
 
-#: screens/sui_menu.lua:2664 screens/sui_quicksettings_bar.lua:1427
+#: screens/sui_menu.lua:2714 screens/sui_quicksettings_bar.lua:1427
 msgid "Quick Settings Bar"
-msgstr "快捷设置栏"
+msgstr "快速设置栏"
 
 #: screens/sui_onboarding.lua:398 screens/sui_onboarding.lua:399
 msgid "Quick Tips"
@@ -5048,7 +5068,7 @@ msgstr "快捷提示"
 
 #: modules/critter/dialog.lua:369
 msgid "Quietly."
-msgstr ""
+msgstr "安安静静地。"
 
 #: features/sui_quickactions.lua:604
 msgid "Quit"
@@ -5073,7 +5093,7 @@ msgstr "sui_quotes 中的名言库文件"
 
 #: modules/module_quote.lua:1419
 msgid "Quotes + My Highlights"
-msgstr "名言 + 我的高亮标注"
+msgstr "名言 + 我的高亮"
 
 #: infra/sui_config.lua:205
 msgid "RAM Usage"
@@ -5086,43 +5106,43 @@ msgstr "随机"
 
 #: modules/critter/module_critter.lua:855
 msgid "React to events"
-msgstr ""
+msgstr "回应事件"
 
 #: modules/critter/challenge.lua:219
 msgid "Read a little today and your streak is safe."
-msgstr ""
+msgstr "今天读一会儿，连续记录就保住了。"
 
 #: modules/critter/challenge.lua:205
 msgid "Read a little today to keep your streak?"
-msgstr ""
+msgstr "今天读一会儿，保住连续记录吗？"
 
 #: modules/critter/phrases.lua:155
 msgid "Read a little today to reach day %d."
-msgstr ""
+msgstr "今天读一点，就能到第 %d 天。"
 
 #: modules/critter/phrases.lua:160
 msgid "Read a little today to start a new one."
-msgstr ""
+msgstr "今天读一点，就能重新开始。"
 
 #: modules/critter/phrases.lua:147
 msgid "Read again tomorrow to keep it going."
-msgstr ""
+msgstr "明天再读一次，就能接上。"
 
 #: modules/critter/challenge.lua:207
 msgid "Read before %d:00?"
-msgstr ""
+msgstr "在 %d:00 前读一会儿吗？"
 
 #: screens/sui_quicksettings_bar.lua:1677
 msgid "Reader"
-msgstr ""
+msgstr "阅读器"
 
 #: screens/sui_quicksettings_bar.lua:1599
 msgid "Reader Layout"
-msgstr ""
+msgstr "阅读器布局"
 
 #: features/sui_presets.lua:200 features/sui_presets.lua:245
-#: features/sui_stats_menu.lua:143 modules/module_reading_goals.lua:805
-#: modules/module_reading_goals.lua:806
+#: features/sui_stats_menu.lua:143 modules/module_reading_goals.lua:804
+#: modules/module_reading_goals.lua:805
 msgid "Reading Goals"
 msgstr "阅读目标"
 
@@ -5145,11 +5165,11 @@ msgstr "阅读统计"
 
 #: modules/critter/dialog.lua:267
 msgid "Reading and travelling at once."
-msgstr ""
+msgstr "一边读书一边旅行。"
 
 #: modules/reading_stats/module_reading_stats.lua:483
 msgid "Reading days, 12 weeks"
-msgstr ""
+msgstr "阅读天数（最近 12 周）"
 
 #: features/sui_backup.lua:138
 msgid "Reading goals, streak mode and freeze bank"
@@ -5157,48 +5177,48 @@ msgstr "阅读目标、连续模式与冻结额度"
 
 #: modules/reading_stats/module_reading_stats.lua:472
 msgid "Reading sessions"
-msgstr ""
+msgstr "阅读次数"
 
 #: modules/reading_stats/module_reading_stats.lua:471
 msgid "Reading sessions, 90 days"
-msgstr ""
+msgstr "阅读次数（最近 90 天）"
 
 #: modules/reading_stats/module_reading_stats.lua:466
 msgid "Reading speed, 90 days"
-msgstr ""
+msgstr "阅读速度（最近 90 天）"
 
 #: modules/critter/phrases.lua:46
 #: modules/reading_stats/module_reading_stats.lua:454
 msgid "Reading streak"
-msgstr ""
+msgstr "连续阅读"
 
 #: modules/reading_stats/module_reading_stats.lua:660
 msgid "Reading time"
-msgstr ""
+msgstr "阅读时长"
 
 #: modules/reading_stats/module_reading_stats.lua:450
 msgid "Reading time this month"
-msgstr ""
+msgstr "本月阅读时长"
 
 #: modules/reading_stats/module_reading_stats.lua:445
 msgid "Reading time this week"
-msgstr ""
+msgstr "本周阅读时长"
 
 #: modules/reading_stats/module_reading_stats.lua:447
 msgid "Reading time this year"
-msgstr ""
+msgstr "今年阅读时长"
 
 #: modules/reading_stats/module_reading_stats.lua:443
 msgid "Reading time today"
-msgstr ""
+msgstr "今日阅读时长"
 
 #: modules/critter/reaction_lines.lua:246
 msgid "Reading today is practically mandatory."
-msgstr ""
+msgstr "今天不读书，基本说不过去。"
 
 #: modules/critter/phrases.lua:263 modules/critter/phrases.lua:282
 msgid "Ready for a good story?"
-msgstr ""
+msgstr "准备好听个好故事了吗？"
 
 #: features/sui_stats_menu.lua:65
 msgid "Real streak only"
@@ -5223,15 +5243,15 @@ msgstr "最近书籍"
 #: modules/reading_stats/module_reading_stats.lua:466
 #: modules/reading_stats/module_reading_stats.lua:471
 msgid "Records"
-msgstr ""
+msgstr "记录"
 
-#: features/sui_style.lua:2505
+#: features/sui_style.lua:2508
 msgid "Regular"
-msgstr "常规体"
+msgstr "常规"
 
-#: features/dialogs/sui_bento_sheet.lua:207
+#: features/dialogs/sui_bento_sheet.lua:236
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #: modules/module_tbr.lua:342
 msgid "Remove from To Be Read"
@@ -5243,12 +5263,12 @@ msgstr "读完后从列表中移除"
 
 #: engines/sui_window.lua:2442 engines/sui_window.lua:3796
 #: features/library/sui_hold_rows.lua:256 features/sui_presets.lua:381
-#: features/sui_presets.lua:973 screens/sui_menu.lua:3624
-#: screens/sui_menu.lua:3786
+#: features/sui_presets.lua:973 screens/sui_menu.lua:3674
+#: screens/sui_menu.lua:3836
 msgid "Rename"
 msgstr "重命名"
 
-#: features/sui_presets.lua:379 screens/sui_menu.lua:3622
+#: features/sui_presets.lua:379 screens/sui_menu.lua:3672
 msgid "Rename \"%s\""
 msgstr "重命名“%s”"
 
@@ -5256,7 +5276,7 @@ msgstr "重命名“%s”"
 msgid "Rename screen"
 msgstr "重命名屏幕"
 
-#: screens/sui_menu.lua:2521
+#: screens/sui_menu.lua:2449
 msgid ""
 "Replaces the \"Closing book…\" notice above with the cover for that close, "
 "when a cover is available."
@@ -5269,12 +5289,12 @@ msgid ""
 "The arrows dim when there is no previous or next page.\n"
 "With navpager active, as few as 1 tab and at most 4 tabs can be configured."
 msgstr ""
-"用导航栏边缘的“上一页/下一页”箭头取代分页栏。\n"
-"当没有上一页或下一页时，箭头会变暗。\n"
-"启用导航分页器时，可配置的标签最少 1 个，最多 4 个。"
+"用导航栏两端的“上一页 / 下一页”箭头取代分页栏。\n"
+"无上一页或下一页时，箭头会变暗。\n"
+"导航分页器启用时，最少可配置 1 个、最多 4 个选项卡。"
 
 #: features/sui_quickactions.lua:1864 features/sui_style.lua:1283
-#: screens/sui_menu.lua:2444 screens/sui_stats_windows.lua:528
+#: screens/sui_menu.lua:2563 screens/sui_stats_windows.lua:528
 msgid "Reset"
 msgstr "重置"
 
@@ -5294,7 +5314,7 @@ msgstr "重置所有系统图标"
 msgid "Reset all Quick Actions icons to default?"
 msgstr "是否将所有快捷操作图标重置为默认？"
 
-#: screens/sui_menu.lua:2443
+#: screens/sui_menu.lua:2562
 msgid "Reset all scales to default (100%)? This cannot be undone."
 msgstr "将所有缩放重置为默认值（100%）？此操作不可撤销。"
 
@@ -5302,13 +5322,13 @@ msgstr "将所有缩放重置为默认值（100%）？此操作不可撤销。"
 msgid "Reset all system icons to default?"
 msgstr "是否将所有系统图标重置为默认？"
 
-#: screens/sui_menu.lua:2438
+#: screens/sui_menu.lua:2557
 msgid "Reset to Default Scale"
 msgstr "重置为默认缩放"
 
 #: modules/critter/reaction_lines.lua:231
 msgid "Resolutions?"
-msgstr ""
+msgstr "新年决心呢？"
 
 #: features/dialogs/sui_dialogs.lua:217 features/sui_quickactions.lua:584
 msgid "Restart"
@@ -5319,7 +5339,7 @@ msgstr "重启"
 msgid "Restart now"
 msgstr "立即重启"
 
-#: features/sui_style.lua:2287
+#: features/sui_style.lua:2290
 msgid "Restart to fully apply the UI font change."
 msgstr "重启以完全应用界面字体更改。"
 
@@ -5348,8 +5368,8 @@ msgid ""
 "Restore this backup? Existing settings for these categories will be "
 "replaced. Saved presets are merged — yours are kept."
 msgstr ""
-"是否恢复此备份？这些分类的现有设置将被替换。已保存的预设将合并，你原有的预设"
-"会予以保留。"
+"要恢复此备份吗？这些类别的现有设置将被替换。已保存的预设会合并——您自己的预设"
+"会保留。"
 
 #: screens/sui_menu.lua:2372
 msgid "Return to Home Screen on Wakeup"
@@ -5359,7 +5379,7 @@ msgstr "唤醒时返回主页"
 msgid "Ribbon"
 msgstr "丝带"
 
-#: infra/sui_config.lua:2086 modules/critter/module_critter.lua:756
+#: infra/sui_config.lua:2147 modules/critter/module_critter.lua:756
 #: modules/module_quick_actions.lua:476 screens/sui_menu.lua:679
 #: screens/sui_menu.lua:884 screens/sui_menu.lua:1310 screens/sui_menu.lua:1508
 msgid "Right"
@@ -5367,27 +5387,27 @@ msgstr "右侧"
 
 #: modules/critter/dialog.lua:510
 msgid "Right on track."
-msgstr ""
+msgstr "完全在正轨上。"
 
 #: modules/critter/reaction_lines.lua:313
 msgid "Right where you left it."
-msgstr ""
+msgstr "还停在你离开的地方。"
 
-#: modules/module_reading_goals.lua:1305
+#: modules/module_reading_goals.lua:1304
 msgid "Ring Alignment"
 msgstr "环对齐方式"
 
-#: modules/module_reading_goals.lua:1293
+#: modules/module_reading_goals.lua:1292
 msgid "Ring Style"
 msgstr "环样式"
 
-#: modules/module_reading_goals.lua:1286
+#: modules/module_reading_goals.lua:1285
 msgid "Rings"
 msgstr "圆环"
 
 #: modules/critter/phrases.lua:88
 msgid "Rise and read!"
-msgstr ""
+msgstr "起来读书啦！"
 
 #: modules/module_quick_actions.lua:457 screens/sui_quicksettings_bar.lua:1657
 msgid "Round"
@@ -5398,26 +5418,25 @@ msgid "Round Overlay"
 msgstr "圆形叠加层"
 
 #: modules/module_tab_grid.lua:633
-#, fuzzy
 msgid "Round Pill"
-msgstr "圆形"
+msgstr "圆形胶囊"
 
 #: modules/module_quick_actions.lua:458 screens/sui_quicksettings_bar.lua:1658
 msgid "Rounded Square"
 msgstr "圆角方形"
 
-#: features/dialogs/sui_bento_sheet.lua:178
+#: features/dialogs/sui_bento_sheet.lua:196
 #: modules/reading_stats/width_sheet.lua:271
 msgid "Row %1 of %2"
-msgstr ""
+msgstr "第 %1 行 · 共 %2 行"
 
 #: modules/reading_stats/module_reading_stats.lua:1727
 msgid "Row alignment"
-msgstr ""
+msgstr "行对齐方式"
 
 #: modules/reading_stats/width_sheet.lua:165
 msgid "Row preview"
-msgstr ""
+msgstr "行预览"
 
 #: engines/sui_book_grid.lua:1924
 #: modules/reading_stats/module_reading_stats.lua:1666
@@ -5426,15 +5445,15 @@ msgstr "行数"
 
 #: modules/critter/reaction_lines.lua:178
 msgid "Running on fumes."
-msgstr ""
+msgstr "就剩最后一口气了。"
 
 #: modules/critter/reaction_lines.lua:140
 msgid "Same time tomorrow?"
-msgstr ""
+msgstr "明天同一时间？"
 
 #: modules/critter/dialog.lua:304
 msgid "Same. I check that the dog survives."
-msgstr ""
+msgstr "我也是。我要确认那只狗活下来了。"
 
 #: infra/sui_datenames.lua:45
 msgid "Sat"
@@ -5442,7 +5461,7 @@ msgstr "星期六"
 
 #: features/sui_accent_picker.lua:88
 msgid "Saturation"
-msgstr ""
+msgstr "饱和度"
 
 #: infra/sui_datenames.lua:51
 msgid "Saturday"
@@ -5450,12 +5469,12 @@ msgstr "星期六"
 
 #: features/sui_manual_books.lua:106 features/sui_manual_books.lua:134
 #: features/sui_presets.lua:936 features/sui_quickactions.lua:2610
-#: infra/sui_goals.lua:115 screens/sui_menu.lua:3746
+#: infra/sui_goals.lua:115 screens/sui_menu.lua:3796
 #: screens/sui_settings_window.lua:353 screens/sui_stats_windows.lua:516
 msgid "Save"
 msgstr "保存"
 
-#: features/sui_presets.lua:929 screens/sui_menu.lua:3739
+#: features/sui_presets.lua:929 screens/sui_menu.lua:3789
 msgid "Save as new preset"
 msgstr "另存为新预设"
 
@@ -5463,7 +5482,7 @@ msgstr "另存为新预设"
 msgid "Save backup as"
 msgstr "备份另存为"
 
-#: screens/sui_menu.lua:3744
+#: screens/sui_menu.lua:3794
 msgid "Save icon preset"
 msgstr "保存图标预设"
 
@@ -5473,11 +5492,11 @@ msgstr "保存预设"
 
 #: modules/critter/dialog.lua:123
 msgid "Saving it for later, then."
-msgstr ""
+msgstr "那就先留着以后问。"
 
 #: modules/critter/talk.lua:117
 msgid "Say something else…"
-msgstr ""
+msgstr "说点别的…"
 
 #: engines/sui_book_grid.lua:1861 engines/sui_book_grid.lua:1863
 #: modules/critter/module_critter.lua:868
@@ -5489,10 +5508,10 @@ msgstr ""
 #: modules/module_heatmap.lua:325 modules/module_quick_actions.lua:428
 #: modules/module_quick_actions.lua:430 modules/module_quote.lua:1355
 #: modules/module_quote.lua:1359 modules/module_quote.lua:1480
-#: modules/module_reading_goals.lua:1130 modules/module_reading_goals.lua:1132
+#: modules/module_reading_goals.lua:1129 modules/module_reading_goals.lua:1131
 #: modules/reading_stats/module_reading_stats.lua:1593
 #: modules/reading_stats/module_reading_stats.lua:1595
-#: screens/sui_menu.lua:2384
+#: screens/sui_menu.lua:2503
 msgid "Scale"
 msgstr "缩放"
 
@@ -5501,6 +5520,8 @@ msgid ""
 "Scale for the badges (progress, pages, etc.).\n"
 "100% is the default size."
 msgstr ""
+"徽章（进度、页数等）的缩放。\n"
+"默认大小为 100%。"
 
 #: modules/module_currently.lua:1261
 msgid ""
@@ -5511,8 +5532,8 @@ msgid ""
 msgstr ""
 "仅封面缩略图的缩放。\n"
 "默认大小为 100%。\n"
-"启用“动态封面大小”后，此设置将相对于其当前动态大小缩放封面，且封面永远不会小"
-"于其 100% 大小。"
+"启用“动态封面大小”后，此设置将相对于封面当前的动态大小进行缩放，且封面永远不"
+"会小于其 100% 大小。"
 
 #: modules/module_coverdeck.lua:1474
 msgid ""
@@ -5529,7 +5550,7 @@ msgid ""
 "100% is the default size."
 msgstr ""
 "仅封面缩略图的缩放。\n"
-"文本和进度条跟随模块比例。\n"
+"文本和进度条跟随模块缩放。\n"
 "默认大小为 100%。"
 
 #: features/sui_cover_elements.lua:129
@@ -5537,13 +5558,12 @@ msgid ""
 "Scale for the folder name overlay text.\n"
 "100% is the default size."
 msgstr ""
-"文件夹名称叠加文本的缩放。\n"
+"文件夹名叠加文本的缩放。\n"
 "默认大小为 100%。"
 
 #: engines/sui_group_cell.lua:313
-#, fuzzy
 msgid "Scale for the group count badge."
-msgstr "书单计数徽章的缩放。"
+msgstr "分组计数徽章的缩放。"
 
 #: screens/sui_quicksettings_bar.lua:1639
 msgid ""
@@ -5560,7 +5580,7 @@ msgstr "进度徽章的缩放。"
 #: engines/sui_book_grid.lua:1965
 msgid ""
 "Scale for this module's corner badges (progress, pages, series, new book)."
-msgstr "此模块角落徽章（进度、页数、丛书、新书）的缩放。"
+msgstr "此模块角落徽章（进度、页数、丛书与新书）的缩放。"
 
 #: modules/module_coverdeck.lua:1466
 msgid "Scale for this module."
@@ -5569,7 +5589,7 @@ msgstr "此模块的缩放。"
 #: engines/sui_book_grid.lua:1864 modules/critter/module_critter.lua:871
 #: modules/module_action_list.lua:318 modules/module_clock.lua:1067
 #: modules/module_currently.lua:1248 modules/module_quick_actions.lua:431
-#: modules/module_quote.lua:1361 modules/module_reading_goals.lua:1133
+#: modules/module_quote.lua:1361 modules/module_reading_goals.lua:1132
 #: modules/reading_stats/module_reading_stats.lua:1596
 msgid ""
 "Scale for this module.\n"
@@ -5587,10 +5607,10 @@ msgid ""
 "card."
 msgstr ""
 "此模块的缩放。\n"
-"默认大小为 100%。此处上限为 100%：网格的列数始终与“显示周数”一致（在时间段视"
+"默认大小为 100%。此处上限为 100%：网格的列数始终与“显示周数”一致（在“时段”视"
 "图中则固定为 24 列），格子一旦放大到超出其自适应大小，网格就会溢出卡片。"
 
-#: screens/sui_menu.lua:2402
+#: screens/sui_menu.lua:2521
 msgid ""
 "Scales all modules and labels together.\n"
 "100% is the default size."
@@ -5598,18 +5618,21 @@ msgstr ""
 "同时缩放所有模块和标签。\n"
 "默认大小为 100%。"
 
-#: screens/sui_menu.lua:2424
+#: screens/sui_menu.lua:2543
 msgid ""
 "Scales the module label text above each module, on top of the size set in "
 "Style > Module Labels.\n"
 "100% is the default size."
 msgstr ""
+"在每个模块上方进一步缩放模块标签文本，叠加在“样式 > 模块标签”中所设大小之"
+"上。\n"
+"默认大小为 100%。"
 
-#: screens/sui_menu.lua:3066
+#: screens/sui_menu.lua:3116
 msgid "Scan Subfolders for Covers"
 msgstr "扫描子文件夹中的封面"
 
-#: screens/sui_settings_window.lua:352 screens/sui_settings_window.lua:960
+#: screens/sui_settings_window.lua:352 screens/sui_settings_window.lua:965
 msgid "Screen name"
 msgstr "屏幕名称"
 
@@ -5617,15 +5640,13 @@ msgstr "屏幕名称"
 msgid ""
 "Screen shown after closing a book. Gestures and quick actions that name a "
 "destination always open that destination."
-msgstr ""
-"关闭书籍后显示的屏幕。手势和快速操作中若指定了目标位置，将始终直接打开该目标"
-"位置。"
+msgstr "关闭书籍后显示的屏幕。指定了目标的手势和快捷操作始终会打开该目标。"
 
 #: screens/sui_menu.lua:2279
 msgid ""
 "Scrim over the wallpaper in Library, History and Collections. 0% shows the "
 "wallpaper, 100% hides it."
-msgstr ""
+msgstr "在书库、历史记录和书单界面为壁纸添加遮罩。0% 显示壁纸，100% 完全隐藏。"
 
 #: features/library/sui_library_search.lua:181
 #: features/sui_quickactions.lua:889 infra/sui_config.lua:134
@@ -5652,11 +5673,11 @@ msgstr "搜索结果：%1"
 #: features/library/sui_label_options.lua:135 features/sui_style.lua:1447
 #: modules/reading_stats/module_reading_stats.lua:1715
 msgid "Secondary"
-msgstr ""
+msgstr "次要色"
 
-#: screens/sui_menu.lua:3270
+#: screens/sui_menu.lua:3320
 msgid "Secondary Color"
-msgstr ""
+msgstr "次要色"
 
 #: engines/sui_window.lua:2431 engines/sui_window.lua:3781
 #: features/library/sui_hold_rows.lua:231
@@ -5664,7 +5685,7 @@ msgid "Select"
 msgstr "选择"
 
 #: features/sui_presets.lua:874 features/sui_presets.lua:882
-#: features/sui_presets.lua:887 screens/sui_menu.lua:3730
+#: features/sui_presets.lua:887 screens/sui_menu.lua:3780
 msgid "Select Preset"
 msgstr "选择预设"
 
@@ -5674,7 +5695,7 @@ msgstr "选择壁纸"
 
 #: modules/module_collections.lua:358
 msgid "Select at least 2 collections to arrange."
-msgstr "请至少选择 2 个书单以便排序。"
+msgstr "请至少选择 2 个书单以便整理。"
 
 #: infra/sui_datenames.lua:32
 msgid "Sep"
@@ -5706,26 +5727,25 @@ msgstr "丛书序号"
 msgid "Set"
 msgstr "设置"
 
-#: modules/module_reading_goals.lua:1193
+#: modules/module_reading_goals.lua:1192
 msgid "Set Goal"
 msgstr "设定目标"
 
 #: features/library/sui_folder_hold_dialog.lua:36
 msgid "Set as HOME folder"
-msgstr ""
+msgstr "设为主目录"
 
 #: modules/module_collections.lua:332
 msgid "Set collection cover"
 msgstr "设置书单封面"
 
 #: engines/sui_group_cell.lua:580
-#, fuzzy
 msgid "Set cover"
-msgstr "设置文件夹封面"
+msgstr "设置封面"
 
 #: features/library/sui_foldercovers.lua:561
 #: features/library/sui_library_browse.lua:879
-#: features/library/sui_series_grouping.lua:386
+#: features/library/sui_series_grouping.lua:387
 msgid "Set folder cover"
 msgstr "设置文件夹封面"
 
@@ -5738,6 +5758,7 @@ msgid "Set your reading goal"
 msgstr "设置你的阅读目标"
 
 #: features/sui_quickactions.lua:982 infra/sui_config.lua:140
+#: screens/sui_settings_window.lua:552
 msgid "Settings"
 msgstr "设置"
 
@@ -5746,14 +5767,14 @@ msgid "Settings not found."
 msgstr "未找到设置。"
 
 #: screens/sui_menu.lua:1008 screens/sui_menu.lua:1035
-#: screens/sui_menu.lua:1177 screens/sui_menu.lua:2570
+#: screens/sui_menu.lua:1177 screens/sui_menu.lua:2618
 #: screens/sui_quicksettings_bar.lua:1685
 msgid "Settings on Long Tap"
 msgstr "长按打开设置"
 
 #: modules/critter/phrases.lua:127
 msgid "Settle in with a good book."
-msgstr ""
+msgstr "找本好书安顿下来吧。"
 
 #: modules/module_clock.lua:255
 msgid "Seven"
@@ -5765,28 +5786,41 @@ msgstr "十七"
 
 #: modules/critter/reaction_lines.lua:418
 msgid "Shall I pick a harder one tomorrow?"
-msgstr ""
+msgstr "明天要不要挑个难点的？"
 
 #: modules/critter/reaction_lines.lua:369
 msgid "Shall we pick up where we left off?"
+msgstr "咱们接着上次的地方继续？"
+
+#: features/dialogs/sui_bento_sheet.lua:117
+msgid ""
+"Share of the row this module occupies.\n"
+"100% = full width. A module that does not fit in the row goes under one of "
+"the same width."
 msgstr ""
+"此模块在本行中占用的比例。\n"
+"100% = 全宽。在本行放不下的模块会移到宽度相同的模块下方。"
 
 #: modules/critter/dialog.lua:170
 msgid "Shh. They can hear you."
-msgstr ""
+msgstr "嘘。它们听得见你。"
 
 #: modules/critter/reaction_lines.lua:111
 msgid "Short and sweet."
-msgstr ""
+msgstr "短小精悍。"
 
 #: modules/critter/dialog.lua:245
 msgid "Short books are the best ones."
-msgstr ""
+msgstr "薄书才是最棒的。"
+
+#: modules/moduleregistry.lua:243
+msgid "Shortcuts"
+msgstr "快捷方式"
 
 #: features/library/sui_finished_books.lua:59
-#: features/sui_cover_elements.lua:236 screens/sui_menu.lua:2773
+#: features/sui_cover_elements.lua:236 screens/sui_menu.lua:2823
 msgid "Show"
-msgstr ""
+msgstr "显示"
 
 #: modules/module_clock.lua:1076
 msgid "Show Battery"
@@ -5808,11 +5842,11 @@ msgstr "显示图标"
 msgid "Show Page Count in Title Bar"
 msgstr "在标题栏显示页数"
 
-#: screens/sui_menu.lua:3007
+#: screens/sui_menu.lua:3057
 msgid "Show Uncategorized Items"
 msgstr "显示未分类项"
 
-#: screens/sui_menu.lua:2459
+#: screens/sui_menu.lua:2387
 msgid ""
 "Show a brief \"Closing book…\" notice when closing a book, preventing "
 "accidental double-taps while e-ink refreshes."
@@ -5822,9 +5856,7 @@ msgstr "关闭书籍时显示短暂的“正在关闭书籍…”提示，防止
 msgid ""
 "Show a brief \"Loading statistics…\" notice when opening a statistics "
 "window, preventing accidental double-taps while e-ink refreshes."
-msgstr ""
-"打开统计窗口时，显示短暂的“正在加载统计数据…”提示，以防止电子墨水屏刷新期间发"
-"生误触。"
+msgstr "打开统计窗口时显示短暂的“正在加载统计…”提示，以防墨水屏刷新期间误触。"
 
 #: engines/sui_book_sources.lua:276 modules/module_coverdeck.lua:1661
 #: modules/module_recent.lua:49
@@ -5833,21 +5865,21 @@ msgstr "显示已读完书籍"
 
 #: modules/reading_stats/module_reading_stats.lua:1735
 msgid "Show icons"
-msgstr ""
+msgstr "显示图标"
 
 #: modules/module_heatmap.lua:359
 msgid "Show legend"
 msgstr "显示图例"
 
-#: screens/sui_menu.lua:2520
+#: screens/sui_menu.lua:2448
 msgid "Show on Close"
 msgstr "关闭时显示"
 
-#: screens/sui_menu.lua:2509
+#: screens/sui_menu.lua:2437
 msgid "Show on Open"
 msgstr "打开时显示"
 
-#: infra/sui_config.lua:2106
+#: infra/sui_config.lua:2167
 msgid "Show section label"
 msgstr "显示分区标签"
 
@@ -5855,11 +5887,11 @@ msgstr "显示分区标签"
 msgid ""
 "Show the frontlight and warmth sliders below the book details in the Book "
 "layout."
-msgstr ""
+msgstr "在书籍布局中，将前光和色温滑块显示在书籍详情下方。"
 
-#: screens/sui_menu.lua:2877
+#: screens/sui_menu.lua:2927
 msgid "Shown in captions"
-msgstr ""
+msgstr "显示在说明栏中"
 
 #: screens/sui_menu.lua:594
 msgid ""
@@ -5868,9 +5900,9 @@ msgid ""
 "Navpager enables this automatically.\n"
 "Not available when Navpager is active."
 msgstr ""
-"在浏览书库、历史记录或书单时，在标题栏副标题中显示“第 X 页，共 Y 页”。\n"
+"浏览书库、历史记录或书单时，在标题栏副标题中显示“第 X 页 · 共 Y 页”。\n"
 "导航分页器会自动启用此功能。\n"
-"当导航分页器处于活动状态时不可用。"
+"导航分页器处于活动状态时不可用。"
 
 #: screens/sui_menu.lua:485
 msgid ""
@@ -5878,9 +5910,9 @@ msgid ""
 "The active page dot is filled; the others are dimmed.\n"
 "Always active when Navpager is selected."
 msgstr ""
-"在主屏幕底部显示一行圆点。\n"
-"当前页面对应的圆点为实心，其余为暗色。\n"
-"当选中导航分页器时始终处于活动状态。"
+"在主页底部显示一排圆点。\n"
+"当前页的圆点为实心，其余为暗色。\n"
+"选择导航分页器时始终启用。"
 
 #: engines/sui_book_grid.lua:1540
 msgid "Shuffle"
@@ -5894,8 +5926,8 @@ msgstr "立即重新随机排序"
 msgid "Simple"
 msgstr "简洁"
 
-#: _meta.lua:5 main.lua:2388 main.lua:2401 screens/sui_menu.lua:4196
-#: screens/sui_menu.lua:4273
+#: _meta.lua:5 main.lua:2388 main.lua:2401 screens/sui_menu.lua:4246
+#: screens/sui_menu.lua:4323
 msgid "Simple UI"
 msgstr "Simple UI"
 
@@ -5905,19 +5937,19 @@ msgid ""
 "\n"
 "Restart KOReader to apply the update?"
 msgstr ""
-"SimpleUI %s 已安装。\n"
+"已安装 SimpleUI %s。\n"
 "\n"
-"是否重启 KOReader 以使更新生效？"
+"要重启 KOReader 以应用更新吗？"
 
 #: infra/sui_updater.lua:492
 msgid ""
 "Simple UI %s is available!\n"
 "You have %s."
 msgstr ""
-"SimpleUI %s 可用！\n"
-"你当前版本为 %s。"
+"SimpleUI %s 已可用！\n"
+"您当前使用的是 %s。"
 
-#: screens/sui_settings_window.lua:865
+#: screens/sui_settings_window.lua:870
 msgid "Simple UI Settings"
 msgstr "SimpleUI 设置"
 
@@ -5941,19 +5973,19 @@ msgstr ""
 "\n"
 "建议重启以完整应用所有更改。"
 
-#: screens/sui_menu.lua:4206
+#: screens/sui_menu.lua:4256
 msgid ""
 "Simple UI will be %s after restart.\n"
 "\n"
 "Restart now?"
 msgstr ""
-"重启后 SimpleUI 将变为 %s。\n"
+"SimpleUI 将在重启后%s。\n"
 "\n"
 "是否立即重启？"
 
 #: main.lua:993
 msgid "Simple UI: Go to Homescreen"
-msgstr "SimpleUI：前往主屏幕"
+msgstr "SimpleUI：前往主页"
 
 #: main.lua:999
 msgid "Simple UI: Go to Library"
@@ -5973,7 +6005,7 @@ msgstr "SimpleUI：设置"
 
 #: main.lua:1005
 msgid "Simple UI: Toggle Homescreen / Library"
-msgstr "SimpleUI：切换主屏幕/书库"
+msgstr "SimpleUI：切换主页/书库"
 
 #: engines/sui_group_cell.lua:261 features/sui_cover_elements.lua:317
 msgid "Single Cover"
@@ -5981,7 +6013,7 @@ msgstr "单封面"
 
 #: modules/critter/dialog.lua:275
 msgid "Sitting came later."
-msgstr ""
+msgstr "坐着是后来才有的。"
 
 #: modules/module_clock.lua:254
 msgid "Six"
@@ -5999,18 +6031,20 @@ msgstr "十六"
 msgid "Size"
 msgstr "大小"
 
-#: screens/sui_menu.lua:3329
+#: screens/sui_menu.lua:3379
 msgid ""
 "Size of the module labels.\n"
 "100% is the default size."
 msgstr ""
+"模块标签的大小。\n"
+"默认大小为 100%。"
 
 #: screens/sui_menu.lua:1130
 msgid ""
 "Size of the tab icons.\n"
 "100% is the default size."
 msgstr ""
-"标签图标的大小。\n"
+"选项卡图标的大小。\n"
 "默认大小为 100%。"
 
 #: screens/sui_menu.lua:1141
@@ -6018,29 +6052,30 @@ msgid ""
 "Size of the tab label text.\n"
 "100% is the default size."
 msgstr ""
-"标签文本的大小。\n"
+"选项卡标签文本的大小。\n"
 "默认大小为 100%。"
 
 #: modules/module_tab_grid.lua:668
-#, fuzzy
 msgid ""
 "Size of the tab labels.\n"
 "100% matches the homescreen section labels."
 msgstr ""
-"标签文本的大小。\n"
-"默认大小为 100%。"
+"选项卡标签的大小。\n"
+"100% 与主页的分区标签一致。"
 
 #: screens/sui_menu.lua:1724
 msgid ""
 "Size of the title bar buttons and tabs.\n"
 "100% is the default size."
 msgstr ""
+"标题栏按钮和选项卡的大小。\n"
+"默认大小为 100%。"
 
 #: engines/sui_book_grid.lua:2170 modules/critter/module_critter.lua:919
 #: modules/module_action_list.lua:367 modules/module_clock.lua:1093
 #: modules/module_coverdeck.lua:1612 modules/module_currently.lua:1374
 #: modules/module_quick_actions.lua:442 modules/module_quote.lua:1447
-#: modules/module_quote.lua:1468 modules/module_reading_goals.lua:1151
+#: modules/module_quote.lua:1468 modules/module_reading_goals.lua:1150
 #: modules/reading_stats/module_reading_stats.lua:1612
 msgid ""
 "Size of this text.\n"
@@ -6055,19 +6090,19 @@ msgstr "休眠"
 
 #: modules/critter/phrases.lua:109
 msgid "Sleep well. The book will keep."
-msgstr ""
+msgstr "睡个好觉。书我帮你看着。"
 
 #: screens/sui_quicksettings_bar.lua:1610
 msgid "Slider Style"
-msgstr ""
+msgstr "滑块样式"
 
 #: screens/sui_quicksettings_bar.lua:1625
 msgid "Sliders in Book Layout"
-msgstr ""
+msgstr "书籍布局中的滑块"
 
 #: modules/critter/reaction_lines.lua:197
 msgid "Slurp. Thank you."
-msgstr ""
+msgstr "咕嘟。谢啦。"
 
 #: modules/reading_stats/width_sheet.lua:64 screens/sui_menu.lua:557
 msgid "Small"
@@ -6075,31 +6110,31 @@ msgstr "小"
 
 #: modules/critter/dialog.lua:219
 msgid "Small critter, tall shelf, very long ladder."
-msgstr ""
+msgstr "小个子，高书架，超长的梯子。"
 
 #: modules/critter/module_critter.lua:806
 msgid "Smooth"
-msgstr ""
+msgstr "平滑"
 
 #: modules/critter/reaction_lines.lua:213
 msgid "Snack time!"
-msgstr ""
+msgstr "加餐时间！"
 
 #: modules/critter/dialog.lua:415
 msgid "So am I. Mostly."
-msgstr ""
+msgstr "我也是。基本上。"
 
 #: modules/critter/reaction_lines.lua:336
 msgid "So you remember where I live."
-msgstr ""
+msgstr "还知道我住哪儿啊。"
 
 #: modules/critter/reaction_lines.lua:78 modules/critter/reaction_lines.lua:100
 msgid "So, how did it end?"
-msgstr ""
+msgstr "结局怎么样？"
 
 #: modules/critter/dialog.lua:274
 msgid "Sofas were invented for books."
-msgstr ""
+msgstr "沙发就是为读书发明的。"
 
 #: infra/sui_backdrop.lua:81
 msgid "Solid"
@@ -6107,27 +6142,27 @@ msgstr "纯色"
 
 #: modules/critter/dialog.lua:567
 msgid "Some chapters are corridors."
-msgstr ""
+msgstr "有些章节就是走廊。"
 
 #: modules/critter/dialog.lua:149
 msgid "Someone has to."
-msgstr ""
+msgstr "总得有人做。"
 
 #: modules/critter/dialog.lua:308
 msgid "Sometimes."
-msgstr ""
+msgstr "有时候。"
 
 #: modules/critter/dialog.lua:547
 msgid "Somewhere far away."
-msgstr ""
+msgstr "在很远的地方。"
 
 #: modules/critter/dialog.lua:459
 msgid "Sorry. Counting is how I show I care."
-msgstr ""
+msgstr "抱歉。数数就是我表达关心的方式。"
 
 #: modules/critter/dialog.lua:602
 msgid "Sorry. I just like it when you read."
-msgstr ""
+msgstr "抱歉。我就是喜欢你读书的样子。"
 
 #: engines/sui_book_grid.lua:1553 modules/module_collections.lua:443
 #: modules/module_library.lua:225
@@ -6146,11 +6181,11 @@ msgstr ""
 "底部导航栏下方的间距。\n"
 "默认间距为 100%。"
 
-#: screens/sui_menu.lua:3361
+#: screens/sui_menu.lua:3411
 msgid ""
 "Space between the characters of a module label, as a percentage of its text "
 "size."
-msgstr ""
+msgstr "模块标签字符之间的间距，以文本大小的百分比表示。"
 
 #: modules/module_spacer.lua:58 modules/module_spacer.lua:112
 msgid "Spacer"
@@ -6166,11 +6201,19 @@ msgstr "间距"
 
 #: modules/module_tab_grid.lua:634
 msgid "Square Pill"
-msgstr ""
+msgstr "方形胶囊"
+
+#: screens/sui_menu.lua:2577
+msgid "Stack Modules"
+msgstr "堆叠模块"
+
+#: screens/sui_menu.lua:2611
+msgid "Start & Wake"
+msgstr "启动与唤醒"
 
 #: modules/critter/challenge.lua:221
 msgid "Start reading before %d:00 and it's yours."
-msgstr ""
+msgstr "在 %d:00 前开始阅读，就算挑战成功！"
 
 #: screens/sui_onboarding.lua:447
 msgid "Start using Simple UI"
@@ -6187,13 +6230,13 @@ msgstr "从预设布局开始，后续均可自由调整。"
 
 #: features/sui_manual_books.lua:110
 msgid "Started"
-msgstr ""
+msgstr "开始日期"
 
 #: modules/module_coverdeck.lua:127 modules/module_coverdeck.lua:1584
 #: modules/module_coverdeck.lua:1604 modules/module_coverdeck.lua:1611
 #: modules/module_currently.lua:273 modules/module_currently.lua:1335
 #: modules/module_currently.lua:1354 screens/sui_quicksettings_bar.lua:219
-#: screens/sui_quicksettings_bar.lua:1567
+#: screens/sui_quicksettings_bar.lua:1567 modules/moduleregistry.lua:242
 msgid "Statistics"
 msgstr "统计"
 
@@ -6210,7 +6253,7 @@ msgid "Statistics plugin not available."
 msgstr "统计插件不可用。"
 
 #: features/sui_quickactions.lua:951 infra/sui_config.lua:138
-#: screens/sui_menu.lua:2647 screens/sui_settings_window.lua:217
+#: screens/sui_menu.lua:2697 screens/sui_settings_window.lua:217
 #: screens/sui_settings_window.lua:282
 msgid "Stats"
 msgstr "统计"
@@ -6220,11 +6263,11 @@ msgid "Stats layout"
 msgstr "统计布局"
 
 #: features/sui_stats_menu.lua:57 modules/module_coverdeck.lua:1711
-#: modules/module_currently.lua:1479 modules/module_reading_goals.lua:1333
+#: modules/module_currently.lua:1479 modules/module_reading_goals.lua:1332
 msgid "Stats updated successfully."
 msgstr "统计数据已成功更新。"
 
-#: screens/sui_menu.lua:2659
+#: screens/sui_menu.lua:2709
 msgid "Status Bar"
 msgstr "状态栏"
 
@@ -6242,7 +6285,7 @@ msgid ""
 "\n"
 "Restart now?"
 msgstr ""
-"重启后状态栏将变为 %s。\n"
+"状态栏将在重启后%s。\n"
 "\n"
 "是否立即重启？"
 
@@ -6252,19 +6295,19 @@ msgstr "状态栏、标题栏、导航栏与分页栏"
 
 #: modules/critter/phrases.lua:112
 msgid "Still awake?"
-msgstr ""
+msgstr "还醒着？"
 
 #: modules/critter/dialog.lua:332
 msgid "Still up? How was your day?"
-msgstr ""
+msgstr "还没睡？今天过得怎么样？"
 
 #: modules/critter/dialog.lua:456
 msgid "Stop counting."
-msgstr ""
+msgstr "别数了。"
 
 #: modules/critter/dialog.lua:599
 msgid "Stop nagging."
-msgstr ""
+msgstr "别唠叨了。"
 
 #: features/sui_stats_menu.lua:139
 #: modules/reading_stats/module_reading_stats.lua:454
@@ -6279,7 +6322,7 @@ msgstr "连续模式"
 
 #: modules/critter/phrases.lua:146
 msgid "Streak started!"
-msgstr ""
+msgstr "连续阅读开始了！"
 
 #: screens/sui_menu.lua:2254
 msgid "Stretch to fill screen"
@@ -6289,9 +6332,9 @@ msgstr "拉伸以填满屏幕"
 #: modules/module_coverdeck.lua:1482 modules/module_tab_grid.lua:584
 #: modules/module_tab_grid.lua:631
 #: modules/reading_stats/module_reading_stats.lua:1681
-#: screens/sui_menu.lua:1759 screens/sui_menu.lua:3311
-#: screens/sui_menu.lua:4230 screens/sui_settings_window.lua:180
-#: screens/sui_settings_window.lua:870
+#: screens/sui_menu.lua:1759 screens/sui_menu.lua:3361
+#: screens/sui_menu.lua:4280 screens/sui_settings_window.lua:180
+#: screens/sui_settings_window.lua:875
 msgid "Style"
 msgstr "样式"
 
@@ -6301,7 +6344,7 @@ msgstr "子页面按钮"
 
 #: modules/critter/dialog.lua:644
 msgid "Suit yourself."
-msgstr ""
+msgstr "随你便。"
 
 #: infra/sui_datenames.lua:45
 msgid "Sun"
@@ -6313,16 +6356,15 @@ msgstr "星期日"
 
 #: screens/sui_menu.lua:2313
 msgid "Surface Opacity"
-msgstr ""
+msgstr "界面不透明度"
 
 #: modules/critter/phrases.lua:131
 msgid "Sweet dreams and good books."
-msgstr ""
+msgstr "好梦，好书相伴。"
 
 #: modules/module_tab_grid.lua:587
-#, fuzzy
 msgid "Swipe Bar"
-msgstr "滑动指示器"
+msgstr "滑动进度条"
 
 #: screens/sui_menu.lua:989
 msgid "Swipe Indicator"
@@ -6333,14 +6375,14 @@ msgstr "滑动指示器"
 msgid "System Actions"
 msgstr "系统操作"
 
-#: features/sui_style.lua:1275 screens/sui_menu.lua:3383
-#: screens/sui_menu.lua:3391
+#: features/sui_style.lua:1275 screens/sui_menu.lua:3433
+#: screens/sui_menu.lua:3441
 msgid "System Icons"
 msgstr "系统图标"
 
 #: features/sui_presets.lua:304
 msgid "System Presets"
-msgstr ""
+msgstr "系统预设"
 
 #: features/sui_quickactions.lua:2978
 msgid "System action error: %s"
@@ -6352,7 +6394,7 @@ msgstr "时间段"
 
 #: features/sui_style.lua:1270 modules/module_tab_grid.lua:628
 msgid "Tab Bar"
-msgstr "选项卡"
+msgstr "选项卡栏"
 
 #: screens/sui_menu.lua:1092
 msgid "Tab Style"
@@ -6401,7 +6443,7 @@ msgstr "选项卡：工具"
 #: features/sui_presets.lua:166 modules/module_tab_grid.lua:930
 #: modules/module_tab_grid.lua:1100
 msgid "Tabbed Grid"
-msgstr ""
+msgstr "标签网格"
 
 #: modules/module_tab_grid.lua:635 modules/module_tab_grid.lua:863
 #: modules/module_tab_grid.lua:866 screens/sui_menu.lua:351
@@ -6428,11 +6470,11 @@ msgstr "标签"
 
 #: modules/critter/reaction_lines.lua:61 modules/critter/reaction_lines.lua:83
 msgid "Take a bow. I'll hold the applause."
-msgstr ""
+msgstr "请受我一拜，掌声我来献。"
 
 #: modules/critter/phrases.lua:96
 msgid "Taking a break?"
-msgstr ""
+msgstr "在休息？"
 
 #: screens/sui_settings_window.lua:316
 msgid "Tap \"Create Screen\" below to add one."
@@ -6440,23 +6482,23 @@ msgstr "点击下方的“创建屏幕”以添加一个。"
 
 #: modules/critter/dialog.lua:228
 msgid "Tea, a blanket and nothing bad happening."
-msgstr ""
+msgstr "一杯茶、一条毯子，平平安安。"
 
 #: modules/critter/reaction_lines.lua:79
 msgid "Tell me about %s. No spoilers. Okay, spoilers."
-msgstr ""
+msgstr "跟我说说 %s。不许剧透。算了，剧透也行。"
 
 #: modules/critter/dialog.lua:551
 msgid "Tell me about it sometime."
-msgstr ""
+msgstr "哪天跟我说说。"
 
 #: modules/critter/reaction_lines.lua:341
 msgid "Tell me everything. Slowly."
-msgstr ""
+msgstr "全都告诉我。慢慢说。"
 
 #: modules/critter/dialog.lua:167
 msgid "Tell that to the ending of that one book."
-msgstr ""
+msgstr "这话去跟那本书的结局说吧。"
 
 #: modules/module_clock.lua:256
 msgid "Ten"
@@ -6464,11 +6506,11 @@ msgstr "十"
 
 #: modules/critter/dialog.lua:406
 msgid "Ten minutes count. Even sleepy ones."
-msgstr ""
+msgstr "十分钟也算。困着的也算。"
 
 #: modules/critter/dialog.lua:403
 msgid "Ten minutes count. I checked."
-msgstr ""
+msgstr "十分钟算数的。我查过了。"
 
 #: engines/sui_book_grid.lua:1996 infra/sui_config.lua:1132
 #: modules/module_quote.lua:1482 modules/module_tab_grid.lua:667
@@ -6486,43 +6528,43 @@ msgstr "仅文本"
 
 #: modules/critter/phrases.lua:274
 msgid "That makes me happy."
-msgstr ""
+msgstr "这让我很开心。"
 
 #: modules/critter/reaction_lines.lua:93
 msgid "That was a good one."
-msgstr ""
+msgstr "那本真不错。"
 
 #: modules/critter/reaction_lines.lua:146
 msgid "That was cosy."
-msgstr ""
+msgstr "真惬意。"
 
 #: modules/critter/reaction_lines.lua:114
 msgid "That was short. I blinked and missed it."
-msgstr ""
+msgstr "太短了。我一眨眼就错过了。"
 
 #: modules/critter/dialog.lua:414
 msgid "That's allowed. Books are patient."
-msgstr ""
+msgstr "这是允许的。书很有耐心。"
 
 #: modules/critter/dialog.lua:596
 msgid "That's fine. Rest days count too."
-msgstr ""
+msgstr "没关系。休息日也算数。"
 
 #: modules/critter/reaction_lines.lua:126
 msgid "That's how libraries get built."
-msgstr ""
+msgstr "图书馆就是这么建起来的。"
 
 #: modules/critter/dialog.lua:260
 msgid "That's my favourite kind of reader."
-msgstr ""
+msgstr "那是我最喜欢的那种读者。"
 
 #: modules/critter/reaction_lines.lua:415
 msgid "That's the best kind of promise."
-msgstr ""
+msgstr "这就是最靠谱的承诺。"
 
 #: modules/critter/dialog.lua:431
 msgid "That's the spirit. I'll keep count."
-msgstr ""
+msgstr "就是这个劲头。我记着账呢。"
 
 #: screens/sui_quicksettings_bar.lua:1493
 msgid ""
@@ -6530,35 +6572,35 @@ msgid ""
 "\n"
 "Restart now?"
 msgstr ""
-"重启后快捷设置栏将变为 %s。\n"
+"快速设置栏将在重启后%s。\n"
 "\n"
 "是否立即重启？"
 
 #: modules/critter/reaction_lines.lua:147
 msgid "The book and you make a good team."
-msgstr ""
+msgstr "书和你，真是绝配。"
 
 #: modules/critter/reaction_lines.lua:161
 msgid "The book clearly deserved it."
-msgstr ""
+msgstr "这本书显然值得。"
 
 #: modules/critter/reaction_lines.lua:133
 msgid "The book is warm now."
-msgstr ""
+msgstr "书都被你读热了。"
 
 #: modules/critter/reaction_lines.lua:331
 msgid "The books were worried."
-msgstr ""
+msgstr "那些书都担心坏了。"
 
 #: modules/critter/reaction_lines.lua:294
 msgid "The calendar flipped a page."
-msgstr ""
+msgstr "日历也翻了一页。"
 
 #: modules/critter/dialog.lua:238
 msgid "The case of the missing bookmark."
-msgstr ""
+msgstr "书签失踪案。"
 
-#: screens/sui_menu.lua:2533
+#: screens/sui_menu.lua:2461
 msgid ""
 "The cover shown right as a book opens normally comes from the library's "
 "cached thumbnail, which can look soft on higher-resolution screens. When on, "
@@ -6568,22 +6610,22 @@ msgid ""
 "to be read twice. Cover on close is unaffected either way: it already reads "
 "the full-quality cover from the open book."
 msgstr ""
-"书籍打开时显示的封面，一般来自书库的缓存缩略图，在高分辨率屏幕上可能发虚。启"
-"用此选项后，插件会直接从书籍文件中读取封面，即便是从未打开过的书也能显示封面"
-"（否则将无封面显示），代价是打开书籍时会多一次短暂停顿，因为文件需要被读取两"
-"次。关闭时的封面不受影响：其始终从已打开的书籍中读取完整质量封面。"
+"书籍打开瞬间显示的封面，通常取自书库的缓存缩略图，在高分辨率屏幕上可能发虚。"
+"开启后，SimpleUI 会在这一瞬间改为直接从书籍文件中读取封面（也能覆盖从未打开过"
+"的书籍，否则它们完全不显示封面）——代价是打开时会多一次短暂停顿，因为文件需要"
+"被读取两次。关闭时的封面不受影响：它始终从已打开的书籍中读取完整质量的封面。"
 
 #: modules/critter/module_critter.lua:782
 msgid "The critter may use it in what it says."
-msgstr ""
+msgstr "小宠物可能会在它说的话里用到这个名字。"
 
 #: modules/critter/reaction_lines.lua:362
 msgid "The dust and I have become friends."
-msgstr ""
+msgstr "灰尘和我已经成朋友了。"
 
 #: modules/critter/reaction_lines.lua:365
 msgid "The hero returns after a long quest!"
-msgstr ""
+msgstr "勇士远征归来！"
 
 #: main.lua:1397 screens/sui_bottombar.lua:1861
 msgid "The navigation bar is already available on this screen."
@@ -6591,27 +6633,27 @@ msgstr "此屏幕已提供导航栏。"
 
 #: modules/critter/dialog.lua:642
 msgid "The offer stands until midnight."
-msgstr ""
+msgstr "这个提议午夜前有效。"
 
 #: modules/critter/phrases.lua:101
 msgid "The perfect time to unwind with a book."
-msgstr ""
+msgstr "正是配着书放松的好时候。"
 
 #: modules/critter/reaction_lines.lua:344
 msgid "The reader returns! Let the feast begin!"
-msgstr ""
+msgstr "读书人回来了！开席！"
 
 #: modules/critter/reaction_lines.lua:327
 msgid "The shelves missed you."
-msgstr ""
+msgstr "书架想你了。"
 
 #: features/sui_manual_books.lua:62
 msgid "The start date is after the finish date."
-msgstr ""
+msgstr "开始日期晚于完成日期。"
 
 #: modules/critter/dialog.lua:465
 msgid "The streak took a little break."
-msgstr ""
+msgstr "连续记录小小地休息了一下。"
 
 #: screens/sui_menu.lua:1715
 msgid ""
@@ -6619,29 +6661,29 @@ msgid ""
 "\n"
 "Restart now?"
 msgstr ""
-"标题栏样式将在重启后更改。\n"
+"标题栏样式将在重启后改变。\n"
 "\n"
 "是否立即重启？"
 
 #: modules/critter/dialog.lua:145
 msgid "The unread ones, maybe."
-msgstr ""
+msgstr "也许是没读的那些。"
 
 #: modules/critter/reaction_lines.lua:323
 msgid "The wanderer returns to the library!"
-msgstr ""
+msgstr "游子归来，重返书库！"
 
 #: modules/critter/phrases.lua:249
 msgid "The weekend is made for reading."
-msgstr ""
+msgstr "周末就是用来读书的。"
 
 #: modules/critter/reaction_lines.lua:160
 msgid "The world can wait."
-msgstr ""
+msgstr "世界可以等一等。"
 
 #: modules/critter/reaction_lines.lua:238
 msgid "The year turns like a page."
-msgstr ""
+msgstr "一年又翻过了一页。"
 
 #: infra/sui_patches.lua:1193
 msgid "The «To Be Read» collection cannot be renamed."
@@ -6649,35 +6691,35 @@ msgstr "“待读”书单无法重命名。"
 
 #: modules/critter/dialog.lua:350
 msgid "Then let's end it with a good chapter."
-msgstr ""
+msgstr "那就用一个好章节收尾。"
 
 #: modules/critter/dialog.lua:151
 msgid "Then let's pick one to visit."
-msgstr ""
+msgstr "那咱们挑一个去看看。"
 
 #: modules/critter/dialog.lua:361
 msgid "Then read something easy."
-msgstr ""
+msgstr "那就读点轻松的。"
 
 #: modules/critter/dialog.lua:670
 msgid "Then slowly. Very slowly."
-msgstr ""
+msgstr "那就慢点。非常慢。"
 
 #: modules/critter/dialog.lua:453
 msgid "Then we start again. I'll still be here."
-msgstr ""
+msgstr "那就重新开始。我还在。"
 
 #: modules/critter/dialog.lua:353
 msgid "Then you get the comfiest book tonight."
-msgstr ""
+msgstr "那你今晚就能看最舒服的那本书。"
 
 #: modules/critter/dialog.lua:526
 msgid "There's still time. Short books count."
-msgstr ""
+msgstr "还有时间。薄书也算数。"
 
 #: modules/critter/dialog.lua:568
 msgid "They lead somewhere."
-msgstr ""
+msgstr "它们通向某个地方。"
 
 #: modules/module_clock.lua:257
 msgid "Thirteen"
@@ -6693,14 +6735,14 @@ msgstr "此备份不包含任何设置或文件。"
 
 #: modules/critter/dialog.lua:184
 msgid "This book has been places."
-msgstr ""
+msgstr "这本书去过不少地方。"
 
 #: modules/module_tbr.lua:354
 msgid ""
 "This book is marked as Finished, so it can't be added to To Be Read.\n"
 "Change its status to Reading or On Hold first."
 msgstr ""
-"此书已标记为“读完”，无法添加到“待读”。\n"
+"本书已标记为“已读完”，无法添加到待读列表。\n"
 "请先将其状态改为“在读”或“搁置”。"
 
 #: features/sui_quickactions.lua:3117 features/sui_quickactions.lua:3196
@@ -6708,18 +6750,18 @@ msgid ""
 "This group is empty.\n"
 "Add actions to it from Settings → Quick Actions."
 msgstr ""
-"该分组为空。\n"
-"请在「设置 > 快捷操作」中添加操作。"
+"此分组为空。\n"
+"请从 设置 → 快捷操作 中添加操作。"
 
 #: modules/reading_stats/module_reading_stats.lua:450
 #: modules/reading_stats/module_reading_stats.lua:451
 #: screens/sui_stats_windows.lua:1897
 msgid "This month"
-msgstr ""
+msgstr "本月"
 
 #: screens/insights/sui_insights_charts.lua:119
 msgid "This month by day"
-msgstr ""
+msgstr "本月每日阅读"
 
 #: features/sui_presets.lua:351
 msgid "This name is reserved by a built-in preset."
@@ -6729,23 +6771,23 @@ msgstr "该名称已被内置预设占用。"
 #: modules/reading_stats/module_reading_stats.lua:446
 #: screens/sui_stats_windows.lua:1889
 msgid "This week"
-msgstr ""
+msgstr "本周"
 
 #: screens/insights/sui_insights_charts.lua:102
 msgid "This week vs last week"
-msgstr ""
+msgstr "本周与上周对比"
 
-#: screens/sui_menu.lua:4110
+#: screens/sui_menu.lua:4160
 msgid ""
 "This will delete all Simple UI settings and restart KOReader.\n"
 "Are you sure?"
 msgstr ""
 "这将删除所有 SimpleUI 设置并重启 KOReader。\n"
-"确定要继续吗？"
+"确定吗？"
 
 #: modules/reading_stats/module_reading_stats.lua:447
 msgid "This year"
-msgstr ""
+msgstr "今年"
 
 #: modules/module_clock.lua:253
 msgid "Three"
@@ -6753,7 +6795,7 @@ msgstr "三"
 
 #: modules/critter/dialog.lua:204
 msgid "Throw it away."
-msgstr ""
+msgstr "扔了吧。"
 
 #: infra/sui_datenames.lua:45
 msgid "Thu"
@@ -6765,11 +6807,11 @@ msgstr "星期四"
 
 #: modules/critter/reaction_lines.lua:288
 msgid "Time flies when you're reading."
-msgstr ""
+msgstr "读起书来时间过得飞快。"
 
 #: modules/critter/phrases.lua:93
 msgid "Time for a few pages?"
-msgstr ""
+msgstr "读几页的时间总有吧？"
 
 #: modules/module_heatmap.lua:224 modules/module_heatmap.lua:341
 #: modules/reading_stats/module_reading_stats.lua:494
@@ -6786,28 +6828,28 @@ msgstr "剩余时间"
 
 #: modules/critter/module_critter.lua:466
 msgid "Tiny Critter"
-msgstr ""
+msgstr "小小宠物"
 
 #: modules/critter/dialog.lua:358
 msgid "Tiring."
-msgstr ""
+msgstr "累人。"
 
 #: features/sui_manual_books.lua:108 modules/module_coverdeck.lua:124
 #: modules/module_coverdeck.lua:1611 modules/module_currently.lua:268
-#: modules/module_currently.lua:1368 screens/sui_menu.lua:2785
+#: modules/module_currently.lua:1368 screens/sui_menu.lua:2835
 #: screens/sui_quicksettings_bar.lua:217 screens/sui_titlebar.lua:117
 msgid "Title"
-msgstr "标题"
+msgstr "书名"
 
 #: engines/sui_book_grid.lua:1535 modules/module_library.lua:203
 msgid "Title (A–Z)"
-msgstr "标题（A–Z）"
+msgstr "书名（A–Z）"
 
 #: engines/sui_book_grid.lua:1536 modules/module_library.lua:204
 msgid "Title (Z–A)"
-msgstr "标题（Z–A）"
+msgstr "书名（Z–A）"
 
-#: features/sui_style.lua:1264 screens/sui_menu.lua:2661
+#: features/sui_style.lua:1264 screens/sui_menu.lua:2711
 msgid "Title Bar"
 msgstr "标题栏"
 
@@ -6817,7 +6859,7 @@ msgstr "标题栏不透明度"
 
 #: screens/sui_menu.lua:1723
 msgid "Title Bar Size"
-msgstr ""
+msgstr "标题栏大小"
 
 #: screens/sui_menu.lua:1752
 msgid ""
@@ -6825,13 +6867,13 @@ msgid ""
 "\n"
 "Restart now?"
 msgstr ""
-"重启后标题栏将变为 %s。\n"
+"标题栏将在重启后%s。\n"
 "\n"
 "是否立即重启？"
 
-#: screens/sui_menu.lua:2786
+#: screens/sui_menu.lua:2836
 msgid "Title and Author"
-msgstr "标题与作者"
+msgstr "书名与作者"
 
 #: engines/sui_book_sources.lua:348 modules/module_coverdeck.lua:1494
 #: modules/module_tbr.lua:378
@@ -6842,9 +6884,13 @@ msgstr "待读"
 msgid "To Be Read Books"
 msgstr "待读书籍"
 
-#: modules/module_reading_goals.lua:892 modules/module_reading_goals.lua:973
-#: modules/module_reading_goals.lua:975 modules/module_reading_goals.lua:1023
-#: modules/module_reading_goals.lua:1026
+#: screens/sui_settings_window.lua:559
+msgid "To Page"
+msgstr "移至页面"
+
+#: modules/module_reading_goals.lua:891 modules/module_reading_goals.lua:972
+#: modules/module_reading_goals.lua:974 modules/module_reading_goals.lua:1022
+#: modules/module_reading_goals.lua:1025
 #: modules/reading_stats/module_reading_stats.lua:443
 #: modules/reading_stats/module_reading_stats.lua:444
 #: screens/sui_stats_windows.lua:1867
@@ -6853,19 +6899,19 @@ msgstr "今天"
 
 #: modules/critter/reaction_lines.lua:256
 msgid "Today the whole world kneels to the book!"
-msgstr ""
+msgstr "今天全世界都要向书下拜！"
 
 #: modules/critter/reaction_lines.lua:243
 msgid "Today we celebrate you and your shelves."
-msgstr ""
+msgstr "今天我们要为你和你的书架庆贺。"
 
 #: modules/critter/phrases.lua:48
 msgid "Today's reading"
-msgstr ""
+msgstr "今日阅读"
 
 #: modules/critter/reaction_lines.lua:281
 msgid "Together, with books."
-msgstr ""
+msgstr "一起，还有书。"
 
 #: engines/sui_window.lua:3799
 msgid "Toggle"
@@ -6880,13 +6926,13 @@ msgstr "顶部"
 msgid "Top Bar"
 msgstr "顶部栏"
 
-#: infra/sui_config.lua:1815
+#: infra/sui_config.lua:1876
 msgid "Top Margin"
 msgstr "上边距"
 
 #: modules/critter/module_critter.lua:832
 msgid "Topics"
-msgstr ""
+msgstr "话题"
 
 #: screens/sui_stats_windows.lua:889 screens/sui_stats_windows.lua:2625
 msgid "Total"
@@ -6894,7 +6940,7 @@ msgstr "总计"
 
 #: modules/reading_stats/module_reading_stats.lua:452
 msgid "Total reading time"
-msgstr ""
+msgstr "总阅读时长"
 
 #: screens/sui_stats_windows.lua:1868 screens/sui_stats_windows.lua:1878
 #: screens/sui_stats_windows.lua:1892
@@ -6907,7 +6953,7 @@ msgstr "总计：%d 项设置、%d 个文件（%s）"
 
 #: modules/critter/dialog.lua:664
 msgid "Tough one…"
-msgstr ""
+msgstr "这题有点难…"
 
 #: infra/sui_backdrop.lua:80
 msgid "Transparent"
@@ -6915,11 +6961,11 @@ msgstr "透明"
 
 #: modules/critter/dialog.lua:746
 msgid "Try “%s”, by %s."
-msgstr ""
+msgstr "试试“%s”，%s 著。"
 
 #: modules/critter/dialog.lua:747
 msgid "Try “%s”."
-msgstr ""
+msgstr "试试“%s”。"
 
 #: infra/sui_datenames.lua:45
 msgid "Tue"
@@ -6939,7 +6985,7 @@ msgstr "二十"
 
 #: modules/critter/dialog.lua:268
 msgid "Twice the places."
-msgstr ""
+msgstr "两个地方那么多。"
 
 #: modules/module_clock.lua:253
 msgid "Two"
@@ -6950,7 +6996,7 @@ msgstr "二"
 msgid "Type"
 msgstr "类型"
 
-#: screens/sui_menu.lua:3975
+#: screens/sui_menu.lua:4025
 msgid "UI Font"
 msgstr "界面字体"
 
@@ -6958,7 +7004,7 @@ msgstr "界面字体"
 msgid "Uncategorized"
 msgstr "未分类"
 
-#: screens/sui_menu.lua:3038
+#: screens/sui_menu.lua:3088
 msgid "Uniformize Covers (2:3)"
 msgstr "统一封面比例（2:3）"
 
@@ -6970,7 +7016,7 @@ msgstr "未知"
 msgid "Unknown error."
 msgstr "未知错误。"
 
-#: features/sui_style.lua:2733
+#: features/sui_style.lua:2736
 msgid "Unsupported format (use a folder or a .zip file)"
 msgstr "不支持的格式（请使用文件夹或 .zip 文件）"
 
@@ -6988,8 +7034,8 @@ msgid "Update"
 msgstr "更新"
 
 #: features/sui_stats_menu.lua:151 modules/module_coverdeck.lua:1694
-#: modules/module_currently.lua:1461 modules/module_reading_goals.lua:1315
-#: modules/module_reading_goals.lua:1351
+#: modules/module_currently.lua:1461 modules/module_reading_goals.lua:1314
+#: modules/module_reading_goals.lua:1350
 #: modules/reading_stats/module_reading_stats.lua:1751
 msgid "Update Stats Now"
 msgstr "立即更新统计"
@@ -7002,17 +7048,17 @@ msgstr "更新已取消。"
 msgid "Update check cancelled."
 msgstr "更新检查已取消。"
 
-#: features/sui_presets.lua:960 screens/sui_menu.lua:3771
+#: features/sui_presets.lua:960 screens/sui_menu.lua:3821
 msgid "Update with current settings"
 msgstr "使用当前设置更新"
 
-#: screens/sui_menu.lua:4089
+#: screens/sui_menu.lua:4139
 msgid "Updater module not found."
 msgstr "未找到更新模块。"
 
 #: modules/critter/module_critter.lua:788
 msgid "Use at most %1 characters."
-msgstr ""
+msgstr "最多使用 %1 个字符。"
 
 #: screens/sui_stats_windows.lua:2210
 msgid "Use freeze"
@@ -7027,8 +7073,8 @@ msgid ""
 "Uses the standard KOReader pagination bar on the homescreen.\n"
 "Not available when Navpager is active."
 msgstr ""
-"在主屏幕上使用 KOReader 标准分页栏。\n"
-"启用导航分页器时不可用。"
+"在主页上使用 KOReader 标准分页栏。\n"
+"导航分页器启用时不可用。"
 
 #: modules/reading_stats/module_reading_stats.lua:1611
 msgid "Value"
@@ -7038,11 +7084,11 @@ msgstr "数值"
 msgid "Version, author and updates"
 msgstr "版本、作者与更新"
 
-#: screens/sui_menu.lua:4064
+#: screens/sui_menu.lua:4114
 msgid "Version: %s"
 msgstr "版本：%s"
 
-#: infra/sui_config.lua:1817
+#: infra/sui_config.lua:1878
 msgid ""
 "Vertical space above this module.\n"
 "100% is the default spacing."
@@ -7064,9 +7110,9 @@ msgstr ""
 
 #: modules/critter/reaction_lines.lua:249
 msgid "WORLD BOOK DAY! The best day of the year!"
-msgstr ""
+msgstr "世界读书日！一年中最好的一天！"
 
-#: features/sui_backup.lua:142 screens/sui_menu.lua:2625
+#: features/sui_backup.lua:142 screens/sui_menu.lua:2675
 #: screens/sui_settings_window.lua:260 screens/sui_settings_window.lua:266
 msgid "Wallpaper"
 msgstr "壁纸"
@@ -7077,7 +7123,7 @@ msgstr "壁纸设置与图片文件"
 
 #: modules/critter/dialog.lua:610
 msgid "Want me to pick your next book?"
-msgstr ""
+msgstr "要我帮你挑下一本书吗？"
 
 #: screens/sui_quicksettings_bar.lua:593
 msgid "Warmth"
@@ -7087,17 +7133,17 @@ msgstr "色温"
 msgid "Warmth Slider"
 msgstr "色温滑块"
 
-#: screens/sui_menu.lua:2559
+#: screens/sui_menu.lua:2599
 msgid "Warn when modules on a page exceed the available screen height."
 msgstr "当页面上的模块超出屏幕高度时发出警告。"
 
 #: modules/critter/dialog.lua:187
 msgid "Was it my bookmark?"
-msgstr ""
+msgstr "是我的书签吗？"
 
 #: modules/critter/reaction_lines.lua:167
 msgid "Was it that good?"
-msgstr ""
+msgstr "真有那么好看？"
 
 #: engines/sui_heatmap_widgets.lua:127 infra/sui_datenames.lua:45
 msgid "Wed"
@@ -7109,11 +7155,11 @@ msgstr "星期三"
 
 #: screens/sui_stats_windows.lua:1736
 msgid "Week streak"
-msgstr ""
+msgstr "连续阅读周数"
 
 #: modules/reading_stats/module_reading_stats.lua:487
 msgid "Weekly change"
-msgstr ""
+msgstr "每周变化"
 
 #: modules/module_heatmap.lua:305 modules/module_heatmap.lua:309
 msgid "Weeks shown"
@@ -7121,19 +7167,19 @@ msgstr "显示周数"
 
 #: modules/critter/reaction_lines.lua:326
 msgid "Welcome back!"
-msgstr ""
+msgstr "欢迎回来！"
 
 #: modules/critter/reaction_lines.lua:368
 msgid "Welcome back, stranger!"
-msgstr ""
+msgstr "欢迎回来，陌生人！"
 
 #: modules/critter/reaction_lines.lua:352
 msgid "Welcome home."
-msgstr ""
+msgstr "欢迎回家。"
 
 #: modules/critter/reaction_lines.lua:284
 msgid "Welcome to %s!"
-msgstr ""
+msgstr "欢迎来到 %s！"
 
 #: screens/sui_onboarding.lua:395 screens/sui_onboarding.lua:396
 msgid "Welcome to Simple UI"
@@ -7141,43 +7187,43 @@ msgstr "欢迎使用 SimpleUI"
 
 #: modules/critter/phrases.lua:225
 msgid "Well done today."
-msgstr ""
+msgstr "今天干得不错。"
 
 #: modules/critter/phrases.lua:230
 msgid "Well done, %s!"
-msgstr ""
+msgstr "干得漂亮，%s！"
 
 #: modules/critter/phrases.lua:217
 msgid "What a habit!"
-msgstr ""
+msgstr "这习惯，绝了！"
 
 #: modules/critter/reaction_lines.lua:136
 msgid "What a lovely session! Bravo!"
-msgstr ""
+msgstr "读得太棒了！精彩！"
 
 #: modules/critter/reaction_lines.lua:340
 msgid "What did I miss?"
-msgstr ""
+msgstr "我错过什么了？"
 
 #: modules/critter/dialog.lua:450
 msgid "What if I miss a day?"
-msgstr ""
+msgstr "要是断了一天怎么办？"
 
 #: modules/critter/reaction_lines.lua:225
 msgid "What shall we read first?"
-msgstr ""
+msgstr "先读哪本？"
 
 #: modules/critter/phrases.lua:119
 msgid "What shall we read today?"
-msgstr ""
+msgstr "今天读点什么？"
 
 #: modules/critter/dialog.lua:520
 msgid "What should I read next?"
-msgstr ""
+msgstr "我下一本读什么？"
 
 #: modules/critter/dialog.lua:180
 msgid "What was it?"
-msgstr ""
+msgstr "是什么？"
 
 #: infra/sui_updater.lua:493
 msgid "What's new:"
@@ -7191,27 +7237,39 @@ msgid ""
 "Books changed back to Reading or Abandoned are automatically removed from "
 "this list."
 msgstr ""
-"当从设备中删除已读完的书籍（文件或文件夹）时，仍在主页的“已读图书”统计中保留"
-"计数。\n"
+"当已读完的书籍从设备中删除（文件或文件夹）时，仍在主页的“已读完书籍”统计中保"
+"留计数。\n"
 "\n"
 "状态改回“在读”或“搁置”的书籍会自动从此列表中移除。"
 
-#: screens/sui_menu.lua:2571
+#: screens/sui_menu.lua:2589
+msgid ""
+"When a module changes width, the next module of its row adjusts so the row "
+"stays full."
+msgstr "当某个模块改变宽度时，本行中的下一个模块会随之调整，以保持整行占满。"
+
+#: screens/sui_menu.lua:2578
+msgid ""
+"When a module does not fit in its row, show it under the module of the row "
+"with the same width instead of starting a new row."
+msgstr "当模块在本行放不下时，将其显示在本行宽度相同的模块下方，而不是另起一行。"
+
+#: screens/sui_menu.lua:2619
 msgid ""
 "When enabled, long-pressing a module on the home screen opens its settings "
 "menu.\n"
 "Disable this to prevent settings from appearing on long tap."
 msgstr ""
 "启用后，长按主页上的模块会打开其设置菜单。\n"
-"禁用此项可防止长按时出现设置菜单。"
+"禁用此项可防止长按时弹出设置。"
 
 #: screens/sui_quicksettings_bar.lua:1688
 msgid ""
 "When enabled, long-pressing the Quick Settings Bar opens its settings menu.\n"
 "Disable this to prevent the settings menu from appearing on long tap."
 msgstr ""
-"启用后，长按快捷设置栏会打开其设置菜单。\n"
-"禁用此项可防止长按时出现设置菜单。"
+"启用后，长按快速设置栏会打开其设置菜单。\n"
+"禁用此项可防止长按时弹出设置菜单。"
 
 #: screens/sui_menu.lua:1178
 msgid ""
@@ -7219,7 +7277,7 @@ msgid ""
 "Disable this to prevent the settings menu from appearing on long tap."
 msgstr ""
 "启用后，长按导航栏会打开其设置菜单。\n"
-"禁用此项可防止长按时出现设置菜单。"
+"禁用此项可防止长按时弹出设置菜单。"
 
 #: screens/sui_menu.lua:1009
 msgid ""
@@ -7227,7 +7285,7 @@ msgid ""
 "Disable this to prevent the settings menu from appearing on long tap."
 msgstr ""
 "启用后，长按顶部栏会打开其设置菜单。\n"
-"禁用此项可防止长按时出现设置菜单。"
+"禁用此项可防止长按时弹出设置菜单。"
 
 #: screens/sui_menu.lua:2373
 msgid ""
@@ -7237,23 +7295,23 @@ msgstr "设备从休眠唤醒时始终返回主页，即使休眠前正在阅读
 
 #: modules/critter/dialog.lua:98
 msgid "When you close a book, do the characters wait?"
-msgstr ""
+msgstr "你合上一本书时，里面的人物会等着吗？"
 
 #: screens/sui_stats_windows.lua:1903
 msgid "When you read"
-msgstr ""
+msgstr "阅读时段"
 
 #: modules/critter/dialog.lua:79
 msgid "Whenever you're ready."
-msgstr ""
+msgstr "你准备好就行。"
 
 #: modules/critter/dialog.lua:252
 msgid "Where do you like to read the most?"
-msgstr ""
+msgstr "你最喜欢在哪儿读书？"
 
 #: infra/sui_config.lua:1514 modules/module_tab_grid.lua:646
 msgid "White"
-msgstr ""
+msgstr "白色"
 
 #: features/sui_quickactions.lua:914 infra/sui_config.lua:135
 msgid "Wi-Fi"
@@ -7271,14 +7329,14 @@ msgstr "Wi-Fi"
 msgid "WiFi not available on this device."
 msgstr "该设备不支持 Wi-Fi。"
 
-#: features/dialogs/sui_bento_sheet.lua:183
+#: features/dialogs/sui_bento_sheet.lua:209
 #: modules/reading_stats/width_sheet.lua:298
 msgid "Width"
-msgstr ""
+msgstr "宽度"
 
-#: features/dialogs/sui_bento_sheet.lua:220 infra/sui_config.lua:1831
+#: features/dialogs/sui_bento_sheet.lua:249 infra/sui_config.lua:1892
 msgid "Width and Position"
-msgstr ""
+msgstr "宽度与位置"
 
 #: features/sui_quickactions.lua:2205
 msgid "Wikipedia Lookup"
@@ -7286,7 +7344,7 @@ msgstr "维基百科查询"
 
 #: modules/critter/phrases.lua:104
 msgid "Winding down?"
-msgstr ""
+msgstr "在放松？"
 
 #: modules/module_currently.lua:1416
 msgid "With percentage"
@@ -7294,27 +7352,27 @@ msgstr "带百分比"
 
 #: modules/critter/dialog.lua:580
 msgid "Wonderful. I'll hold the lamp."
-msgstr ""
+msgstr "太好了。我来举灯。"
 
 #: modules/module_clock.lua:1103 modules/module_clock.lua:1116
 msgid "Word"
-msgstr "单词"
+msgstr "文字"
 
 #: modules/critter/reaction_lines.lua:248
 msgid "World Book Day. Fine. Read something."
-msgstr ""
+msgstr "世界读书日。行吧。读点什么。"
 
 #: modules/critter/reaction_lines.lua:358
 msgid "YOU'RE BACK! Confetti, everyone!"
-msgstr ""
+msgstr "你回来了！大家撒花！"
 
 #: features/sui_manual_books.lua:102
 msgid "YYYY-MM-DD or YYYY"
-msgstr ""
+msgstr "YYYY-MM-DD 或 YYYY"
 
 #: features/sui_manual_books.lua:146
 msgid "Year:"
-msgstr ""
+msgstr "年份："
 
 #: screens/sui_stats_windows.lua:1161
 msgid "Yes"
@@ -7322,27 +7380,27 @@ msgstr "是"
 
 #: modules/critter/dialog.lua:582
 msgid "Yes! Lamp on. Pages ready."
-msgstr ""
+msgstr "好！灯亮了。书页就绪。"
 
 #: modules/critter/dialog.lua:634
 msgid "Yes! You've got this!"
-msgstr ""
+msgstr "好！你行的！"
 
 #: modules/critter/dialog.lua:393
 msgid "Yes, a few chapters."
-msgstr ""
+msgstr "读了，几个章节。"
 
 #: modules/critter/dialog.lua:613
 msgid "Yes, pick one"
-msgstr ""
+msgstr "好，选一本"
 
 #: modules/critter/dialog.lua:577
 msgid "Yes, right now."
-msgstr ""
+msgstr "读了，就刚才。"
 
 #: modules/critter/dialog.lua:193
 msgid "Yes. I'll sleep on the cover, then."
-msgstr ""
+msgstr "好。那我去封面上睡一觉。"
 
 #: screens/sui_stats_windows.lua:2199
 msgid "Yesterday is already covered by a freeze."
@@ -7354,11 +7412,11 @@ msgstr "昨天的内容你已经读过了 — 无需冻结。"
 
 #: modules/critter/reaction_lines.lua:354
 msgid "You came back."
-msgstr ""
+msgstr "你还是回来了。"
 
 #: modules/critter/dialog.lua:669
 msgid "You can do it. One page at a time."
-msgstr ""
+msgstr "你行的。一次一页。"
 
 #: screens/sui_stats_windows.lua:2191
 msgid "You don't have any freezes available yet."
@@ -7366,100 +7424,100 @@ msgstr "你当前没有可用的冻结权。"
 
 #: modules/critter/reaction_lines.lua:63
 msgid "You finished %s."
-msgstr ""
+msgstr "你读完了 %s。"
 
 #: modules/critter/reaction_lines.lua:85
 msgid "You finished a book."
-msgstr ""
+msgstr "你读完了一本书。"
 
 #: modules/critter/reaction_lines.lua:274
 msgid "You had a book in your hand."
-msgstr ""
+msgstr "你手里还拿着一本书。"
 
 #: screens/sui_stats_windows.lua:2208
 msgid ""
 "You have %d freeze(s) available.\n"
 "Use one to cover %s?"
 msgstr ""
-"你有 %d 个冻结权可用。\n"
-"是否使用 1 个补签 %s？"
+"您有 %d 次可用冻结权。\n"
+"要用一次来覆盖 %s 吗？"
 
 #: modules/critter/dialog.lua:168
 msgid "You know which one."
-msgstr ""
+msgstr "你知道是哪一本。"
 
 #: modules/critter/reaction_lines.lua:168
 msgid "You must tell me everything."
-msgstr ""
+msgstr "你得把一切都告诉我。"
 
 #: modules/critter/reaction_lines.lua:206
 msgid "You plugged me in."
-msgstr ""
+msgstr "你给我插上电了。"
 
 #: modules/critter/reaction_lines.lua:414
 msgid "You said you would, and you did."
-msgstr ""
+msgstr "你说过你会做到，你做到了。"
 
 #: modules/critter/reaction_lines.lua:337
 msgid "You're back! Best day ever!"
-msgstr ""
+msgstr "你回来了！最棒的一天！"
 
 #: modules/critter/reaction_lines.lua:316
 msgid "You're back! I missed you!"
-msgstr ""
+msgstr "你回来了！想死你了！"
 
 #: modules/critter/reaction_lines.lua:343
 msgid "You're back. Finally. I got so bored I napped."
-msgstr ""
+msgstr "你终于回来了。我无聊到都睡了一觉。"
 
 #: modules/critter/reaction_lines.lua:364
 msgid "You're back. I slept through half of it."
-msgstr ""
+msgstr "你回来了。这期间我睡掉了一半。"
 
 #: modules/critter/reaction_lines.lua:322
 msgid "You're back. I was napping, honest."
-msgstr ""
+msgstr "你回来了。我在睡觉呢，真的。"
 
 #: modules/critter/reaction_lines.lua:207
 msgid "You're my favourite human."
-msgstr ""
+msgstr "你是我最喜欢的人类。"
 
 #: modules/critter/phrases.lua:140
 msgid "You're on a roll!"
-msgstr ""
+msgstr "你正顺得停不下来！"
 
 #: modules/critter/dialog.lua:660
 msgid "You're unstoppable today."
-msgstr ""
+msgstr "你今天无人能挡。"
 
 #: modules/critter/dialog.lua:63
 msgid "You've opened every book you own."
-msgstr ""
+msgstr "你把有的书全翻开了。"
 
 #: modules/critter/dialog.lua:68
 msgid "You've opened them all. I'm so proud."
-msgstr ""
+msgstr "你把它们全翻开了。我太骄傲了。"
 
 #: modules/critter/phrases.lua:176
 msgid "Your first one this year is waiting."
-msgstr ""
+msgstr "你今年的第一本在等着呢。"
 
 #: modules/module_quote.lua:1016
 msgid "Your highlights"
-msgstr "你的高亮标注"
+msgstr "你的高亮"
 
 #: modules/critter/module_critter.lua:776
 #: modules/critter/module_critter.lua:781
 msgid "Your name"
-msgstr ""
+msgstr "你的名字"
 
 #: modules/critter/dialog.lua:311
 msgid "Your secret is safe with the shelf."
-msgstr ""
+msgstr "你的秘密跟书架在一起很安全。"
 
 #: modules/critter/phrases.lua:159
 msgid "Your streak is on a break."
-msgstr ""
+msgstr "你的连续阅读中断了。"
 
 #: modules/reading_stats/module_reading_stats.lua:503
 msgid "abandoned"
@@ -7483,7 +7541,7 @@ msgstr "8月"
 
 #: modules/reading_stats/module_reading_stats.lua:463
 msgid "average session (90 days)"
-msgstr ""
+msgstr "平均单次阅读（近 90 天）"
 
 #: modules/reading_stats/module_reading_stats.lua:453
 msgid "books finished"
@@ -7495,7 +7553,7 @@ msgstr "日平均（近 7 天）"
 
 #: modules/reading_stats/module_reading_stats.lua:483
 msgid "days read (12 weeks)"
-msgstr ""
+msgstr "阅读天数（近 12 周）"
 
 #: screens/sui_stats_windows.lua:314 screens/sui_stats_windows.lua:1326
 msgid "dec"
@@ -7510,7 +7568,7 @@ msgid "default"
 msgstr "默认"
 
 #: screens/sui_menu.lua:809 screens/sui_menu.lua:1086 screens/sui_menu.lua:1753
-#: screens/sui_menu.lua:4206 screens/sui_quicksettings_bar.lua:1494
+#: screens/sui_menu.lua:4256 screens/sui_quicksettings_bar.lua:1494
 msgid "disabled"
 msgstr "已禁用"
 
@@ -7519,7 +7577,7 @@ msgid "empty"
 msgstr "空"
 
 #: screens/sui_menu.lua:809 screens/sui_menu.lua:1086 screens/sui_menu.lua:1753
-#: screens/sui_menu.lua:4206 screens/sui_quicksettings_bar.lua:1494
+#: screens/sui_menu.lua:4256 screens/sui_quicksettings_bar.lua:1494
 msgid "enabled"
 msgstr "已启用"
 
@@ -7531,9 +7589,9 @@ msgstr "2月"
 msgid "february"
 msgstr "2月"
 
-#: features/sui_style.lua:2679
+#: features/sui_style.lua:2682
 msgid "ffi/archiver not available in this KOReader version"
-msgstr "此版本的 KOReader 中 ffi/archiver 不可用"
+msgstr "此版本 KOReader 中的 ffi/archiver 不可用"
 
 #: features/sui_quickactions.lua:2053
 msgid "hex code, e.g. E001"
@@ -7569,19 +7627,19 @@ msgstr "6月"
 
 #: modules/reading_stats/module_reading_stats.lua:484
 msgid "last 12 weeks"
-msgstr ""
+msgstr "最近 12 周"
 
 #: modules/reading_stats/module_reading_stats.lua:448
 #: modules/reading_stats/module_reading_stats.lua:449
 msgid "last 7 days"
-msgstr ""
+msgstr "最近 7 天"
 
 #: modules/reading_stats/module_reading_stats.lua:461
 #: modules/reading_stats/module_reading_stats.lua:464
 #: modules/reading_stats/module_reading_stats.lua:467
 #: modules/reading_stats/module_reading_stats.lua:472
 msgid "last 90 days"
-msgstr ""
+msgstr "最近 90 天"
 
 #: infra/sui_updater.lua:680
 msgid "latest"
@@ -7589,7 +7647,7 @@ msgstr "最新版"
 
 #: modules/reading_stats/module_reading_stats.lua:460
 msgid "longest session (90 days)"
-msgstr ""
+msgstr "最长单次阅读（近 90 天）"
 
 #: screens/sui_stats_windows.lua:313 screens/sui_stats_windows.lua:1325
 msgid "mar"
@@ -7606,11 +7664,11 @@ msgstr "5月"
 
 #: modules/reading_stats/module_reading_stats.lua:494
 msgid "most-read time of day"
-msgstr ""
+msgstr "最常阅读的时段"
 
 #: modules/reading_stats/module_reading_stats.lua:477
 msgid "most-read weekday"
-msgstr ""
+msgstr "最常阅读的星期"
 
 #: modules/reading_stats/module_reading_stats.lua:456
 msgid "no streak"
@@ -7643,7 +7701,7 @@ msgstr "10月"
 #: modules/reading_stats/module_reading_stats.lua:450
 #: modules/reading_stats/module_reading_stats.lua:452
 msgid "of reading"
-msgstr ""
+msgstr "阅读时长"
 
 #: modules/reading_stats/module_reading_stats.lua:450
 msgid "of reading this month"
@@ -7655,7 +7713,7 @@ msgstr "本周阅读量"
 
 #: modules/reading_stats/module_reading_stats.lua:447
 msgid "of reading this year"
-msgstr ""
+msgstr "今年阅读时长"
 
 #: modules/reading_stats/module_reading_stats.lua:443
 msgid "of reading today"
@@ -7665,7 +7723,7 @@ msgstr "今日阅读时长"
 msgid "of reading, all time"
 msgstr "总阅读时长"
 
-#: features/sui_style.lua:2722
+#: features/sui_style.lua:2725
 msgid "pack_path not provided"
 msgstr "未提供 pack_path 参数"
 
@@ -7689,19 +7747,19 @@ msgstr "今天阅读页数"
 
 #: modules/reading_stats/module_reading_stats.lua:449
 msgid "pages/day (7 days)"
-msgstr "页/天（7天）"
+msgstr "页/天（近 7 天）"
 
 #: modules/reading_stats/module_reading_stats.lua:466
 msgid "pages/hour (90 days)"
-msgstr ""
+msgstr "页/小时（近 90 天）"
 
 #: modules/reading_stats/module_reading_stats.lua:474
 msgid "peak reading hour"
-msgstr ""
+msgstr "最常阅读时段"
 
 #: modules/reading_stats/module_reading_stats.lua:471
 msgid "reading sessions (90 days)"
-msgstr ""
+msgstr "阅读次数（近 90 天）"
 
 #: screens/sui_stats_windows.lua:314 screens/sui_stats_windows.lua:1326
 msgid "sep"
@@ -7717,11 +7775,11 @@ msgstr "未读"
 
 #: modules/reading_stats/module_reading_stats.lua:487
 msgid "vs last week"
-msgstr ""
+msgstr "较上周"
 
 #: modules/reading_stats/module_reading_stats.lua:488
 msgid "vs the same days last week"
-msgstr ""
+msgstr "较上周同期"
 
 #: infra/sui_updater.lua:682
 msgid "⬆ Update available: %s"
@@ -7733,18 +7791,19 @@ msgid_plural "  (%d left)"
 msgstr[0] " （剩余 %d）"
 msgstr[1] " （剩余 %d）"
 
-#: modules/module_reading_goals.lua:1212
+#: modules/module_reading_goals.lua:1211
 msgid "  Set Goal  (%d book in %s)"
 msgid_plural "  Set Goal  (%d books in %s)"
-msgstr[0] "  设定目标（读 %d 本书在 %s 年）"
-msgstr[1] "  设定目标（读 %d 本书在 %s 年）"
+msgstr[0] "  设定目标（%d 本书 / %s 年）"
+msgstr[1] "  设定目标（%d 本书 / %s 年）"
 
 #: modules/reading_stats/width_sheet.lua:100
 msgid "%1 column"
 msgid_plural "%1 columns"
-msgstr[0] ""
+msgstr[0] "%1 列"
+msgstr[1] "%1 列"
 
-#: modules/module_reading_goals.lua:732 screens/sui_stats_windows.lua:769
+#: modules/module_reading_goals.lua:731 screens/sui_stats_windows.lua:769
 msgid "%d book"
 msgid_plural "%d books"
 msgstr[0] "%d 本书"
@@ -7753,28 +7812,32 @@ msgstr[1] "%d 本书"
 #: modules/critter/phrases.lua:76
 msgid "%d book finished this year"
 msgid_plural "%d books finished this year"
-msgstr[0] ""
+msgstr[0] "今年读完 %d 本书"
+msgstr[1] "今年读完 %d 本书"
 
-#: modules/module_reading_goals.lua:1161
+#: modules/module_reading_goals.lua:1160
 msgid "%d book in %s"
 msgid_plural "%d books in %s"
-msgstr[0] "读 %d 本书在 %s 年"
-msgstr[1] "读 %d 本书在 %s 年"
+msgstr[0] "%d 本书 / %s 年"
+msgstr[1] "%d 本书 / %s 年"
 
 #: screens/sui_stats_windows.lua:1219
 msgid "%d book read"
 msgid_plural "%d books read"
-msgstr[0] ""
+msgstr[0] "%d 本书已读"
+msgstr[1] "%d 本书已读"
 
 #: modules/critter/dialog.lua:505
 msgid "%d book this year. How's the goal looking?"
 msgid_plural "%d books this year. How's the goal looking?"
-msgstr[0] ""
+msgstr[0] "今年已经 %d 本书。目标进展如何？"
+msgstr[1] "今年已经 %d 本书。目标进展如何？"
 
 #: modules/critter/phrases.lua:169
 msgid "%d book to go for your goal."
 msgid_plural "%d books to go for your goal."
-msgstr[0] ""
+msgstr[0] "距你的目标还差 %d 本书。"
+msgstr[1] "距你的目标还差 %d 本书。"
 
 #: infra/sui_book_stats.lua:190 screens/sui_stats_windows.lua:1734
 msgid "%d day"
@@ -7785,37 +7848,44 @@ msgstr[1] "%d 天"
 #: modules/critter/reaction_lines.lua:310
 msgid "%d day away. I counted."
 msgid_plural "%d days away. I counted."
-msgstr[0] ""
+msgstr[0] "不见 %d 天。我数着呢。"
+msgstr[1] "不见 %d 天。我数着呢。"
 
 #: modules/critter/phrases.lua:142
 msgid "%d day of reading in a row."
 msgid_plural "%d days of reading in a row."
-msgstr[0] ""
+msgstr[0] "连续阅读 %d 天。"
+msgstr[1] "连续阅读 %d 天。"
 
 #: screens/insights/sui_insights_charts.lua:141
 msgid "%d day read"
 msgid_plural "%d days read"
-msgstr[0] ""
+msgstr[0] "阅读 %d 天"
+msgstr[1] "阅读 %d 天"
 
 #: modules/critter/phrases.lua:72
 msgid "%d day strong!"
 msgid_plural "%d days strong!"
-msgstr[0] ""
+msgstr[0] "连续 %d 天，稳稳的！"
+msgstr[1] "连续 %d 天，稳稳的！"
 
 #: modules/critter/reaction_lines.lua:351
 msgid "%d day! I thought you'd moved."
 msgid_plural "%d days! I thought you'd moved."
-msgstr[0] ""
+msgstr[0] "%d 天不见！我以为你搬家了。"
+msgstr[1] "%d 天不见！我以为你搬家了。"
 
 #: modules/critter/reaction_lines.lua:330
 msgid "%d day! Where were you?"
 msgid_plural "%d days! Where were you?"
-msgstr[0] ""
+msgstr[0] "%d 天不见！你上哪儿去了？"
+msgstr[1] "%d 天不见！你上哪儿去了？"
 
 #: modules/critter/phrases.lua:210
 msgid "%d day, your longest streak yet."
 msgid_plural "%d days, your longest streak yet."
-msgstr[0] ""
+msgstr[0] "连续 %d 天，你的新纪录！"
+msgstr[1] "连续 %d 天，你的新纪录！"
 
 #: features/sui_quickactions.lua:1566 features/sui_quickactions.lua:2879
 #: features/sui_quickactions.lua:2900
@@ -7827,52 +7897,62 @@ msgstr[1] "%d 个项目"
 #: modules/critter/reaction_lines.lua:129
 msgid "%d minute of reading."
 msgid_plural "%d minutes of reading."
-msgstr[0] ""
+msgstr[0] "阅读 %d 分钟。"
+msgstr[1] "阅读 %d 分钟。"
 
 #: modules/critter/phrases.lua:193
 msgid "%d minute read today!"
 msgid_plural "%d minutes read today!"
-msgstr[0] ""
+msgstr[0] "今天读了 %d 分钟！"
+msgstr[1] "今天读了 %d 分钟！"
 
 #: modules/critter/reaction_lines.lua:154
 msgid "%d minute without surfacing."
 msgid_plural "%d minutes without surfacing."
-msgstr[0] ""
+msgstr[0] "%d 分钟没露面。"
+msgstr[1] "%d 分钟没露面。"
 
 #: modules/critter/reaction_lines.lua:150
 msgid "%d minute! Did you eat?"
 msgid_plural "%d minutes! Did you eat?"
-msgstr[0] ""
+msgstr[0] "%d 分钟！吃饭了吗？"
+msgstr[1] "%d 分钟！吃饭了吗？"
 
 #: modules/critter/reaction_lines.lua:109
 msgid "%d minute. A sneaky one."
 msgid_plural "%d minutes. A sneaky one."
-msgstr[0] ""
+msgstr[0] "%d 分钟。偷偷读的。"
+msgstr[1] "%d 分钟。偷偷读的。"
 
 #: modules/critter/phrases.lua:184
 msgid "%d of %d book."
 msgid_plural "%d of %d books."
-msgstr[0] ""
+msgstr[0] "已完成 %d 本，目标 %d 本。"
+msgstr[1] "已完成 %d 本，目标 %d 本。"
 
 #: modules/critter/challenge.lua:213
 msgid "%d of %d minute so far."
 msgid_plural "%d of %d minutes so far."
-msgstr[0] ""
+msgstr[0] "目前 %d/%d 分钟。"
+msgstr[1] "目前 %d/%d 分钟。"
 
 #: modules/critter/challenge.lua:216
 msgid "%d of %d page so far."
 msgid_plural "%d of %d pages so far."
-msgstr[0] ""
+msgstr[0] "目前 %d/%d 页。"
+msgstr[1] "目前 %d/%d 页。"
 
 #: modules/critter/dialog.lua:542
 msgid "%d page today. Where did it take you?"
 msgid_plural "%d pages today. Where did they take you?"
-msgstr[0] ""
+msgstr[0] "今天已经 %d 页。它带你去哪儿了？"
+msgstr[1] "今天已经 %d 页。它们带你去哪儿了？"
 
 #: modules/critter/phrases.lua:201
 msgid "%d page turned today!"
 msgid_plural "%d pages turned today!"
-msgstr[0] ""
+msgstr[0] "今天翻了 %d 页！"
+msgstr[1] "今天翻了 %d 页！"
 
 #: screens/sui_stats_windows.lua:1737
 msgid "%d week"
@@ -7883,14 +7963,16 @@ msgstr[1] "%d 周"
 #: modules/critter/reaction_lines.lua:267
 msgid "%d year of pages and snacks."
 msgid_plural "%d years of pages and snacks."
-msgstr[0] ""
+msgstr[0] "%d 年的书页和零食。"
+msgstr[1] "%d 年的书页和零食。"
 
 #: modules/critter/reaction_lines.lua:263
 msgid "%d year together!"
 msgid_plural "%d years together!"
-msgstr[0] ""
+msgstr[0] "一起走过 %d 年！"
+msgstr[1] "一起走过 %d 年！"
 
-#: modules/module_reading_goals.lua:730
+#: modules/module_reading_goals.lua:729
 msgid "%d/%d book"
 msgid_plural "%d/%d books"
 msgstr[0] "%d/%d 本书"
@@ -7911,12 +7993,14 @@ msgstr[1] "（%d/%d — 剩余 %d）"
 #: screens/sui_stats_windows.lua:1917
 msgid "Day read"
 msgid_plural "Days read"
-msgstr[0] ""
+msgstr[0] "已读天数"
+msgstr[1] "已读天数"
 
 #: screens/sui_stats_windows.lua:2437
 msgid "Freeze available"
 msgid_plural "Freezes available"
-msgstr[0] ""
+msgstr[0] "可用冻结权"
+msgstr[1] "可用冻结权"
 
 #: features/sui_quickactions.lua:2402
 msgid "Group (%d item)"
@@ -7933,27 +8017,32 @@ msgstr[1] "最多 %d 个槽位，请先移除一个。"
 #: modules/critter/phrases.lua:215
 msgid "Milestone: %d day!"
 msgid_plural "Milestone: %d days!"
-msgstr[0] ""
+msgstr[0] "里程碑：连续 %d 天！"
+msgstr[1] "里程碑：连续 %d 天！"
 
 #: modules/critter/dialog.lua:423
 msgid "Our streak is at %d day. No pressure."
 msgid_plural "Our streak is at %d days. No pressure."
-msgstr[0] ""
+msgstr[0] "我们的连续阅读到了 %d 天。别有压力。"
+msgstr[1] "我们的连续阅读到了 %d 天。别有压力。"
 
 #: screens/sui_stats_windows.lua:1930
 msgid "Page read"
 msgid_plural "Pages read"
-msgstr[0] ""
+msgstr[0] "已读页数"
+msgstr[1] "已读页数"
 
 #: modules/critter/challenge.lua:201
 msgid "Read %d minute today?"
 msgid_plural "Read %d minutes today?"
-msgstr[0] ""
+msgstr[0] "今天要读 %d 分钟吗？"
+msgstr[1] "今天要读 %d 分钟吗？"
 
 #: modules/critter/challenge.lua:203
 msgid "Read %d page today?"
 msgid_plural "Read %d pages today?"
-msgstr[0] ""
+msgstr[0] "今天要读 %d 页吗？"
+msgstr[1] "今天要读 %d 页吗？"
 
 #: screens/sui_menu.lua:37
 msgid ""
@@ -7982,7 +8071,8 @@ msgid ""
 "The maximum of %d decoration per side has been reached. Remove one first."
 msgid_plural ""
 "The maximum of %d decorations per side has been reached. Remove one first."
-msgstr[0] ""
+msgstr[0] "每侧最多 %d 个装饰，已达上限。请先移除一个。"
+msgstr[1] "每侧最多 %d 个装饰，已达上限。请先移除一个。"
 
 #: features/sui_quickactions.lua:1636 features/sui_quickactions.lua:2844
 msgid "The maximum of %d quick action has been reached. Delete one first."
@@ -8001,210 +8091,11 @@ msgstr[1] "最多 %d 个标签，请先移除一个。"
 #: modules/reading_stats/module_reading_stats.lua:486
 msgid "day"
 msgid_plural "days"
-msgstr[0] ""
+msgstr[0] "天"
+msgstr[1] "天"
 
 #: modules/reading_stats/module_reading_stats.lua:457
 msgid "day streak"
 msgid_plural "days streak"
 msgstr[0] "连续阅读天数"
 msgstr[1] "连续阅读天数"
-
-#~ msgid "ALL TIME"
-#~ msgstr "所有时间"
-
-#~ msgid "All time — Books"
-#~ msgstr "总计 — 书籍"
-
-#~ msgid "All time — Time"
-#~ msgstr "总计 — 时间"
-
-#~ msgid "Column Width (Bento Grid)"
-#~ msgstr "列宽（Bento 网格）"
-
-#~ msgid "DAY STREAK"
-#~ msgstr "连续天数"
-
-#~ msgid "Daily avg — Pages"
-#~ msgstr "每日平均 — 页数"
-
-#~ msgid "Daily avg — Time"
-#~ msgstr "每日平均 — 时间"
-
-#~ msgid "FREEZES"
-#~ msgstr "冻结权"
-
-#~ msgid "LAST 7 DAYS"
-#~ msgstr "最近 7 天"
-
-#~ msgid ""
-#~ "Share of the row this module occupies.\n"
-#~ "100% = full width. Modules under 100% share a row when their widths fit "
-#~ "(bento grid)."
-#~ msgstr ""
-#~ "此模块在该行中所占的比例。\n"
-#~ "100% 表示整行宽度。宽度小于 100% 的模块，若宽度合适则会共用同一行（Bento "
-#~ "网格）。"
-
-#~ msgid "Show wallpaper on all screens"
-#~ msgstr "在所有屏幕显示壁纸"
-
-#~ msgid "Status — Abandoned"
-#~ msgstr "状态 — 搁置"
-
-#~ msgid "Status — Reading"
-#~ msgstr "状态 — 在读"
-
-#~ msgid "Status — Unread"
-#~ msgstr "状态 — 未读"
-
-#~ msgid "THIS MONTH"
-#~ msgstr "本月"
-
-#~ msgid "THIS WEEK"
-#~ msgstr "本周"
-
-#~ msgid "TODAY'S SUMMARY"
-#~ msgstr "今日摘要"
-
-#~ msgid "This month — Pages"
-#~ msgstr "本月 — 页数"
-
-#~ msgid "This month — Time"
-#~ msgstr "本月 — 时间"
-
-#~ msgid "This week — Pages"
-#~ msgstr "本周 — 页数"
-
-#~ msgid "This week — Time"
-#~ msgstr "本周 — 时间"
-
-#~ msgid "Today — Pages"
-#~ msgstr "今天 — 页数"
-
-#~ msgid "Today — Time"
-#~ msgstr "今天 — 时间"
-
-#~ msgid "WEEK STREAK"
-#~ msgstr "连续周数"
-
-#~ msgid "hours read"
-#~ msgstr "已读小时数"
-
-#~ msgid "reading time"
-#~ msgstr "阅读时长"
-
-#~ msgid "%d freeze available"
-#~ msgid_plural "%d freezes available"
-#~ msgstr[0] "%d 次冻结可用"
-#~ msgstr[1] "%d 次冻结可用"
-
-#~ msgid "day read"
-#~ msgid_plural "days read"
-#~ msgstr[0] "已读天数"
-#~ msgstr[1] "已读天数"
-
-#~ msgid "page read"
-#~ msgid_plural "pages read"
-#~ msgstr[0] "已读页数"
-#~ msgstr[1] "已读页数"
-
-#~ msgid "Badges"
-#~ msgstr "徽章"
-
-#~ msgid "Bar Style"
-#~ msgstr "栏样式"
-
-#~ msgid "Folder Book Stack"
-#~ msgstr "文件夹堆叠"
-
-#~ msgid "Folder Cover Type"
-#~ msgstr "文件夹封面类型"
-
-#~ msgid "Follow Library"
-#~ msgstr "跟随书库设置"
-
-#~ msgid "Number of Books in Folder"
-#~ msgstr "文件夹中的书籍数量"
-
-#~ msgid "Number of Pages"
-#~ msgstr "页数"
-
-#~ msgid "Overlays"
-#~ msgstr "叠加层"
-
-#~ msgid ""
-#~ "Scale for the library badges (progress, pages, etc.).\n"
-#~ "100% is the default size."
-#~ msgstr ""
-#~ "书库徽章（进度、页数等）的缩放。\n"
-#~ "默认大小为 100%。"
-
-#~ msgid ""
-#~ "Scales the section label text above each module.\n"
-#~ "100% is the default size."
-#~ msgstr ""
-#~ "每个模块上方的分区标签文本的缩放。\n"
-#~ "默认大小为 100%。"
-
-#~ msgid "Title and Author Below Covers"
-#~ msgstr "封面下方显示标题和作者"
-
-#~ msgid ""
-#~ "Title and author strip enabled.\n"
-#~ "\n"
-#~ "Restart now?"
-#~ msgstr ""
-#~ "标题与作者栏已启用。\n"
-#~ "\n"
-#~ "是否立即重启？"
-
-#~ msgid "Title only"
-#~ msgstr "仅标题"
-
-#~ msgid ""
-#~ "Title strip disabled.\n"
-#~ "\n"
-#~ "Restart now?"
-#~ msgstr ""
-#~ "标题栏已禁用。\n"
-#~ "\n"
-#~ "是否立即重启？"
-
-#~ msgid ""
-#~ "Title strip enabled.\n"
-#~ "\n"
-#~ "Restart now?"
-#~ msgstr ""
-#~ "标题栏已启用。\n"
-#~ "\n"
-#~ "是否立即重启？"
-
-#~ msgid "UI Font  (default)"
-#~ msgstr "界面字体 [默认]"
-
-#~ msgid "UI Font  [%s]"
-#~ msgstr "界面字体 [%s]"
-
-#~ msgid "Visibility"
-#~ msgstr "可见性"
-
-#~ msgid "Visible"
-#~ msgstr "可见"
-
-#~ msgid "The maximum of %d stat per row has been reached. Remove one first."
-#~ msgid_plural ""
-#~ "The maximum of %d stats per row has been reached. Remove one first."
-#~ msgstr[0] "每行最多 %d 个统计项，请先移除一项。"
-#~ msgstr[1] "每行最多 %d 个统计项，请先移除一项。"
-
-#~ msgid "Button Background"
-#~ msgstr "按钮背景"
-
-#~ msgid "Button Opacity"
-#~ msgstr "按钮不透明度"
-
-#~ msgid "Button Style"
-#~ msgstr "按钮样式"
-
-#~ msgid "Card Opacity"
-#~ msgstr "卡片不透明度"

@@ -15,6 +15,7 @@ local source = Sources.bind("new_books")
 local new_books_module = GridRenderer.makeModule{
     id          = "new_books",
     name        = _("New Books"),
+    category    = "books",
     label       = Sources.label("new_books"),
     default_on  = false,  -- opt-in; users enable via Arrange Modules
     max_items   = 5,

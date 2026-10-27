@@ -2483,6 +2483,18 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
                 },
             },
         }
+        table.insert(book_items, 1, {
+            text           = _("Fast Book Closing"),
+            help_text      = _("Keeps the Home Screen in memory while you read, so closing a book returns to it instantly instead of rebuilding it. Uses more RAM while a book is open."),
+            checked_func   = function()
+                return SUISettings:isTrue("simpleui_hs_fast_book_close")
+            end,
+            keep_menu_open = true,
+            callback       = function()
+                local on = SUISettings:isTrue("simpleui_hs_fast_book_close")
+                SUISettings:saveSetting("simpleui_hs_fast_book_close", not on)
+            end,
+        })
         local layout_items = {
             {
                 text_func = function() return _("Scale") end,
@@ -3205,6 +3217,20 @@ SimpleUIPlugin.addToMainMenu = function(self, menu_items)
                             text           = mosaic_item.text,
                             separator      = mosaic_item.separator,
                             sub_item_table = filtered,
+                        })
+                    end
+
+                    -- 3. Flash on cover images: shared with the Home Screen page turns.
+                    local ok_bim, BookInfoManager = pcall(require, "bookinfomanager")
+                    if ok_bim then
+                        table.insert(items, {
+                            text         = _("Flash when displaying covers"),
+                            checked_func = function()
+                                return BookInfoManager:getSetting("flash_ui_cover_images")
+                            end,
+                            callback     = function()
+                                BookInfoManager:toggleSetting("flash_ui_cover_images")
+                            end,
                         })
                     end
 

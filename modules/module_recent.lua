@@ -21,6 +21,7 @@ end)
 local recent_module = GridRenderer.makeModule{
     id          = "recent",
     name        = _("Recent Books"),
+    category    = "books",
     label       = Sources.label("recent"),
     default_on  = false,
     is_book_mod = true,   -- suppresses empty-state when active

@@ -742,6 +742,7 @@ local M = {}
 
 M.id         = "clock"
 M.name       = _("Clock")
+M.category   = "extras"
 M.label      = nil
 M.default_on = true
 M.text_elems = TEXT_ELEMS

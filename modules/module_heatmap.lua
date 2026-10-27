@@ -208,6 +208,7 @@ local M = {}
 
 M.id          = "heatmap"
 M.name        = _("Reading Heatmap")
+M.category    = "stats"
 M.label       = _("Reading Heatmap")
 M.enabled_key = "heatmap_enabled"
 M.default_on  = false

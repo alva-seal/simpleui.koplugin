@@ -499,6 +499,7 @@ end
 local M = {}
 M.id           = "quick_actions_row"
 M.name         = _("Quick Actions Row")
+M.category     = "shortcuts"
 M.instanciable = true
 M.makeInstance = makeInstance
 M.menu_group   = "quick_actions"
