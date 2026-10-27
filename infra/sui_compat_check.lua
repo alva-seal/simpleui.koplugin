@@ -82,12 +82,6 @@ local AUTO_DISABLE = {
         fallback_key = "quickui",
         folder_key = "quickui",
     },
-    {
-        sentinel = "readermenuredesign_installer",
-        label = "Reader Menu Redesign",
-        fallback_key = "zzz-readermenuredesign",
-        folder_key = "zzz-readermenuredesign",
-    },
 }
 
 -- Extra detection for ZenOS when its logger sentinel is not yet loaded.

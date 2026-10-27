@@ -461,7 +461,7 @@ function GridRenderer.applyBadges(cover_widget, bd, fp, cw, ch, cfg)
     -- Pages badge (bottom-left) — hidden for finished books, same rule as
     -- the Library grid (a finished book doesn't need its page count).
     if cfg.show_pages and bd.status ~= "complete" and bd.pages then
-        local wg = CW.buildRectBadgeWidget(bd.pages .. _(" p."), false, cell_min, cfg.badge_color.pages, false, corner_badge_scale)
+        local wg = CW.buildRectBadgeWidget(bd.pages .. _(""), false, cell_min, cfg.badge_color.pages, false, corner_badge_scale)
         if wg then
             wg.overlap_offset = { edge_margin, ch - wg.dimen.h - margin }
             overlap[#overlap + 1] = wg

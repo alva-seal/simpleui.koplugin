@@ -211,6 +211,10 @@ local _BADGE_RIGHT_INSET = Screen:scaleBySize(8)
 local _BADGE_BAR_H       = Screen:scaleBySize(8)
 local _BADGE_BAR_GAP     = Screen:scaleBySize(4)
 
+-- Extra shift of the pages badge: positive = further right / further down.
+local _PAGES_SHIFT_X = Screen:scaleBySize(-6)
+local _PAGES_SHIFT_Y = Screen:scaleBySize(12)
+
 -- Plugin directory and optional custom icon path.
 -- (Depth-independent — see infra/sui_paths.lua for why this can't be the
 -- old inline "chop the last two path components" regex.)
@@ -1229,11 +1233,11 @@ function M.install()
             self._fc_badge_scale = badge_scale
             self._fc_fade = self.status == "complete" and Finished.isFaded()
                 and M.getFadeAmount() or nil
-
+        
             if self._fc_overlay_pages and self.status ~= "complete" and self._fc_pages then
                 local cell_min = math.min(self.width or 40, self.height or 40)
                 self._fc_pages_widget = CoverWidgets.buildRectBadgeWidget(
-                    self._fc_pages .. _(" p."), false, cell_min, CE.getColor("pages"), false, badge_scale)
+                    self._fc_pages .. _(""), false, cell_min, CE.getColor("pages"), false, badge_scale)
             end
 
             if self._fc_overlay_series then
@@ -1565,6 +1569,7 @@ function M.install()
                 else
                     badge_x = fx + _native_bar_left_margin
                 end
+                badge_x = badge_x + _PAGES_SHIFT_X
                 local badge_y
                 if self.show_progress_bar then
                     local corner_sz = _fc_coll_sz or math.floor(math.min(self.width, self.height) / 8)
@@ -1573,6 +1578,7 @@ function M.install()
                 else
                     badge_y = fy + fh - wg.dimen.h - _native_bar_left_margin
                 end
+                badge_y = badge_y + _PAGES_SHIFT_Y
                 wg:paintTo(bb, badge_x, badge_y)
             end
         end
